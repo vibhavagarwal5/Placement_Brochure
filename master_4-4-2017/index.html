@@ -8,7 +8,7 @@
 			<!--this for the slider-->
 			<link href="assets/css/slider1.css" rel="stylesheet" type="text/css" />
 			
-	    	
+				
 			<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 			<link rel="stylesheet" href="assets/css/main.css" />
 			<link rel="stylesheet" href="assets/css/popup.css" />
@@ -54,17 +54,17 @@
 					/*opacity:0.5;*/
 					text-shadow: 2px 2px #877E7E;
 					-webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 8s; /* Firefox < 16 */
+			 -moz-animation: fadein 8s; /* Firefox < 16 */
 				}
 				@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 0.9; }
+		from { opacity: 0; }
+		to   { opacity: 0.9; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 0.9; }
+		from { opacity: 0; }
+		to   { opacity: 0.9; }
 }
 
 				.carousel{
@@ -80,157 +80,157 @@
 
 			</style>
 			<script>
-	  $(function() {
-	    $('a[href*=#]:not([href=#])').click(function() {
-	        if( $(this).attr("href")=="#myCarousel") return;//This is the exception
-	        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	            var target = $(this.hash);
-	            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	            if (target.length) {
-	                $('html,body').animate({
-	                    scrollTop: target.offset().top
-	                }, 1000);
-	                return false;
-	            }
-	        }
-	    });
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+					if( $(this).attr("href")=="#myCarousel") return;//This is the exception
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+							var target = $(this.hash);
+							target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+							if (target.length) {
+									$('html,body').animate({
+											scrollTop: target.offset().top
+									}, 1000);
+									return false;
+							}
+					}
+			});
 	});
 		</script>
 		
 <!--
 		<script>
-        jssor_1_slider_init = function() {
-            
-            var jssor_1_SlideshowTransitions = [
-              {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
-            ];
-            
-            var jssor_1_options = {
-              $AutoPlay: true,
-              $SlideshowOptions: {
-                $Class: $JssorSlideshowRunner$,
-                $Transitions: jssor_1_SlideshowTransitions,
-                $TransitionsOrder: 1
-              },
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              },
-              $ThumbnailNavigatorOptions: {
-                $Class: $JssorThumbnailNavigator$,
-                $Cols: 1,
-                $Align: 0,
-                $NoDrag: true
-              }
-            };
-            
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-            
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizing
-            function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 600);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            //responsive code end
-        };
-    </script>
+				jssor_1_slider_init = function() {
+						
+						var jssor_1_SlideshowTransitions = [
+							{$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+							{$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+						];
+						
+						var jssor_1_options = {
+							$AutoPlay: true,
+							$SlideshowOptions: {
+								$Class: $JssorSlideshowRunner$,
+								$Transitions: jssor_1_SlideshowTransitions,
+								$TransitionsOrder: 1
+							},
+							$ArrowNavigatorOptions: {
+								$Class: $JssorArrowNavigator$
+							},
+							$BulletNavigatorOptions: {
+								$Class: $JssorBulletNavigator$
+							},
+							$ThumbnailNavigatorOptions: {
+								$Class: $JssorThumbnailNavigator$,
+								$Cols: 1,
+								$Align: 0,
+								$NoDrag: true
+							}
+						};
+						
+						var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+						
+						//responsive code begin
+						//you can remove responsive code if you don't want the slider scales while window resizing
+						function ScaleSlider() {
+								var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+								if (refSize) {
+										refSize = Math.min(refSize, 600);
+										jssor_1_slider.$ScaleWidth(refSize);
+								}
+								else {
+										window.setTimeout(ScaleSlider, 30);
+								}
+						}
+						ScaleSlider();
+						$Jssor$.$AddEvent(window, "load", ScaleSlider);
+						$Jssor$.$AddEvent(window, "resize", ScaleSlider);
+						$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+						//responsive code end
+				};
+		</script>
 -->
 
 <!--
-    <style>
-        
-        /* jssor slider bullet navigator skin 01 css */
-        /*
-        .jssorb01 div           (normal)
-        .jssorb01 div:hover     (normal mouseover)
-        .jssorb01 .av           (active)
-        .jssorb01 .av:hover     (active mouseover)
-        .jssorb01 .dn           (mousedown)
-        */
-        .jssorb01 {
-            position: absolute;
-        }
-        .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
-            position: absolute;
-            /* size of bullet elment */
-            width: 12px;
-            height: 12px;
-            filter: alpha(opacity=70);
-            opacity: .7;
-            overflow: hidden;
-            cursor: pointer;
-            border: #000 1px solid;
-        }
-        .jssorb01 div { background-color: gray; }
-        .jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
-        .jssorb01 .av { background-color: #fff; }
-        .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+		<style>
+				
+				/* jssor slider bullet navigator skin 01 css */
+				/*
+				.jssorb01 div           (normal)
+				.jssorb01 div:hover     (normal mouseover)
+				.jssorb01 .av           (active)
+				.jssorb01 .av:hover     (active mouseover)
+				.jssorb01 .dn           (mousedown)
+				*/
+				.jssorb01 {
+						position: absolute;
+				}
+				.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+						position: absolute;
+						/* size of bullet elment */
+						width: 12px;
+						height: 12px;
+						filter: alpha(opacity=70);
+						opacity: .7;
+						overflow: hidden;
+						cursor: pointer;
+						border: #000 1px solid;
+				}
+				.jssorb01 div { background-color: gray; }
+				.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+				.jssorb01 .av { background-color: #fff; }
+				.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
 
-        /* jssor slider arrow navigator skin 05 css */
-        /*
-        .jssora05l                  (normal)
-        .jssora05r                  (normal)
-        .jssora05l:hover            (normal mouseover)
-        .jssora05r:hover            (normal mouseover)
-        .jssora05l.jssora05ldn      (mousedown)
-        .jssora05r.jssora05rdn      (mousedown)
-        */
-        .jssora05l, .jssora05r {
-            display: block;
-            position: absolute;
-            /* size of arrow element */
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            background: url('img/a17.png') no-repeat;
-            overflow: hidden;
-        }
-        .jssora05l { background-position: -10px -40px; }
-        .jssora05r { background-position: -70px -40px; }
-        .jssora05l:hover { background-position: -130px -40px; }
-        .jssora05r:hover { background-position: -190px -40px; }
-        .jssora05l.jssora05ldn { background-position: -250px -40px; }
-        .jssora05r.jssora05rdn { background-position: -310px -40px; }
+				/* jssor slider arrow navigator skin 05 css */
+				/*
+				.jssora05l                  (normal)
+				.jssora05r                  (normal)
+				.jssora05l:hover            (normal mouseover)
+				.jssora05r:hover            (normal mouseover)
+				.jssora05l.jssora05ldn      (mousedown)
+				.jssora05r.jssora05rdn      (mousedown)
+				*/
+				.jssora05l, .jssora05r {
+						display: block;
+						position: absolute;
+						/* size of arrow element */
+						width: 40px;
+						height: 40px;
+						cursor: pointer;
+						background: url('img/a17.png') no-repeat;
+						overflow: hidden;
+				}
+				.jssora05l { background-position: -10px -40px; }
+				.jssora05r { background-position: -70px -40px; }
+				.jssora05l:hover { background-position: -130px -40px; }
+				.jssora05r:hover { background-position: -190px -40px; }
+				.jssora05l.jssora05ldn { background-position: -250px -40px; }
+				.jssora05r.jssora05rdn { background-position: -310px -40px; }
 
-        /* jssor slider thumbnail navigator skin 09 css */
-        
-        .jssort09-600-45 .p {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 600px;
-            height: 45px;
-        }
-        
-        .jssort09-600-45 .t {
-            font-family: verdana;
-            font-weight: normal;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            color:#fff;
-            line-height: 45px;
-            font-size: 20px;
-            padding-left: 10px;
-        }
-        
-    </style>
+				/* jssor slider thumbnail navigator skin 09 css */
+				
+				.jssort09-600-45 .p {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 600px;
+						height: 45px;
+				}
+				
+				.jssort09-600-45 .t {
+						font-family: verdana;
+						font-weight: normal;
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						color:#fff;
+						line-height: 45px;
+						font-size: 20px;
+						padding-left: 10px;
+				}
+				
+		</style>
 -->
 		
 		
@@ -260,7 +260,7 @@
 													<li><a href="test_msDIGSOC.html">MSc in Digital Society</a></li>
 													<li><a href="test_msRSRCH.html">MS by Research</a></li>
 													<li><a href="achievements.html">Achievements</a></li>
-                                                    <li><a href="contact.html">Contact Us</a></li>
+													<li><a href="contact.html">Contact Us</a></li>
 											</ul>
 										</nav>
 
@@ -271,69 +271,51 @@
 
 
 							<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:100%; margin: 8% auto">
-	        <!-- Carousel indicators -->
-	        <ol class="carousel-indicators">
-	            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	            <li data-target="#myCarousel" data-slide-to="1"></li>
-	            <li data-target="#myCarousel" data-slide-to="2"></li>
-	            <li data-target="#myCarousel" data-slide-to="3"></li>
-	        </ol>   
+					<!-- Carousel indicators -->
+					<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+					</ol>   
 
-	        <!-- Wrapper for carousel items -->
-	        <div class="carousel-inner">
-	            <div class="item active">
-
-
-	               
-		<img src="campus.jpg" alt="First Slide" height="auto" width="100%">
-	   <div class="carousel-caption">
-	 <h1 class="carousel-caption-header" style="font-size:1em;"><strong>
-	                                Placement Brochure 2016-2017</strong></h1>
-	                            
-	                            <h1 style="font-size:1em;">
-	                                <strong>IIITB</strong></h1>
-	                        </div>
-	            </div>
-	            <div class="item">
-	                <img src="images/recruiters.jpg" alt="Second Slide" height="auto" width="100%">
-	 <div class="carousel-caption">
-	 <h1 class="carousel-caption-header" style="font-size:1em;"><weak>
-	                               Major Recruiters</weak></h1>
-	                            
-	                            <h1>
-	                                <weak> </weak></h1>
-	                        </div>
-	            </div>
-	            <div class="item">
-	                <img src="images/imtechBatch2.jpg" alt="Third Slide" height="auto" width="100%">
-	 <div class="carousel-caption" style="top:-4.5%;font-size=0.1em;">
-	 <!-- class="carousel-caption-header" -->
-
-	 <h1 style="color:black;font-size:1em;"><strong> 
-	                        Introducing 5 year Integrated M.Tech Batch</strong></h1>
-	                            
-	                            <!-- <h1> -->
-	                                <!-- <strong>IIITB</strong></h1> -->
-	                        </div>
-	            </div>
-	 <div class="item">
-	      <img src="campus 2.jpg" alt="Flower" height="auto" width="100%">
-	 <div class="carousel-caption">
-	 <h1 class="carousel-caption-header" style="font-size:1em;"><strong>
-	                                Placement Brochure 2016-2017</strong></h1>
-	                            
-	                            <h1 style="font-size:1em;">
-	                                <strong>IIITB</strong></h1>
-	                        </div>
-	    </div>
-	  </div>
-	     <!-- Carousel controls -->
-	    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-	        <span class="glyphicon glyphicon-chevron-left"></span>
-	    </a>
-	    <a class="carousel-control right" href="#myCarousel" data-slide="next">
-	        <span class="glyphicon glyphicon-chevron-right"></span>
-	    </a>
+					<!-- Wrapper for carousel items -->
+	<div class="carousel-inner">
+			<div class="item active">
+				<img src="campus.jpg" alt="First Slide" height="auto" width="100%">
+					<div class="carousel-caption">
+						<h1 class="carousel-caption-header" style="font-size:1em;"><strong>Placement Brochure 2016-2017</strong></h1>
+					<h1 style="font-size:1em;"><strong>IIITB</strong></h1>
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/recruiters.jpg" alt="Second Slide" height="auto" width="100%">
+	 			<div class="carousel-caption">
+	 				<h1 class="carousel-caption-header" style="font-size:1em;"><weak>Major Recruiters</weak></h1>
+					<h1><weak> </weak></h1>
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/imtechBatch2.jpg" alt="Third Slide" height="auto" width="100%">
+				<div class="carousel-caption" style="top:-4.5%;font-size=0.1em;">
+					 <h1 style="color:black;font-size:1em;"><strong>Introducing 5 year Integrated M.Tech Batch</strong></h1>
+				</div>
+							</div>
+	 		<div class="item">
+				<img src="campus 2.jpg" alt="Flower" height="auto" width="100%">
+	 			<div class="carousel-caption">
+					<h1 class="carousel-caption-header" style="font-size:1em;"><strong>Placement Brochure 2016-2017</strong></h1>
+					<h1 style="font-size:1em;"><strong>IIITB</strong></h1>
+	 			</div>
+	 		</div>
+	</div>
+			 <!-- Carousel controls -->
+			<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="carousel-control right" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
 	</div>
 								<!-- <div id="banner">
 									<h2 style="color:#FFFFFF;opacity=1;"><strong>Placement brochure <br> IIIT Bangalore<br>2015-2017</strong> 
@@ -406,16 +388,16 @@
 	
 				
 <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h3 class="modal-title" style="padding-top:10%;">Message from Director</h3>
-        </div>
-        <div class="modal-body">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title" style="padding-top:10%;">Message from Director</h3>
+				</div>
+				<div class="modal-body">
 		<a ><img src="images/director.jpg" alt="" height="144.66" width="244.66" style="float:left;padding-right:10px;padding-top:10px; padding-left:33px;"/></a>
 							
-          	<p style="font-color:white;">
+						<p style="font-color:white;">
 								Many of you from the IT industry find IIIT-B a familiar
 place, where you come year after year to recruit high
 quality students graduating with our M.Tech program.
@@ -430,27 +412,27 @@ nearly 2500+ strong alumni have been doing extremely well. You can only expect t
 present batch to better the performance of our alumni.<br>
 							</p>
 							<p>Happy Recruiting,<br>S.Sadagopan</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-warning" data-dismiss="modal" style="float:center;">Back</button>
-        </div>
-      </div>
-    </div>
-  </div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-warning" data-dismiss="modal" style="float:center;">Back</button>
+				</div>
+			</div>
+		</div>
+	</div>
 					
 					
-				 	
+					
 <div class="modal fade" id="myModal1" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" style="padding-top:10%;">About IIIT-B</h4>
-        </div>
-        <div class="modal-body">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title" style="padding-top:10%;">About IIIT-B</h4>
+				</div>
+				<div class="modal-body">
 		<a><img src="campus.jpg" alt="" height="160.66" width="274.66" style="float:left;padding-right:10px;padding-top:10px;padding-left:33px;"/></a>
 											
-          	<p>
+						<p>
 									Set up in the year 1999, and promoted by the Karnataka Government
 and the IT Industry, IIIT B attracts quality students every year from all
 over India and abroad, to its acclaimed iM.Tech, M.Tech, MS by Re-
@@ -466,38 +448,38 @@ students to stay on the path of scientific enquiry and together, they
 have produced several patents, published in influential journals and
 conferences and carried out innovative projects.
 								</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-warning" data-dismiss="modal" style="float:center;">Back</button>
-        </div>
-      </div>
-    </div>
-  </div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-warning" data-dismiss="modal" style="float:center;">Back</button>
+				</div>
+			</div>
+		</div>
+	</div>
 				
 					 
  <div class="modal fade" id="myModal2" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" style="padding-top:10%;">Message From Placement Committee</h4>
-        </div>
-        <div class="modal-body">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title" style="padding-top:10%;">Message From Placement Committee</h4>
+				</div>
+				<div class="modal-body">
 		<a><img src="images/placecom.JPG" alt="" height="160.66" width="274.66" style="float:left;padding-right:10px;padding-top:10px;padding-left:33px;"/></a>
 											
-          	<p>
+						<p>
 									Dear Corporate Friends,<br>&nbsp;&nbsp; IIIT-Bangalore is one of the best Post-Graduate institutions in India for higher education in IT, Electronic System Design and related areas. With an impressive faculty profile, a deeply ingrained culture of academic excellence and work ethic and a transparent, informal and culturally rich atmosphere, most of our students find IIIT-B an institution of the kind they have always dreamt about.
 									<br><br>
 									Academically the emphasis at IIIT-B has always been on ensuring that the students get a sound conceptual foundation and on enabling them with problem solving skills of a higher order, allowing students to live up to the rather demanding expectations from them in each of our courses. 
 									<br><br>We welcome you to our campus for the Placement recruitment. We hope you will cherish your time at our campus. We are sure our students will make you proud as your colleagues.
 								</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-warning" data-dismiss="modal" style="float:center;">Back</button>
-        </div>
-      </div>
-    </div>
-  </div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-warning" data-dismiss="modal" style="float:center;">Back</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 					
 					
@@ -714,7 +696,7 @@ conferences and carried out innovative projects.
 				<script src="assets/js/util.js"></script>
 				<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 				<script src="assets/js/main.js"></script>
-			 	<style>
+				<style>
 				#op:link{
 				text-decoration: none;
 				#op:hover:{text-decoration:underline;}</style>
