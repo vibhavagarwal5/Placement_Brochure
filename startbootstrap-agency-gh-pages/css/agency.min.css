@@ -9,20 +9,6 @@
     background-image: none
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 2px solid #fff;
-    background: url(img/tiger.png) no-repeat;
-    box-shadow: 10px 10px 5px #ccc;
-    -moz-box-shadow: 10px 10px 5px #ccc;
-    -webkit-box-shadow: 10px 10px 5px #ccc;
-    -khtml-box-shadow: 10px 10px 5px #ccc;
-    - See more at: http: //www.corelangs.com/css/box/image-shadow.html#sthash.tAekzdMV.dpuf
-}
 
 body {
     overflow-x: hidden;
