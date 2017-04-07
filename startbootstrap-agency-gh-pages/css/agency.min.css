@@ -34,7 +34,7 @@ h6 {
 }
 .text-primary,
 a {
-    color: #fed136
+    color: #ffff;
 }
 p {
     font-size: 14px;
@@ -48,7 +48,8 @@ a.active,
 a:active,
 a:focus,
 a:hover {
-    outline: 0
+    outline: 0;
+    color: #ffff;
 }
 a.active,
 a:active,
@@ -145,7 +146,7 @@ fieldset[disabled] .btn-xl:hover {
     border-color: transparent
 }
 .navbar-custom .navbar-brand {
-    color: #fed136;
+    color: #fff;
     font-family:  "Arial", cursive;
 }
 .navbar-custom .navbar-brand.active,
@@ -166,13 +167,13 @@ fieldset[disabled] .btn-xl:hover {
     border-color: rgba(255, 255, 255, .02)
 }
 .navbar-custom .navbar-toggle {
-    background-color: #fed136;
-    border-color: #fed136;
+    background-color: #ffff;
+    border-color: #ffff;;
     font-size: 12px
 }
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:hover {
-    background-color: #fed136
+    background-color: grey;
 }
 .navbar-custom .nav li a {
     font-weight: 400;
