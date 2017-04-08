@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <!--
 	ZeroFour by HTML5 UP
@@ -5,10 +6,59 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	
-<!-- Mirrored from placement.iiitb.ac.in/mtechIT.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Apr 2017 13:33:26 GMT -->
-<head>
-		<script src="../ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<head>
+        <!-- Bootstrap Core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- Theme CSS -->
+        <link href="css/agency.min.css" rel="stylesheet">
+        <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top ">
+            <div class="navigationMenu">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <!--<img src="img/logo.jpg">-->
+                    <a class="navbar-brand page-scroll navBarHeading" href="index.html">IIIT - Bangalore</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="currentPage toolbarButton" href="mtechIT.html">M.Tech - IT</a>
+                        </li>
+                        <li>
+                            <a class="toolbarButton" href="mtechESD.html">M.Tech - ESD</a>
+                        </li>
+                        <li>
+                            <a class="toolbarButton" href="imtech.html">Integrated M.Tec</a>
+                        </li>
+                        <li>
+                            <a class="toolbarButton" href="ms_research.html">Research Programmes</a>
+                        </li>
+                        <li>
+                            <a class="toolbarButton" href="digisoc.html">MSc in Digital Society</a>
+                        </li>
+                        <li>
+                            <a class="toolbarButton" href="achievements.html">Achievements</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		<title>MTech In IT</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -49,7 +99,7 @@
 			  padding:10px 0;
 			  color:#3498db;
 
-			  
+
 			}
 			an:hover{
 				background: rgba(255, 205, 40, 0.36);
@@ -69,7 +119,7 @@
 			an[data-filter="se"]:focus ~  div:not([data-filter="se"]){
 			  display: none;
 			}
-*/			
+*/
 			/*tab within tab ends*/
 
 		</style>
@@ -80,7 +130,7 @@
 
 
 
-//script for the tabs within project tab			
+//script for the tabs within project tab
 			$('#projDSData').hide();
 	        $('#projNCData').hide();
 	        $('#projSEData').hide();
@@ -92,20 +142,20 @@
 		        $('#projSEData').hide();
 		        $('#projCSData').show();
 		    });
-			$('#projDSTab').click(function() {		  		
+			$('#projDSTab').click(function() {
 		        $('#projNCData').hide();
 		        $('#projSEData').hide();
 		        $('#projCSData').hide();
 		        $('#projDSData').show();
-			});    
+			});
 			$('#projSETab').click(function() {
 		  		$('#projDSData').hide();
-		        $('#projNCData').hide();		        
+		        $('#projNCData').hide();
 		        $('#projCSData').hide();
 		        $('#projSEData').show();
-			});    
+			});
 			$('#projNCTab').click(function() {
-		  		$('#projDSData').hide();		        
+		  		$('#projDSData').hide();
 		        $('#projSEData').hide();
 		        $('#projCSData').hide();
 		        $('#projNCData').show();
@@ -124,24 +174,24 @@
 		        $('#courSEData').hide();
 		        $('#courCSData').show();
 		    });
-			$('#courDSTab').click(function() {		  		
+			$('#courDSTab').click(function() {
 		        $('#courNCData').hide();
 		        $('#courSEData').hide();
 		        $('#courCSData').hide();
 		        $('#courDSData').show();
-			});    
+			});
 			$('#courSETab').click(function() {
 		  		$('#courDSData').hide();
-		        $('#courNCData').hide();		        
+		        $('#courNCData').hide();
 		        $('#courCSData').hide();
 		        $('#courSEData').show();
-			});    
+			});
 			$('#courNCTab').click(function() {
-		  		$('#courDSData').hide();		        
+		  		$('#courDSData').hide();
 		        $('#courSEData').hide();
 		        $('#courCSData').hide();
 		        $('#courNCData').show();
-			});    
+			});
 
 			//end of script for courses tab
 		});
@@ -165,45 +215,7 @@
 					<div class="container">
 
 						<!-- Header -->
-							<header id="header">
-								<div class="inner">
-
-									<!-- Logo -->
-										<h1><a href="index-2.html" id="logo"></a></h1>
-
-									<!-- Nav -->
-										<nav id="nav" style="font-weight:600;">
-											<ul>
-												<li><a href="index-2.html">Home</a></li>
-												<li class="current_page_item">
-													<a href="#">M.Tech-IT</a>
-													<!--<ul>
-														<li>
-															<li><a href="comp_sci.html">Computer Science</a></li>
-															<li><a href="data_sci.html">Data Sciences</a></li>
-															<li><a href="net_com.html">Networking & Communication</a></li>
-															<li><a href="soft_eng.html">Software Engineering</a></li>
-														</li>
-													</ul>-->
-												</li>
-												<li>
-													<a href="mtechESD.html">M.Tech-ESD</a>
-													<!--<ul>
-														<li>
-															<li><a href="soc.html">SOC</a></li>
-															<li><a href="embedded.html">Embedded Systems</a></li>
-														</li>
-													</ul>-->
-												</li>
-												<li><a href="imtech.html">Integrated M.Tech</a></li>
-												<li><a href="digisoc.html">MSc in Digital Society</a></li>
-												<li><a href="ms_research.html">MS by Research</a></li>
-												<li><a href="contact.html">Contact Us</a></li>
-											</ul>
-										</nav>
-
-								</div>
-							</header>
+							<
 
 					</div>
 				</div>
@@ -220,14 +232,14 @@
 											<!-- Sidebar -->
 
 												<section>
-													<header class="major">
+													<div class="major">
 														<h2>M.Tech in Information Technology</h2>
-													</header>
+													</div>
 													<p style="font-weight:300;">
 													The M.Tech degree in Information Technology (IT) is intended to provide education for students who wish to work in the IT industry as practitioners. It is awarded upon successful completion of a 4-semester broad-based academic program in IT, going beyond, but incorporating essential elements of, traditional computer science. <br><br> Apart from imparting technical knowledge, the program teaches managerial and other cognate skills that are essential for a successful career in today's competitive IT industry. All students enrolled in the M.Tech program are residential, full-time students. <br><br>
 													The M.Tech. program is a four semester program. The first three semesters of the program constitute academic course work. During the fourth semester, a student can either take up an industry internship or academic research at the institute leading to a thesis.<br>
-													
-													</p>										
+
+													</p>
 												</section>
 
 										</div>
@@ -240,22 +252,22 @@
 													<input type="radio" name="tabs" id="tab0" checked/>
 									        		<label for="tab0">Courses</label>
 									        		<div id="tab-content0" class="tab-content" style="height:700px" align="justify">
-									        		
+
 									        		 <!--<an  data-filter="cs" tabindex="-1">Computer Science</an>-->
 													 <!--<an  data-filter="ds" tabindex="-1">Data Science</an>-->
-													 <an  href="#" id="courCSTab">Computer Science</an> 
+													 <an  href="#" id="courCSTab">Computer Science</an>
 													 <an  href="#" id="courDSTab">Data Science</an>
 													 <an  id="courSETab">Software Engineering</an>
 													 <an  id="courNCTab">Networking and Communication</an>
 
 													 <!--<an  data-filter="se" tabindex="-1">Software Engineering</an>
-													 <an  data-filter="nc" tabindex="-1">Networking and Communication.</an>-->	
+													 <an  data-filter="nc" tabindex="-1">Networking and Communication.</an>-->
 													 <br>
 													 <br>
 													 <br>
-									        		<div id="courCSData" tabindex='1'>							        	
-									        		<!--<div data-filter="cs">-->							        		
-									        		<p>	
+									        		<div id="courCSData" tabindex='1'>
+									        		<!--<div data-filter="cs">-->
+									        		<p>
 									        		<b><h2 style="text-align: center;%;">Computer Science</h2>
 									        		</b>
 									        		Starting from problem solving using computers, students of this stream learn concepts from a wide range of softwares.
@@ -265,14 +277,14 @@
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Theory Of Computation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Artificial Intelligence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		        				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Artificial Intelligence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Competitive Programming&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Distributed Computing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Distributed Computing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Cryptography and Network Security&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -284,15 +296,15 @@
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematical Models of Computation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Theoretical Computer Sciences&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Theoretical Computer Sciences&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        	</ul>
 
 
-									        			</p>	
+									        			</p>
 									        </div>
 									        		<div id="courDSData">
-									        		<!--<div data-filter="ds">-->	
+									        		<!--<div data-filter="ds">-->
 
 									        			<p>
 									        			<b><h2 style="text-align: center;%;">Data Science</h2></b>
@@ -303,14 +315,14 @@
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Data Modeling&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Data Analytics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		        				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Data Analytics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Multi Agent Systems&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Advanced Database Management Systems&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Advanced Database Management Systems&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Web Information Retrieval&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -320,12 +332,12 @@
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Foundations of Big Data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										        		</li>										        		
-										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Machine learning&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Algorithms for Massive datasets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Machine learning&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+										        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Algorithms for Massive datasets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        	</ul>
 									        			</p>
@@ -335,35 +347,35 @@
 									        			<b><h2 style="text-align: center;%;">Software Engineering</h2></b>
 									        			This stream has a two-fold mission:<br>
 Firstly, to educate the students to be high quality software engineers, with strong hands-on experience and with strong foundations in computer science concepts.<br>
-Secondly, to contribute original and ground breaking ideas to the state-of-the art in SE by actively involving in research. 
+Secondly, to contribute original and ground breaking ideas to the state-of-the art in SE by actively involving in research.
 									        		<br><br>
 													Subjects of this stream include: <br><br>
 									        		<ul class="fa-ul">
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Design Patterns&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Usability&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		        				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Usability&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Software testing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Data Modeling&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Data Modeling&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Automated Formal Verification&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Geographic Information Systems&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										        		</li>										        		
+										        		</li>
 										        	</ul>
 									        			</p>
 
 									        			</div>
 									        		<div id="courNCData">
 									        		<!--<div data-filter="nc">-->
-									        			
+
 									        			<p>
 									        			<b><h2 style="text-align: center;%;">Networking and Communication</h2></b>
 									        			This stream covers a detailed understanding on various types of communication systems and protocols.
@@ -373,45 +385,45 @@ Secondly, to contribute original and ground breaking ideas to the state-of-the a
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Wireless Access Networks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Wireless Sensor networks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		        				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Wireless Sensor networks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Internet Of Things&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Digital Image Processing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Digital Image Processing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mobile computing with IMS Architecture&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Computer Vision&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										        		</li>										        		
+										        		</li>
 										        	</ul>
 									        			</p>
 									        		</div>
-												</li>												
-												
+												</li>
+
 												<li>
 													<input type="radio" name="tabs" id="tab2"/>
 									        		<label for="tab2">Projects</label>
 									        		<div id="tab-content2" class="tab-content" style="height:700px" align="justify">
-									        		
+
 									        		 <!--<an  data-filter="cs" tabindex="-1">Computer Science</an>-->
 													 <!--<an  data-filter="ds" tabindex="-1">Data Science</an>-->
-													 <an  href="#" id="projCSTab">Computer Science</an> 
+													 <an  href="#" id="projCSTab">Computer Science</an>
 													 <an  id="projDSTab">Data Science</an>
 													 <an  id="projSETab">Software Engineering</an>
 													 <an  id="projNCTab">Networking and Communication</an>
 
 													 <!--<an  data-filter="se" tabindex="-1">Software Engineering</an>
-													 <an  data-filter="nc" tabindex="-1">Networking and Communication</an>-->	
+													 <an  data-filter="nc" tabindex="-1">Networking and Communication</an>-->
 													 <br>
 													 <br>
 													 <br>
-									        		<div id="projCSData" tabindex='1'>							        	
-									        		<!--<div data-filter="cs">-->							        		
+									        		<div id="projCSData" tabindex='1'>
+									        		<!--<div data-filter="cs">-->
 									        		<p>	<b><h2 style="text-align: center;%;">Computer Science</h2>
 									        		</b><ul class="fa-ul">
 									        			<li>
@@ -439,17 +451,17 @@ The project involves the study of Assembly language for 8086 Architecture and ai
 										        				In this application user can write on webscreen using his fingers without any additional hardware requirement other than a webcam.<br><br>
 										        				<b>Tools used:&nbsp;&nbsp;</b>Python & Opencv
 										        			</li>
-										        			
+
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Volume Estimation of an Object in the Scene using Intel Real Sense</b><br>
 										        				The main aim of the project is to estimate the volume of an object in the scene by capturing an image using the Intel Real Sense camera.<br><br>
 										        				<b>Tools used:&nbsp;&nbsp;</b>Visual Studio, OpenCV, Intel SDK
 										        			</li>
 									        			</ul>
-									        			</p>	
+									        			</p>
 									        </div>
 									        		<div id="projDSData">
-									        		<!--<div data-filter="ds">-->	
+									        		<!--<div data-filter="ds">-->
 
 									        			<p>
 									        			<b><h2 style="text-align: center;%;">Data Science</h2></b>
@@ -495,7 +507,7 @@ To implement and optimize various machine learning algorithms on embedded system
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Temporal XML </b><br>
 										        				Imposing temporal features to XML Database. Inculcate the factor of time in XML Database <br><br>
-										        				<b>Tools used:&nbsp;&nbsp;</b>eXistdb, java 
+										        				<b>Tools used:&nbsp;&nbsp;</b>eXistdb, java
 										        			</li>
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>ASL(American Sign Language)Translator</b><br><br>
@@ -520,7 +532,7 @@ To implement and optimize various machine learning algorithms on embedded system
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Web Telescope </b><br>
 										        				This project is under web - observatory in IIITB. Web telescope  monitors data on social network (twitter as of  now) to collect  those data from social network a single application has been built which  provides you an API through which you can access all top  conversations given a specific search query (the  direct REST api was  not there by twitter officials and developers were demanding api like  this since 2008)<br><br>
-										        				<b>Tools used:&nbsp;&nbsp;</b>python, twitter api, tweepy, node.js 
+										        				<b>Tools used:&nbsp;&nbsp;</b>python, twitter api, tweepy, node.js
 										        			</li>
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Analysis of Meetup.com</b><br>
@@ -542,7 +554,7 @@ To implement and optimize various machine learning algorithms on embedded system
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Face Recognition using CNN</b><br>
 										        				The project involves usage of Convolutional neural network for face Recognition task. Caffe framework is used for implementing CNN.<br><br>
 										        				<b>Tools used:&nbsp;&nbsp;</b>Caffe, Python, AWS GPU Instance
-										        			</li>									        			
+										        			</li>
 
 									        			</ul>
 									        			</p>
@@ -599,7 +611,7 @@ After getting the request from User it goes to the appropriate GDS and fires mul
 									        		<!--<div data-filter="nc">-->
 									        			<p><b>
 									        			<h2 style="text-align:center">Networking & Communication</h2></b>
-									        			
+
 
 									        			<ul class="fa-ul">
 									        				<li>
@@ -613,7 +625,7 @@ After getting the request from User it goes to the appropriate GDS and fires mul
 										        				<b>Tools used:&nbsp;&nbsp;</b>MEAN stack, eclipse, mongoDB, angularjs, nodejs
 										        			</li>
 										        		</ul>
-										        	</div>		
+										        	</div>
 										        </p>
 									        </div>
 										</li>
@@ -621,7 +633,7 @@ After getting the request from User it goes to the appropriate GDS and fires mul
 													<input type="radio" name="tabs" id="tab4" />
 									        		<label for="tab4">Student Profiles</label>
 									        		<!--<div id="tab-content2" class="tab-content" style="height:780px">-->
-									        		<div id="tab-content2" class="tab-content" style="height:700px">	
+									        		<div id="tab-content2" class="tab-content" style="height:700px">
 									        			<div class="profiles"  >
 											                <table >
 <tr><td  style="color:white">Sl No</td><td  style="color:white">Name</td><td  style="color:white">Specialization</td><td  style="color:white">Experience (Months)</td></tr>
@@ -757,11 +769,11 @@ After getting the request from User it goes to the appropriate GDS and fires mul
  <tr><td>129</td><td>Yerragunta Sindhu Priya</td><td>Data Sciences</td><td>TCS (24)</td></tr>
 
 
- 
+
 </table>
 											            </div>
 									        		</div>
-												</li>	
+												</li>
 
 												<li>
 													<input type="radio" name="tabs" id="tab1"  />
@@ -783,7 +795,7 @@ After getting the request from User it goes to the appropriate GDS and fires mul
                                                         <h3>Computational Sciences Lab</h3>
                                                     <span class="image featured"><img src="images/csl.jpg" alt="" /></span>
 
-                                                    
+
                                                     <p>The Computational Sciences Lab at IIIT-B is interested broadly in the areas of Algorithms, Optimization, and Robotics.<br><br>Major focus areas include:
                                                         <ul class="fa-ul">
                                                             <li >
@@ -791,7 +803,7 @@ After getting the request from User it goes to the appropriate GDS and fires mul
                                                             </li>
                                                             <br><br>
                                                             <li >
-                                                                <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true" style="margin-bottom=20px;"></i>Approximation algorims, machine learning, cryptography and linguistics, Visualization (scientific and information), high performance computing, computational geometry and topology 
+                                                                <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true" style="margin-bottom=20px;"></i>Approximation algorims, machine learning, cryptography and linguistics, Visualization (scientific and information), high performance computing, computational geometry and topology
 
                                                             </li> <br> <br> <br>
 
@@ -814,9 +826,9 @@ After getting the request from User it goes to the appropriate GDS and fires mul
 
                                                             </li>
 
-                                                            
+
                                                         </ul>
-                                                        
+
 
                                                         <br><br><br><!--<br> <br><br>--></p>
                                                 </article>
@@ -831,7 +843,7 @@ After getting the request from User it goes to the appropriate GDS and fires mul
 													<h3>CEEMS Lab</h3>
 														<span class="image featured"><img src="images/ceems.jpg" alt="" /></span>
 														<p>The Center for Electronics and Embedded Systems (CEEMS) Lab's objective is to nurture talent by focusing on Embedded Computing, Wireless Communication and Computer Vision. CEEMS Lab collaborates with public and private organizations with the aim of bridging the gap between academic output and industry requirements, thus providing every learner an equal opportunity to become industry ready.</p>
-													</article> 
+													</article>
 
 													<h2 style="text-decoration: underline;">Networking & Signal Processing</h2>
 										        	<article>
@@ -843,14 +855,14 @@ After getting the request from User it goes to the appropriate GDS and fires mul
 													</article>
 													<article>
 														<h3>Wireless Network Lab</h3>
-														<span class="image featured"><img src="images/networkLab.jpg" alt="" /></span>
+														<span class="image featured"><img src="images/networkLab.JPG" alt="" /></span>
 														<p>This lab focuses on research involving networking standards and technology. Current research work concentrates upon the latest broadband wireless access technology – WiMAX/LTE. Major areas of work include medium access control (MAC), QoS, QoE, power management, media independent handover (MIH).</p>
-													</article> 
+													</article>
 										        	</div>
 												</li>
 																						</ul>
 
-											
+
 
 
 										</div>
@@ -859,10 +871,10 @@ After getting the request from User it goes to the appropriate GDS and fires mul
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 
-			
+
 
 		</div>
 
@@ -877,6 +889,4 @@ After getting the request from User it goes to the appropriate GDS and fires mul
 			<script src="assets/js/main.js"></script>
 
 	</body>
-
-<!-- Mirrored from placement.iiitb.ac.in/mtechIT.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Apr 2017 13:35:51 GMT -->
 </html>
