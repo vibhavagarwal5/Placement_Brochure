@@ -16,6 +16,10 @@
     padding-bottom: 10px;
 }
 
+.navBarHeading{
+    text-decoration: none;
+}
+
 .toolbarButton:hover{
     border: 2px solid white;
 
@@ -29,6 +33,7 @@
 .toolbarButton{
     border: 2px solid;
     border-color: #222;
+    text-decoration:none;
     margin-left: 2px;
     margin-right: 2px;
     border-radius: 6px;
@@ -39,7 +44,10 @@
     -webkit-transition-duration: 0.7s; /* Safari */
     transition-duration: 0.7s;
 }
-
+.currentPage{
+        border: 2px solid;
+        border-color: #444;
+}
 .scecrow{
     display: inline-block;
 }
