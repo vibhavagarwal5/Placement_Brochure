@@ -1,0 +1,38 @@
+HTTrack3.49-1+htsswf+htsjava launched on Fri, 07 Apr 2017 18:50:21 at http://placement.iiitb.ac.in/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://placement.iiitb.ac.in/ -O1 "C:\My Web Sites\placement" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:57:34	Warning: 	file not stored in cache due to bogus state (broken size, expected 3775842 got 1626186): placement.iiitb.ac.in/images/placecom.JPG
+19:05:33	Warning: 	file not stored in cache due to bogus state (broken size, expected 3744104 got 1614506): placement.iiitb.ac.in/images/achievements/kandy.jpg
+19:07:19	Warning: 	Retry after error -4 (Incorrect length (1626186 Bytes, 3775842 expected)) at link placement.iiitb.ac.in/images/placecom.JPG (from placement.iiitb.ac.in/)
+19:08:51	Warning: 	file not stored in cache due to bogus state (broken size, expected 5746117 got 1634946): placement.iiitb.ac.in/images/hides.jpg
+19:08:51	Error: 	"Not Found" (404) at link placement.iiitb.ac.in/img/loading.gif (from placement.iiitb.ac.in/)
+19:08:51	Warning: 	Retry after error -4 (Incorrect length (2342714 Bytes, 5075679 expected)) at link placement.iiitb.ac.in/images/infra/2.JPG (from placement.iiitb.ac.in/)
+19:09:01	Warning: 	file not stored in cache due to bogus state (broken size, expected 6265527 got 1576546): placement.iiitb.ac.in/images/ceems.jpg
+19:09:01	Warning: 	Retry after error -4 (Incorrect length (1657229 Bytes, 5737706 expected)) at link placement.iiitb.ac.in/images/infra/7.jpg (from placement.iiitb.ac.in/)
+19:11:43	Warning: 	file not stored in cache due to bogus state (broken size, expected 3775842 got 3262555): placement.iiitb.ac.in/images/placecom.JPG
+19:11:44	Warning: 	Retry after error -4 (Incorrect length (1334735 Bytes, 9154439 expected)) at link placement.iiitb.ac.in/images/infra/1.JPG (from placement.iiitb.ac.in/)
+19:13:07	Warning: 	file not stored in cache due to bogus state (broken size, expected 5075679 got 3927983): placement.iiitb.ac.in/images/infra/2.JPG
+19:13:07	Warning: 	Retry after error -4 (Incorrect length (1321645 Bytes, 9106000 expected)) at link placement.iiitb.ac.in/images/infra/3.JPG (from placement.iiitb.ac.in/)
+19:13:21	Warning: 	file not stored in cache due to bogus state (broken size, expected 5737706 got 3274618): placement.iiitb.ac.in/images/infra/7.jpg
+19:17:30	Warning: 	Retry after error -4 (Incorrect length (1614506 Bytes, 3744104 expected)) at link placement.iiitb.ac.in/images/achievements/kandy.jpg (from placement.iiitb.ac.in/)
+19:17:30	Error: 	"Not Found" (404) at link placement.iiitb.ac.in/js/ (from placement.iiitb.ac.in/)
+19:17:32	Error: 	"Not Found" (404) at link placement.iiitb.ac.in/assets/css/img/a17.png (from placement.iiitb.ac.in/assets/css/slider1.css)
+19:18:48	Error: 	"Not Found" (404) at link placement.iiitb.ac.in/assets/css/images/absurdity.png (from placement.iiitb.ac.in/assets/css/main.css)
+19:18:48	Warning: 	Retry after error -4 (Incorrect length (1634946 Bytes, 5746117 expected)) at link placement.iiitb.ac.in/images/hides.jpg (from placement.iiitb.ac.in/mtechIT.html)
+19:23:17	Warning: 	Retry after error -4 (Incorrect length (1576546 Bytes, 6265527 expected)) at link placement.iiitb.ac.in/images/ceems.jpg (from placement.iiitb.ac.in/mtechIT.html)
+19:29:51	Error: 	"Not Found" (404) at link https://embedmaps.com/google-maps-authorization/script.js?id=7f85b2f47f5aa8c9a33695e47f96673e626962b7 (from placement.iiitb.ac.in/contact.html)
+19:29:51	Warning: 	Retry after error -4 (Incorrect length (3262555 Bytes, 3775842 expected)) at link placement.iiitb.ac.in/images/placecom.JPG (from placement.iiitb.ac.in/)
+19:31:14	Warning: 	Retry after error -4 (Incorrect length (3927983 Bytes, 5075679 expected)) at link placement.iiitb.ac.in/images/infra/2.JPG (from placement.iiitb.ac.in/)
+19:31:24	Warning: 	Retry after error -4 (Incorrect length (3274618 Bytes, 5737706 expected)) at link placement.iiitb.ac.in/images/infra/7.jpg (from placement.iiitb.ac.in/)
+19:32:42	Error: 	"Not Found" (404) at link placement.iiitb.ac.in/Missing URL in @import rule (from placement.iiitb.ac.in/assets/js/cssParser.js)
+19:32:42	Error: 	"Not Found" (404) at link placement.iiitb.ac.in/GET (from placement.iiitb.ac.in/assets/js/css-filters-polyfill.js)
+19:32:42	Error: 	"Not Found" (404) at link placement.iiitb.ac.in/js/css-filters-polyfill/ (from placement.iiitb.ac.in/assets/js/css-filters-polyfill.js)
+19:34:42	Error: 	"Not Found" (404) at link placement.iiitb.ac.in/images/pic08.jpg (from placement.iiitb.ac.in/comp_sci.html)
+
+HTTrack Website Copier/3.49-1 mirror complete in 44 minutes 53 seconds : 117 links scanned, 96 files written (67756205 bytes overall) [67353738 bytes received at 25010 bytes/sec], 575737 bytes transferred using HTTP compression in 27 files, ratio 24%, 2.2 requests per connection
+(9 errors, 18 warnings, 0 messages)

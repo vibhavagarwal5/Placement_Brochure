@@ -1,0 +1,793 @@
+	<!DOCTYPE HTML>
+	<html>
+		
+<!-- Mirrored from placement.iiitb.ac.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Apr 2017 13:20:21 GMT -->
+<head>
+			<title>IIITB Placement Brochure</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+			<!--this for the slider-->
+			<link href="assets/css/slider1.css" rel="stylesheet" type="text/css" />
+			
+	    	
+			<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+			<link rel="stylesheet" href="assets/css/main.css" />
+			<link rel="stylesheet" href="assets/css/popup.css" />
+			<script src="assets/js/modernizr.custom.js"></script>
+			<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+			<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+			<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+			<script src="../ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+			<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+			<script type="text/javascript" src="assets/js/jssor.slider.min.js"></script>
+			<script type="text/javascript" src="assets/js/slider1.js"></script>
+			<script type="text/javascript" src="assets/js/slider2.js"></script>
+			<script type="text/javascript" src="assets/js/slider3.js"></script>
+<!--
+			<script src="js/bootstrap.min.js"></script>
+-->
+<!--
+			<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+-->
+			<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+			<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<!--
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+-->
+			<script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+			<style type="text/css">
+				p{
+					font-family: 'Roboto', sans-serif;
+					font-size: 0.9em; 
+				}
+				#scroll{
+					position: relative;
+					width: 60px;
+					height: 60px;
+					left: 45%;
+					top: -180px;
+				}
+				strong{
+				color: white;
+				}
+				weak{
+					color: black;
+					/*opacity:0.5;*/
+					text-shadow: 2px 2px #877E7E;
+					-webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 8s; /* Firefox < 16 */
+				}
+				@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.9; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.9; }
+}
+
+				.carousel{
+					background: white;
+					margin-top: 20px;
+				}
+				.carousel .item img{
+					margin: 0 auto; /* Align slide image horizontally center */
+				}
+				.bs-example{
+					margin: 20px;
+				}
+
+			</style>
+			<script>
+	  $(function() {
+	    $('a[href*=#]:not([href=#])').click(function() {
+	        if( $(this).attr("href")=="#myCarousel") return;//This is the exception
+	        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	            var target = $(this.hash);
+	            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	            if (target.length) {
+	                $('html,body').animate({
+	                    scrollTop: target.offset().top
+	                }, 1000);
+	                return false;
+	            }
+	        }
+	    });
+	});
+		</script>
+		
+<!--
+		<script>
+        jssor_1_slider_init = function() {
+            
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Cols: 1,
+                $Align: 0,
+                $NoDrag: true
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            //responsive code end
+        };
+    </script>
+-->
+
+<!--
+    <style>
+        
+        /* jssor slider bullet navigator skin 01 css */
+        /*
+        .jssorb01 div           (normal)
+        .jssorb01 div:hover     (normal mouseover)
+        .jssorb01 .av           (active)
+        .jssorb01 .av:hover     (active mouseover)
+        .jssorb01 .dn           (mousedown)
+        */
+        .jssorb01 {
+            position: absolute;
+        }
+        .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 12px;
+            height: 12px;
+            filter: alpha(opacity=70);
+            opacity: .7;
+            overflow: hidden;
+            cursor: pointer;
+            border: #000 1px solid;
+        }
+        .jssorb01 div { background-color: gray; }
+        .jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+        .jssorb01 .av { background-color: #fff; }
+        .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+        /* jssor slider arrow navigator skin 05 css */
+        /*
+        .jssora05l                  (normal)
+        .jssora05r                  (normal)
+        .jssora05l:hover            (normal mouseover)
+        .jssora05r:hover            (normal mouseover)
+        .jssora05l.jssora05ldn      (mousedown)
+        .jssora05r.jssora05rdn      (mousedown)
+        */
+        .jssora05l, .jssora05r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            background: url('img/a17.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora05l { background-position: -10px -40px; }
+        .jssora05r { background-position: -70px -40px; }
+        .jssora05l:hover { background-position: -130px -40px; }
+        .jssora05r:hover { background-position: -190px -40px; }
+        .jssora05l.jssora05ldn { background-position: -250px -40px; }
+        .jssora05r.jssora05rdn { background-position: -310px -40px; }
+
+        /* jssor slider thumbnail navigator skin 09 css */
+        
+        .jssort09-600-45 .p {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 600px;
+            height: 45px;
+        }
+        
+        .jssort09-600-45 .t {
+            font-family: verdana;
+            font-weight: normal;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            color:#fff;
+            line-height: 45px;
+            font-size: 20px;
+            padding-left: 10px;
+        }
+        
+    </style>
+-->
+		
+		
+		
+		</head>
+		<body class="homepage" >
+			<div id="page-wrapper" >
+
+				<!-- Header -->
+					<div id="header-wrapper" style="background-color=white;">
+						<div class="container">
+
+							<!-- Header -->
+								<header id="header">
+									<div class="inner">
+
+										<!-- Logo -->
+											<h1><a href="index-2.html" id="logo"></a></h1>
+
+										<!-- Nav -->
+											<nav id="nav">
+												<ul>
+													<li>
+														<a href="mtechIT.html">M.Tech - IT</a>
+														<!--<ul>
+															<li>
+																<li><a href="comp_sci.html">Computer Science</a></li>
+																<li><a href="data_sci.html">Data Sciences</a></li>
+																<li><a href="net_com.html">Networking & Communication</a></li>
+																<li><a href="soft_eng.html">Software Engineering</a></li>
+															</li>
+														</ul>-->
+													</li>
+													<li>
+														<a href="mtechESD.html">M.Tech - ESD</a>
+														<!--<ul>
+															<li>
+																<li><a href="soc.html">SOC</a></li>
+																<li><a href="embedded.html">Embedded Systems</a></li>
+															</li>
+														</ul>-->
+													</li>
+													<li>
+														<a href="imtech.html">Integrated M.Tech</a>
+													</li>
+													<li><a href="digisoc.html">MSc in Digital Society</a></li>
+													<li><a href="ms_research.html">MS by Research</a></li>
+													<li><a href="contact.html">Contact Us</a></li>
+												</ul>
+											</nav>
+
+									</div>
+								</header>
+
+							<!-- Banner -->
+
+
+							<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 900px; margin: 0 auto">
+	        <!-- Carousel indicators -->
+	        <ol class="carousel-indicators">
+	            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	            <li data-target="#myCarousel" data-slide-to="1"></li>
+	            <li data-target="#myCarousel" data-slide-to="2"></li>
+	            <li data-target="#myCarousel" data-slide-to="3"></li>
+	        </ol>   
+
+	        <!-- Wrapper for carousel items -->
+	        <div class="carousel-inner">
+	            <div class="item active">
+
+
+	               
+		<img src="campus.jpg" alt="First Slide" height="600px" width="900px">
+	   <div class="carousel-caption">
+	 <h1 class="carousel-caption-header"><strong>
+	                                Placement Brochure 2016-2017</strong></h1>
+	                            
+	                            <h1>
+	                                <strong>IIITB</strong></h1>
+	                        </div>
+	            </div>
+	            <div class="item">
+	                <img src="images/recruiters.jpg" alt="Second Slide" height="480px" width="900px">
+	 <div class="carousel-caption">
+	 <h1 class="carousel-caption-header"><weak>
+	                               Major Recruiters</weak></h1>
+	                            
+	                            <h1>
+	                                <weak> </weak></h1>
+	                        </div>
+	            </div>
+	            <div class="item">
+	                <img src="images/imtechBatch2.jpg" alt="Third Slide" height="250px" width="900px">
+	 <div class="carousel-caption" style="top:-4.5%;">
+	 <!-- class="carousel-caption-header" -->
+
+	 <h1 style="color:black;"><strong> 
+	                        Introducing 5 year Integrated M.Tech Batch</strong></h1>
+	                            
+	                            <!-- <h1> -->
+	                                <!-- <strong>IIITB</strong></h1> -->
+	                        </div>
+	            </div>
+	 <div class="item">
+	      <img src="campus%202.jpg" alt="Flower" height="300px" width="900px">
+	 <div class="carousel-caption">
+	 <h1 class="carousel-caption-header"><strong>
+	                                Placement Brochure 2016-2017</strong></h1>
+	                            
+	                            <h1>
+	                                <strong>IIITB</strong></h1>
+	                        </div>
+	    </div>
+	  </div>
+	     <!-- Carousel controls -->
+	    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+	        <span class="glyphicon glyphicon-chevron-left"></span>
+	    </a>
+	    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+	        <span class="glyphicon glyphicon-chevron-right"></span>
+	    </a>
+	</div>
+								<!-- <div id="banner">
+									<h2 style="color:#FFFFFF;opacity=1;"><strong>Placement brochure <br> IIIT Bangalore<br>2015-2017</strong> 
+								</div> -->
+								<div id="scroll"><a href="#details" ><i class="fa fa-chevron-circle-down fa-5x" aria-hidden="true" style="font-size:3em; float:right;position:absolute;top:47px;right:-14px"></i></a></div>
+								<section id="details" class="box feature1">
+										<div class="row">
+											<div class="4u 12u(mobile)">
+												<section>
+													<a class="image featured"><img src="images/director.jpg" alt="" />
+													<!-- height="190.66" width="244.66" --></a>
+													<header class="second icon fa-user">
+														<h4 id="dir" class="md-trigger" data-modal="modal-16" style="color: #183048;cursor: pointer;">Message From The Director</h4>
+													</header>
+												</section>
+											</div>
+											
+											<div class="4u 12u(mobile)">
+												<section>
+													<a class="image featured"><img src="1.jpg" alt="" 
+													height="190.66" width="244.66"/></a>
+													<header class="second icon fa-university">
+														<h4 id="about" class="md-trigger" data-modal="modal-17" style="color: #183048;cursor: pointer;">About IIITB</h4>
+													</header>
+												</section>
+											</div>
+											<div class="4u 12u(mobile)">
+												<section>
+													<a class="image featured"><img src="images/placecom.jpg" alt=""/></a>
+													<header class="second icon fa-users">
+														<h4 id="place" class="md-trigger" data-modal="modal-18" style="color: #183048;cursor: pointer;">Message From PlaceComm</h4>
+													</header>
+												</section>
+											</div>
+											<div class="4u 12u(mobile)">
+												<section>
+													<a class="image featured"><img src="images/infra/MCR2.jpg" alt="" /></a>
+													<header class="second icon fa-bar-chart-o">
+														<h4 id="aca" class="md-trigger" data-modal="modal-19" style="color: #183048;cursor: pointer;">Academic Infrastructure</h4>
+													</header>
+												</section>
+											</div>
+											
+											<div class="4u 12u(mobile)">
+												<section>
+													<a class="image featured" ><img src="images/achievements/swissre1.jpg" alt="" /></a>
+													<header class="second icon fa-cog">
+														<h4 id="mission" class="md-trigger" data-modal="modal-20" style="color: #183048;cursor: pointer;";>Achievements</h4>
+													</header>
+												</section>
+											</div>
+											<div class="4u 12u(mobile)">
+												<section>
+													<a class="image featured"><img src="img/a1.jpg" alt="" /></a>
+													<header class="second icon fa-life-buoy">
+														<h4 id="life" class="md-trigger" data-modal="modal-21" style="color: #183048;cursor: pointer;">Life @ IIITB</h4>
+													</header>
+												</section>
+											</div>
+										</div>
+										
+										</div>
+									</section>
+
+									
+
+
+						</div>
+					</div>
+					<div class="md-modal md-effect-16" id="modal-16">
+						<div class="md-content1">
+							<h3>Message from Director</h3>
+							<!-- <div> -->
+							<a ><img src="images/director.jpg" alt="" height="144.66" width="244.66" style="float:left;padding-right:10px;padding-top:10px; padding-left:33px;"/></a>
+							<!-- </div> -->
+						<div>
+							<p>
+								Many of you from the IT industry find IIIT-B a familiar
+place, where you come year after year to recruit high
+quality students graduating with our M.Tech program.
+This year, the first batch of our newly introduced
+iM.Tech programme, which has an exciting and meticulously planned 5 year course structure, is looking for internships and placements.<br><br>
+In terms of quality, this year is no exception. With more
+funded research projects, new research labs and additional faculty members, the quality of education has
+improved further.<br><br>
+	If you are visiting us for the first time a special welcome, I can assure you that you will
+find our students second to none. As per the feedback received from the industry, our
+nearly 2500+ strong alumni have been doing extremely well. You can only expect the
+present batch to better the performance of our alumni.<br>
+							</p>
+							<p>Happy Recruiting,<br>S.Sadagopan</p>
+							<button class="md-close">Close</button>
+						</div>
+						</div>
+					</div>
+					
+					<div class="md-modal md-effect-16" id="modal-17">
+						<div class="md-content1">
+							<h3>About IIIT-B</h3>
+							<!-- <div> -->
+								<a><img src="campus.jpg" alt="" height="160.66" width="274.66" style="float:left;padding-right:10px;padding-top:10px;padding-left:33px;"/></a>
+							<!-- </div> -->
+							<div>
+								<p>
+									Set up in the year 1999, and promoted by the Karnataka Government
+and the IT Industry, IIIT B attracts quality students every year from all
+over India and abroad, to its acclaimed iM.Tech, M.Tech, MS by Re-
+search and Ph.D programmes. The institute has a short yet distin-
+guished history of producing high quality post-graduate engineers
+every year. <br>The 1700+ strong alumni occupy key positions in a
+number of corporations, delivering tremendous value to their organi-
+zations. Students from different technical and cultural backgrounds
+come together in the institute, realizing the potential of unity and
+teamwork. Immense support from the wonderful faculty enables the
+students to stay on the path of scientific enquiry and together, they
+have produced several patents, published in influential journals and
+conferences and carried out innovative projects.
+								</p>
+								<button class="md-close">Close</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="md-modal md-effect-16" id="modal-18">
+						<div class="md-content1">
+							<h3>Message From Placement Committee</h3>
+							<!-- <div> -->
+								<a><img src="images/placecom.jpg" alt="" height="160.66" width="274.66" style="float:left;padding-right:10px;padding-top:10px;padding-left:33px"/></a>
+							<!-- </div> -->
+							<div>
+								<p>
+									Dear Corporate Friends,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IIIT-Bangalore is one of the best Post-Graduate institutions in India for higher education in IT, Electronic System Design and related areas. With an impressive faculty profile, a deeply ingrained culture of academic excellence and work ethic and a transparent, informal and culturally rich atmosphere, most of our students find IIIT-B an institution of the kind they have always dreamt about. Academically the emphasis at IIIT-B has always been on ensuring that the students get a sound conceptual foundation and on enabling them with problem solving skills of a higher order, allowing students to live up to the rather demanding expectations from them in each of our courses. We welcome you to our campus for the Placement recruitment. We hope you will cherish your time at our campus. We are sure our students will make you proud as your colleagues.
+								</p>
+								<button class="md-close">Close</button>
+							</div>
+						</div>
+					</div>
+					
+<!--
+					<div class="md-modal md-effect-16" id="modal-17">
+						<div class="md-content1">
+							<h3>About IIITB</h3>
+							<div>
+								<a><img src="campus.jpg" alt="" height="160.66" width="274.66" style="float:left;padding-right:10px;"/></a>
+							</div>
+							<div>
+								<p>
+									Set up in the year 1999, and promoted by the Karnataka government and the IT industry, IIIT-B 
+									attracts quality students every year from all over India and abroad to its acclaimed iMtech, M.Tech, 
+									Master of Science by research, M.Sc in Digital Society and Ph.D programs.<br> <br>
+									The institute has a short yet distinguished history of producing high quality post-graduate 
+									engineers every year. The 2500+ strong alumni occupy key positions in a number of corporations, 
+									delivering tremendous value to their organizations. Students from different technical and 
+									cultural backgrounds come together in the institute, realizing the potential of unity and team work.<br><br>
+									 Immense support from the wonderful faculty enables the students to stay on the path of scientific enquiry
+									  and together, they have produced several patents, published in influential journals and conferences 
+									  and carried out innovative projects. And to think we are just 16 years old...
+								</p>
+								<button class="md-close">Go Back</button>
+							</div>
+						</div>
+					</div>
+-->
+					
+<!--
+					<div class="md-modal md-effect-16" id="modal-19">
+						<div class="md-content1">
+							<h3>Academic Infrastucture</h3>
+							<div>
+								<p>
+									Designed and built in compliance with the highest global standards, the teaching and learning infrastructure features the most advanced elements of contemporary academic tools. With addition of a new floor to the main academic block, the institute now has over 120,000 square feet of air-conditioned space, uninterrupted power supply, and a wellcrafted interior, the Institute offers a world-class environment for students and faculty. All the classrooms are “smart,” with high-speed data networks and large projection systems for audio and video. The well-designed main classroom comfortably seats in excess of 150 students. Video conferencing capabilities are built in using state-of-the-art audio-visual equipment. They include electronic smart boards, location-sensing microphones, and multiple LCD projectors,thus enabling an enriching learning experience. The Institute has an academic library with an excellent collection of books,journals, and magazines both in print and electronic form. Students have privileged free access to numerous online research resources (such as the ACM Digital Library, IEEEXplore, JSTOR). 
+								</p>
+								<button class="md-close">Go Back</button>
+							</div>
+						</div>
+					</div>
+-->
+					
+					<div class="md-modal md-effect-16" id="modal-19">
+						<div class="md-content1">
+							<h3 >Academic Infrastucture</h3>
+							<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
+								<!-- Loading Screen -->
+								<div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+									<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+									<div style="position:absolute;display:block;background:url('img/loading.html') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+								</div>
+								<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="images/infra/2.jpg"/>
+										<div data-u="thumb">One of the classrooms</div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="images/infra/lib.jpg" />
+										<div data-u="thumb">Library</div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="images/infra/7.jpg" />
+										<div data-u="thumb">HIDES Lab</div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="images/infra/1.jpg" />
+										<div data-u="thumb">Students working in CEEMS Lab</div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="images/infra/3.jpg" />
+										<div data-u="thumb">iMtech Computer Lab</div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="images/infra/ESDM.jpg" />
+										<div data-u="thumb">Equipment of Electronic System Lab</div>
+									</div>
+<!--
+									<a data-u="ad" href="http://www.jssor.com" style="display:none">Bootstrap Slider</a>
+-->
+								
+								</div>
+								<!-- Thumbnail Navigator -->
+								<div data-u="thumbnavigator" class="jssort09-600-45" style="position:absolute;bottom:0px;left:0px;width:600px;height:45px;">
+									<div style="position: absolute; top: 0; left: 0; width: 100%; height:100%; background-color: #000; filter:alpha(opacity=40.0); opacity:0.4;"></div>
+									<!-- Thumbnail Item Skin Begin -->
+									<div data-u="slides" style="cursor: default;">
+										<div data-u="prototype" class="p">
+											<div data-u="thumbnailtemplate" class="t"></div>
+										</div>
+									</div>
+									<!-- Thumbnail Item Skin End -->
+								</div>
+								<!-- Bullet Navigator -->
+								<div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
+									<div data-u="prototype" style="width:12px;height:12px;"></div>
+								</div>
+								<!-- Arrow Navigator -->
+								<span data-u="arrowleft" class="jssora05l" style="top:0px;left:8px;width:40px;height:40px;" data-autocenter="2"></span>
+								<span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+							</div>
+							
+							<button class="md-close">Close</button>
+						</div>
+					</div>
+					
+					<div class="md-modal md-effect-16" id="modal-20">
+						<div class="md-content1">
+							<h3>Achievements</h3> 
+							<div id="jssor_2" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 400px; overflow: hidden; visibility: hidden;">
+								<!-- Loading Screen -->
+								<div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+									<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+									<div style="position:absolute;display:block;background:url('img/loading.html') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+								</div>
+								<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 400px; overflow: hidden;">
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="images/achievements/swissre1.jpg" />
+										<div data-u="thumb">Students getting 1st and 2nd place in SwissRe Hack'16</div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="images/achievements/hilti.jpg" />
+										<div data-u="thumb">Won the First prize of The 2016 Hilti Mobile App Competition(International Hackathon)</div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="images/achievements/kandy.jpg" />
+										<div data-u="thumb">Runner up prize for Kandy's most Outlandish App</div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="images/achievements/applift.jpg" />
+										<div data-u="thumb">AppLift Datathon - Winners and Second Runner Up</div>
+									</div>
+									<!-- <a data-u="ad" href="http://www.jssor.com" style="display:none">Bootstrap Slider</a> -->
+								
+								</div>
+								<!-- Thumbnail Navigator -->
+								<div data-u="thumbnavigator" class="jssort09-600-45" style="position:absolute;bottom:0px;left:0px;width:600px;height:45px;">
+									<div style="position: absolute; top: 0; left: 0; width: 100%; height:100%; background-color: #000; filter:alpha(opacity=40.0); opacity:0.4;"></div>
+									<!-- Thumbnail Item Skin Begin -->
+									<div data-u="slides" style="cursor: default;">
+										<div data-u="prototype" class="p">
+											<div data-u="thumbnailtemplate" class="t"></div>
+										</div>
+									</div>
+									<!-- Thumbnail Item Skin End -->
+								</div>
+								<!-- Bullet Navigator -->
+								<div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
+									<div data-u="prototype" style="width:12px;height:12px;"></div>
+								</div>
+								<!-- Arrow Navigator -->
+								<span data-u="arrowleft" class="jssora05l" style="top:0px;left:8px;width:40px;height:40px;" data-autocenter="2"></span>
+								<span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+							</div>
+							
+							<button class="md-close">Close</button> 
+						</div>
+					</div>
+					
+					
+					<div class="md-modal md-effect-16" id="modal-21">
+						<div class="md-content1"> 
+							 <h3>Life @ IIITB</h3> 
+							 <div id="jssor_3" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
+								<!-- Loading Screen -->
+								<div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+									<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+									<div style="position:absolute;display:block;background:url('img/loading.html') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+								</div>
+								<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="images/life.jpg" />
+										<div data-u="thumb"> </div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="img/a.jpg" />
+										<div data-u="thumb"> </div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="img/l.jpg" />
+										<div data-u="thumb"> </div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="img/b.jpg" />
+										<div data-u="thumb"> </div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="img/c.jpg" />
+										<div data-u="thumb"> </div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="img/e.jpg" />
+										<div data-u="thumb"> </div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="img/j.jpg" />
+										<div data-u="thumb"> </div>
+									</div>
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="img/m.jpg" />
+										<div data-u="thumb"> </div>
+									</div>
+
+									<div data-p="112.50" style="display: none;">
+										<img data-u="image" src="img/h.jpg" />
+										<div data-u="thumb"> </div>
+									</div>
+									<!-- <a data-u="ad" href="http://www.jssor.com" style="display:none">Bootstrap Slider</a> -->
+								
+								</div>
+								<!-- Thumbnail Navigator -->
+								<div data-u="thumbnavigator" class="jssort09-600-45" style="position:absolute;bottom:0px;left:0px;width:600px;height:45px;">
+									<div style="position: absolute; top: 0; left: 0; width: 100%; height:100%; background-color: #000; filter:alpha(opacity=40.0); opacity:0.4;"></div>
+									<!-- Thumbnail Item Skin Begin -->
+									<div data-u="slides" style="cursor: default;">
+										<div data-u="prototype" class="p">
+											<div data-u="thumbnailtemplate" class="t"></div>
+										</div>
+									</div>
+									<!-- Thumbnail Item Skin End -->
+								</div>
+								<!-- Bullet Navigator -->
+								<div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
+									<div data-u="prototype" style="width:12px;height:12px;"></div>
+								</div>
+								<!-- Arrow Navigator -->
+								<span data-u="arrowleft" class="jssora05l" style="top:0px;left:8px;width:40px;height:40px;" data-autocenter="2"></span>
+								<span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+							</div>
+							
+							<button class="md-close">Close!</button> 
+							</div>
+						</div>
+					</div>
+			<div class="md-overlay"></div>
+				
+
+			<!-- Scripts -->
+				<script src="assets/js/classie.js"></script>
+				<script src="assets/js/modalEffects.js"></script>
+
+			<!-- for the blur effect -->
+			<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+				<script>
+					// this is important for IEs
+					var polyfilter_scriptpath = 'js/index.html';
+				</script>
+				<script src="assets/js/cssParser.js"></script>
+				<script src="assets/js/css-filters-polyfill.js"></script>
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.dropotron.min.js"></script>
+				<script src="assets/js/skel.min.js"></script>
+				<script src="assets/js/skel-viewport.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+				<script src="assets/js/main.js"></script>
+				
+				<script>
+					jssor_1_slider_init();
+					jssor_2_slider_init();
+					jssor_3_slider_init();
+					$(document).ready(function(){
+						$("#jssor_1").hide();
+						$("#jssor_2").hide();
+						$("#jssor_3").hide();
+						
+						$("#aca").click(function(){
+							$("#jssor_1").show();
+						});
+						$("#mission").click(function(){
+							$("#jssor_2").show();
+						});
+						$("#life").click(function(){
+							$("#jssor_3").show();
+						});
+						
+						
+					});
+					
+					
+					$(document).mouseup(function (e)
+					{
+						var container = new Array();
+						container.push($('#jssor_1'));
+						container.push($('#jssor_2'));
+						container.push($('#jssor_3'));
+						
+						$.each(container, function(key, value) {
+							if (!$(value).is(e.target) // if the target of the click isn't the container...
+								&& $(value).has(e.target).length === 0) // ... nor a descendant of the container
+							{
+								$(value).hide();
+							}
+						});
+					});
+					
+				</script>
+
+		</body>
+	
+<!-- Mirrored from placement.iiitb.ac.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Apr 2017 13:33:22 GMT -->
+</html>
