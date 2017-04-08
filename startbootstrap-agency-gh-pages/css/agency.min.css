@@ -9,6 +9,37 @@
     background-image: none
 }
 
+.navigationMenu{
+    width:95%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.toolbarButton:hover{
+    border: 2px solid white;
+
+    /*text-align: center;*/
+    /*display: inline;*/
+    /*font-size: 12px;*/
+    /*cursor: pointer;*/
+    -webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.7s;
+}
+.toolbarButton{
+    border: 2px solid;
+    border-color: #222;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 6px;
+    /*text-align: center;*/
+    /*display: inline;*/
+    /*font-size: 12px;*/
+    /*cursor: pointer;*/
+    -webkit-transition-duration: 0.7s; /* Safari */
+    transition-duration: 0.7s;
+}
+
 .scecrow{
     display: inline-block;
 }
