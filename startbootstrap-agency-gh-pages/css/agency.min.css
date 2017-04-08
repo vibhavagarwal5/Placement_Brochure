@@ -9,6 +9,10 @@
     background-image: none
 }
 
+.img-icon{
+    font-size: 60px;
+}
+
 .navigationMenu{
     width:95%;
     margin: auto;
@@ -229,7 +233,6 @@ header {
     background-image: url(../img/clg.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    margin-top: 100px;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;

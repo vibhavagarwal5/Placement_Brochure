@@ -1,326 +1,37 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	ZeroFour by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<title>MSc in Digital Society</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
 
-		<link rel="stylesheet" href="assets/css/popup.css" />
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-
-
-	    <style>
-            #wrapper {
-              margin-right: 200px;
-              position: relative;
-              height: 400px;
-            }
-            #cont {
-              position: relative;
-              float: left;
-              width: 61%;
-              background-color: #FFF;
-
-            }
-            #side {
-            	position: relative;
-              float: right;
-              width: 300px;
-              margin-right: -149px;
-              background-color: #FFF;
-            }
-            #cleared {
-              clear: both;
-            }
-
-
-            table {
-				background: #f5f5f5;
-				border-collapse: separate;
-				box-shadow: inset 0 1px 0 #fff;
-				font-size: 12px;
-				line-height: 24px;
-				margin: 30px auto;
-				text-align: left;
-				width: 100%;
-				table-layout: fixed;
+<!-- Mirrored from placement.iiitb.ac.in/digisoc.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Apr 2017 13:37:10 GMT -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta content="initial-scale=1" name="viewport"><meta content="user-scalable=yes,width=device-width,initial-scale=1" name="viewport">
+<title>MSc in Digital Society</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/tabs.css">
+		<link href="digisoc_files/css.css" rel="stylesheet" type="text/css">
+		<link href="digisoc_files/css_002.css" rel="stylesheet" type="text/css">
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<style type="text/css">
+			p{
 				font-family: 'Roboto', sans-serif;
-			}	
-
-			th {
-				/*background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);*/
-				border-left: 1px solid #555;
-				border-right: 1px solid #777;
-				border-top: 1px solid #555;
-				border-bottom: 1px solid #333;
-				box-shadow: inset 0 1px 0 #999;
-				color: #fff;
-			  font-weight: bold;
-				padding: 10px 15px;
-				position: relative;
-				text-shadow: 0 1px 0 #000;	
-				background-color: rgba(59, 62, 69, 0.9);
+				font-size: lem;
 			}
 
-			th:after {
-				/*background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));*/
-				content: '';
-				display: block;
-				height: 25%;
-				left: 0;
-				margin: 1px 0 0 0;
-				position: absolute;
-				top: 25%;
-				width: 100%;
-				background-color: rgba(59, 62, 69, 0.9);
+			li{
+				margin-bottom: -20px;
 			}
-
-			th:first-child {
-				border-left: 1px solid #777;	
-				box-shadow: inset 1px 1px 0 #999;
-			}
-
-			th:last-child {
-				box-shadow: inset -1px 1px 0 #999;
-			}
-
-			td {
-				border-right: 1px solid #fff;
-				border-left: 1px solid #e8e8e8;
-				border-top: 1px solid #fff;
-				border-bottom: 1px solid #e8e8e8;
-				padding: 10px 4px;
-				position: relative;
-				transition: all 300ms;
-				color: #444;
-				font-weight: 500;
-				text-shadow: 0 1px 0 #fff;
-				text-align: center;
-				/*font-size: 0.8em;*/
-				/*word-wrap:break-word;*/
-			}
-
-			td:first-child {
-				box-shadow: inset 1px 0 0 #fff;
-			}	
-
-			td:last-child {
-				border-right: 1px solid #e8e8e8;
-				box-shadow: inset -1px 0 0 #fff;
-			}	
-
-			tr {
-				/*background: url(http://jackrugile.com/images/misc/noise-diagonal.png);	*/
-			}
-
-			tr:nth-child(odd) td {
-				background: #f1f1f1 url(http://jackrugile.com/images/misc/noise-diagonal.png);	
-			}
-
-			tr:last-of-type td {
-				box-shadow: inset 0 -1px 0 #fff; 
-			}
-
-			tr:last-of-type td:first-child {
-				box-shadow: inset 1px -1px 0 #fff;
-			}	
-
-			tr:last-of-type td:last-child {
-				box-shadow: inset -1px -1px 0 #fff;
-			}	
-
-			/*tbody:hover td {
-				color: transparent;
-				text-shadow: 0 0 3px #aaa;
-			}
-
-			tbody:hover tr:hover td {
-				color: #444;
-				text-shadow: 0 1px 0 #fff;
-			}*/
-        </style>
-
-
-
-
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	
-		<style>
-			an{
-	              display:block;
-	              float:left;
-	              height: 30px;
-	              width:50%;
-	              /*background:#d4eaf9;*/
-	              border-style:groove;
-	              border-width:thin;
-	              /*text-decoration:bold;*/
-	              /*font-weight:600;*/
-	              /*font-size: 1.02em;*/
-	              text-align:center;
-	              /*padding:10px 0;*/
-	              color:#3498db;	              
-	            }
-	            an:hover{
-	            	background: rgba(255, 205, 40, 0.36);
-	            }
-
-	            @media screen and (max-width:700px){
-
-            	an{
-	              display:block;
-	              float:left;
-	              height: 75px;
-	              width:50%;
-	              /*background:#d4eaf9;*/
-	              border-style:groove;
-	              border-width:thin;
-	              /*text-decoration:bold;*/
-	              /*font-weight:600;*/
-	              /*font-size: 1.02em;*/
-	              text-align:center;
-	              /*padding:10px 0;*/
-	              color:#3498db;	              
-	            }
-	            an:hover{
-	            	background: rgba(255, 205, 40, 0.36);
-	            }
-
-/*	            nav nav-tabs{
-	            	width:25%;
-
-
-	            }
-*/
-
-				.nav>li>a {
-				    position: relative;
-				    display: block;
-				    padding: 10px 14px;
-				    /*width:25%;*/
-				}
-
-				#wrapper {
-	              margin-right: 200px;
-	            }
-	            #cont {
-	              float: left;
-	              width: 61%;
-	              background-color: #FFF;
-	            }
-	            #side {
-	              float: left;
-	              width: 61%;
-	              background-color: #FFF;
-	            }
-	            #cleared {
-	              clear: both;
-	            }
-
-	            
-
-
-
-	        }
 		</style>
-
-		 <script>
-
-
-        $(document).ready(function(){
-
-
-
-//script for the tabs within project tab            
-            $('#projDSData').hide();
-            $('#projNCData').hide();
-            $('#projESData').hide();
-            $('#projCSData').show();
-
-            $("#projCSTab").click(function(){
-                $('#projDSData').hide();
-                $('#projNCData').hide();
-                $('#projESData').hide();
-                $('#projCSData').show();
-            });
-            $('#projDSTab').click(function() {              
-                $('#projNCData').hide();
-                $('#projESData').hide();
-                $('#projCSData').hide();
-                $('#projDSData').show();
-            });    
-            $('#projESTab').click(function() {
-                $('#projDSData').hide();
-                $('#projNCData').hide();                
-                $('#projCSData').hide();
-                $('#projESData').show();
-            });    
-            $('#projNCTab').click(function() {
-                $('#projDSData').hide();                
-                $('#projESData').hide();
-                $('#projCSData').hide();
-                $('#projNCData').show();
-            });
-
-            //end of script for project tab
-
-
-            $('#courDSData').hide();
-	        $('#courNCData').hide();
-	        $('#courSEData').hide();
-	        $('#courCSData').show();
-
-			$("#courCSTab").click(function(){
-		        $('#courDSData').hide();
-		        $('#courNCData').hide();
-		        $('#courSEData').hide();
-		        $('#courCSData').show();
-		    });
-			$('#courDSTab').click(function() {		  		
-		        $('#courNCData').hide();
-		        $('#courSEData').hide();
-		        $('#courCSData').hide();
-		        $('#courDSData').show();
-			});    
-			$('#courSETab').click(function() {
-		  		$('#courDSData').hide();
-		        $('#courNCData').hide();		        
-		        $('#courCSData').hide();
-		        $('#courSEData').show();
-			});    
-			$('#courNCTab').click(function() {
-		  		$('#courDSData').hide();		        
-		        $('#courSEData').hide();
-		        $('#courCSData').hide();
-		        $('#courNCData').show();
-			});   
-        });
-
-
-
-
-
-        /*
-        */
-
-    </script>
-
-
-
-
 	</head>
-	<body class="no-sidebar">
+	<body class="left-sidebar">
 		<div id="page-wrapper">
 
 			<!-- Header Wrapper -->
@@ -332,18 +43,35 @@
 								<div class="inner">
 
 									<!-- Logo -->
-										<h1><a href="index.html" id="logo"></a></h1>
+										<h1><a href="index-2.html" id="logo" style="background-image:url('images/logo.jpg');"></a></h1>
 
 									<!-- Nav -->
 										<nav id="nav">
 											<ul>
-													<li><a href="index.html">Home</a></li>
-													<li><a href="test_mtechIT.html">M.Tech - IT</a></li>
-													<li><a href="test_mtechESD.html">M.Tech - ESD</a></li>
-													<li><a href="test.html">Integrated M.Tech</a></li>
-													<li><a href="test_msDIGSOC.html">MSc in Digital Society</a></li>
-													<li><a href="test_msRSRCH.html">MS by Research</a></li>
-													<li><a href="contact.html">Contact Us</a></li>
+												<li><a href="index.html">Home</a></li>
+												<li class="current_page_item">
+													<a href="test_mtechIT">M.Tech-IT</a>
+													<!--<ul>
+														<li>
+															<li><a href="comp_sci.html">Computer Science</a></li>
+															<li><a href="data_sci.html">Data Sciences</a></li>
+															<li><a href="net_com.html">Networking & Communication</a></li>
+															<li><a href="soft_eng.html">Software Engineering</a></li>
+														</li>
+													</ul>-->
+												</li>
+												<li>
+													<a href="test_mtechESD.html">M.Tech-ESD</a>
+													<!--<ul>
+														<li>
+															<li><a href="soc.html">SOC</a></li>
+															<li><a href="embedded.html">Embedded Systems</a></li>
+														</li>
+													</ul>-->
+												</li>
+												<li><a href="test.html">Integrated M.Tech</a></li>
+												<li><a href="test_msDIGSOC.html">MSc in Digital Society</a></li>
+												<li><a href="test_msRSRCH.html">MS by Research</a></li>
 											</ul>
 										</nav>
 
@@ -358,293 +86,349 @@
 					<div class="wrapper style2">
 						<div class="inner">
 							<div class="container">
-								<div id="content">
+								<div class="row">
+									<div class="4u 12u(mobile)">
+										<div id="sidebar">
 
-									<!-- Content -->
+											<!-- Sidebar -->
 
-										<article>
-
-
-											<section>
+												<section>
 													<header class="major">
 														<h2>M.Sc in Digital Society</h2>
 													</header>
 													<p>
-													Recognizing the socio-economic potential of ICTs, and the 
-													increasing need to train professionals in harnessing this potential, 
-													IIIT-B offers a unique and innovative two-year Masters of Science 
-													Program in unpacking the dynamics of Digital Society. This 
-													interdisciplinary program will bring together diverse disciplines such 
+													Recognizing the socio-economic potential of ICTs, and the
+													increasing need to train professionals in harnessing this potential,
+													IIIT-B offers a unique and innovative two-year Masters of Science
+													Program in unpacking the dynamics of Digital Society. This
+													interdisciplinary program will bring together diverse disciplines such
 													as social sciences, humanities and the IT industry. Through this course,
 													 we aim to create a group of professionals who will: :
 													</p>
 													<p>
 													<ul class="fa-ul">
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Contribute to the design, development and deployment of digital technologies for diverse social groups. </p></li>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Provide
- 															and manage solutions that address persistent developmental challenges 
+														<li><i class="fa-li fa fa-check-square fa-2x" aria-hidden="true"></i><p>Contribute to the design, development and deployment of digital technologies for diverse social groups. </p></li>
+														<li><i class="fa-li fa fa-check-square fa-2x" aria-hidden="true"></i><p>Provide
+ 															and manage solutions that address persistent developmental challenges
 															in domains such as education, governance, and health. </p></li>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Engage in policy making and in advocacy for deploying digital technologies. </p></li>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Enrich interdisciplinary research on the digital society. </p></li>
+														<li><i class="fa-li fa fa-check-square fa-2x" aria-hidden="true"></i><p>Engage in policy making and in advocacy for deploying digital technologies. </p></li>
+														<li><i class="fa-li fa fa-check-square fa-2x" aria-hidden="true"></i><p>Enrich interdisciplinary research on the digital society. </p></li>
 													</ul>
 													</p>
 												</section>
 
 
-											
-										<div style="padding-bottom:25px;">
-											<ul class="nav nav-tabs">
-											    <li class="active"><a data-toggle="tab" href="#courseTab">Course Details</a></li>
-											    <li><a data-toggle="tab" href="#menu1">Job Profiles</a></li>
-											    <li><a data-toggle="tab" href="#menu2">Students</a></li>											    
+
+										</div>
+									</div>
+									<div class="8u 12u(mobile) important(mobile)">
+										<div id="content">
+											<ul class="tabs">
+											<li>
+													<input name="tabs" id="tab2" checked="checked" type="radio">
+									        		<label for="tab2">Courses</label>
+									        		<div id="tab-content2" class="tab-content" style="height:584px;">
+									        			<article>
+
+									        	 			<h3 style="border-bottom: 3px solid #0e364d;width: 230px;">Course Contents</h3>
+																							        	 			<p style="margin-left: 30px;">The course includes subjects which enable you to understand ICT and its deployment from multiple angles:<br><br>
+														Interface design encourages you to think about designing technology for a diverse population. It enlists your brain to think about different types of users who interact with your design.
+														It also aims to promote intuitive designing.Tracing artifacts back in time allows us to think about how, when and where the idea originated from. It creates the scope for examining how the artifact came to be what it is today.
+														The digital divide has a large amount of scope for research. <br><br>To help students pursue this, we incorporate qualitative and quantitative research methodologies into the curriculum.
+														Examining technology and understanding it from different standpoints is necessary to understanding the digital divide. There are courses which help you understand the policy implications of ICT. This course also provides you with the understanding of large scale digital systems. This allows students to understand how Request for Proposals for large scale projects come into being.
+														There are a wide array of electives offered which allows students to dwell deeper into different areas like research, smart city solution deployments and product design.</p>
+
+
+										        	 	</article>
+
+									        		</div>
+												</li>
+												<li>
+													<input name="tabs" id="tab3" type="radio">
+									        		<label for="tab3">Job Profiles</label>
+									        		<div id="tab-content3" class="tab-content" style="height:584px;">
+
+										        	 	<article>
+									        	 			<h3 style="border-bottom: 3px solid #0e364d;width: 280px;">Job Profiles</h3>
+									        	 			<!-- <p style="margin-left: 30px;"> -->
+
+									        	 			<ul class = "fa-ul">
+									        			 	<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Organizations engaged in human centered computing for product development</p></li>
+
+									        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Development sector organizations interested in ICT-Society interface</p></li>
+
+									        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Government agencies and e-Governance programmes</p></li>
+
+									        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Consulting organizations working with the public and development sectors</p></li><li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>CSR units of corporates interested in leveraging the digital ecology</p></li>
+
+									        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Corporate research labs and Design organizations</p></li>
+
+									        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>International development agencies and Policy think-tanks etc.</p></li>
+
+									        	 			</ul>
+									        	 			<!-- </p> -->
+
+
+
+										        	 	</article>
+
+									        		</div>
+												</li>
+												<li>
+													<input name="tabs" id="tab1" type="radio">
+										        	<label for="tab1">Student Profiles</label>
+										        	<div id="tab-content1" class="tab-content" style="height:584px;">
+										        	 	<article>
+									        	 			<h3 style="border-bottom: 3px solid #0e364d;width: 180px;">Abinash Sahu</h3>
+									        	 			<h4><b>Qualifications</b></h4>
+									        	 			<p style="margin-left: 30px;">B.Tech (Electronics &amp; Communication Engineering)</p>
+
+									        	 			<h4><b>Areas of Interest</b></h4>
+
+									        	 			<p style="margin-left: 30px;">Big Data Analytics
+									        	 			<br>User Interface Design (Product Design and Development)</p>
+
+									        	 			<h4><b>Projects</b></h4>
+									        	 			<p style="margin-left: 30px;">
+									        	 			<ul class="fa-ul">
+									        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>
+									        	 			Project on MOOCs (Massive Open Online Courses) by using qualitative and quantitative research method, under the guidance of Prof. Preeti Mudliar.
+									        	 			</p></li>
+
+									        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Project on usability testing under the guidance of Prof. Muralidhar Koteshwar. Audit a mobile app called "AUDVISOR", submit a report and give recommendation based on result.</p></li></p>
+
+
+										        	 	</article>
+
+										        	 	<article>
+									        	 			<h3 style="border-bottom: 3px solid #0e364d;width: 150px;">Ashish Jain</h3>
+									        	 			<h4><b>Qualifications</b></h4>
+									        	 			<p style="margin-left: 30px;">B.Tech (Electronics &amp; Communication Engineering)</p>
+
+									        	 			<h4><b>Areas of Interest</b></h4>
+									        	 			<p style="margin-left: 30px;">Human Computer Interaction<br>Digital Marketing<br>UI Designing</p>
+
+									        	 			<h4><b>Projects</b></h4>
+									        	 			<p style="margin-left: 30px;">
+										        	 			<ul class = "fa-ul">
+
+										        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>
+										        	 			Paper under guidance of Prof. Preeti Mudliar on “Have mobile apps helped
+																people to carpool in Bangalore” using Qualitative and Quantitative
+																research methods.</p></li>
+
+																<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Designing “TrackEasy” android app under supervision of R&amp;D Dept. of Sonim Technologies.<br>Website customization of CITAPP as an extracurricular activity.</p></li>
+															</p>
+
+
+										        	 	</article>
+										        	 	<article>
+									        	 			<h3 style="border-bottom: 3px solid #0e364d;width: 390px;">Masih Abhishek John Shantiel</h3>
+									        	 			<h4><b>Qualifications</b></h4>
+									        	 			<p style="margin-left: 30px;">B.E (Electrical and Electronics)</p>
+
+
+									        	 			<h4><b>Areas of Interest</b></h4>
+									        	 			<p style="margin-left: 30px;">Product Designing<br>Data Analysis<br>Gaming Industry</p>
+
+									        	 			<h4><b>Projects</b></h4>
+									        	 			<p style="margin-left: 30px;">
+										        	 			<ul class="fa-ul">
+											        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Study on usage of MOOCs (Massive Open Online Courses) amongst college students utilizing qualitative and quantitative research method, under the guidance of Prof. Preeti Mudliar.</p></li>
+											        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Usability Audit of "AUDVISOR", a mobile app which streams audio files from various advisors, under the guidance of Prof. Muralidhar Koteshwar.</p></li>
+											        	 		</ul>
+										        	 		</p>
+										        	 	</article>
+										        	 	<article>
+									        	 				<h3 style="border-bottom: 3px solid #0e364d;width: 215px;">Prashant Aswal</h3>
+									        	 				<h4><b>Qualifications</b></h4>
+										        	 			<p style="margin-left: 30px;">B. Tech (Electrical and Electronics Engineering)
+										        	 			</p>
+
+
+									        	 				<h4><b>Areas of Interest</b></h4>
+										        	 			<p style="margin-left: 30px;">
+											        	 			User Interface Design
+											        	 			<br>Product Designing
+											        	 			<br>Usability
+											        	 			<br>Engineering and management of large scale digital systems
+										        	 			</p>
+
+									        	 			<h4><b>Projects</b></h4>
+									        	 			<p style="margin-left: 30px;">
+										        	 			<ul class="fa-ul">
+											        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Project on MOOCs (Massive Open Online Courses) by using qualitative and quantitative research method, under the guidance of Prof. Preeti Mudliar.</p></li>
+																	<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Project on usability testing under the guidance of Prof. Muralidhar Koteshwar. Audit a mobile app called "AUDVISOR", submit a report and give
+																	recommendation based on result.</p></li>
+																</ul>
+															</p>
+															<h4><b>Work Experience</b></h4>
+									        	 			<p style="margin-left: 30px;">Work experience of 17 months with "The fuller Life". Organized and managed both small and large scale running events.</p>
+
+										        	 	</article>
+										        	 	<article>
+									        	 				<h3 style="border-bottom: 3px solid #0e364d;width: 210px;">Priyanka Arora</h3>
+									        	 				<h4><b>Qualifications</b></h4>
+									        	 				<p style="margin-left: 30px;">
+									        	 					B.Tech (Electronics &amp; Communication)
+									        	 				</p>
+									        	 				<h4><b>Areas of Interest</b></h4>
+									        	 				<p style="margin-left: 30px;">
+										        	 				Designing of Digital Strategies<br>
+										        	 				Technology Management <br>
+										        	 				Solution Designing<br>
+										        	 				Policy Analyst / Consultant
+									        	 				</p>
+
+									        	 			<h4><b>Projects</b></h4>
+									        	 			<p style="margin-left: 30px;">
+									        	 			<ul class="fa-ul">
+									        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>
+									        	 			<p>Qualitative study on the usage of mobile phones for entertainment purposes amongst the students of Shivanahalli; a peri urban settlement on the outskirts of Bangalore which involved multiple visits to the field.</p>
+									        	 			</li>
+									        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>
+										        	 			<p>
+										        	 			Quantitative study which looked at the dissemination of mobile phones amongst school students of urban and peri-urban Bangalore which involved multiple visits to the field.
+										        	 			</p>
+									        	 			</li>
+									        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Audit and recommendation report for the usability tests performed on "MentorCloud" website under the guidance of Professor Murlidhar Koteshwar</p></li>
+															<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>
+									        	 			Real time Security Application of Face detection: Embedded system based project on TMS320C6713 kit using CCS (Code Composer Studio) , C-language </p></li>
+
+									        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Study Of Radio resource management and quality of service factors for WCDMA
+									        	 			</p></li>
+									        	 			</ul>
+									        	 			</p>
+
+									        	 			<h4><b>Work Experience</b></h4>
+									        	 			<p style="margin-left: 30px;">Organization: LANDIS + GYR, Noida (Toshiba)<br>Designation: GET <br>Tenure: August 2013 to February 2015 </p>
+
+										        	 	</article>
+
+										        	 	<article>
+									        	 			<h3 style="border-bottom: 3px solid #0e364d;width: 225px;">Priyanka Ivatury</h3>
+									        	 			<h4><b>Qualifications</b></h4>
+									        	 			<p style="margin-left: 30px;">B.Tech (Computer Science and Engineering)</p>
+
+
+									        	 			<h4><b>Areas of Interest</b></h4>
+									        	 			<p style="margin-left: 30px;">Research in Information and Communication Technologies for Development (ICTD)<br>Primary areas of interest would include the use of ICT in healthcare, education and  alleviation of urban poverty</p>
+
+									        	 			<h4><b>Projects</b></h4>
+									        	 			<p style="margin-left: 30px;">
+										        	 			<ul class = "fa-ul">
+
+										        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>
+										        	 			Qualitative study on the usage of mobile phones for entertainment purposes amongst the students of Shivanahalli; a peri urban settlement on the outskirts of Bangalore which involved multiple visits to the field.</p></li>
+
+										        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Quantitative study which looked at the dissemination of mobile phones amongst school students of urban and peri-urban Bangalore which involved multiple visits to the field.</p></li>
+
+										        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Performed a usability audit for MentorCloud.</p></li>
+
+										        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Worked on a project which analyzed the different facial recognition algorithms. These algorithms were implemented both sequentially as well as in parallel and a comparative study was performed based on the performance with respect to time and accuracy. This helped narrow down which algorithm could be implemented in various applications according to their requirement.</p></li>
+
+										        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Developed a website using PHP - www.stomponit.in</p></li>
+										        	 			<li><p>
+										        	 				<h4><b>Work Experience</b></h4>
+									        	 			<p style="margin-left: 30px;">
+									        	 			Organization: Accenture Pvt. Ltd.<br>Designation: Associate Software Engineer<br>Tenure: August 2014 – May 2015</p>
+										        	 				</p>
+										        	 			</li>
+										        	 			</ul>
+									        	 			</p>
+
+										        	 	</article>
+
+										        	 	<article>
+									        	 			<h3 style="border-bottom: 3px solid #0e364d;width: 155px;">Tejas Pande</h3>
+									        	 			<h4><b>Qualifications</b></h4>
+									        	 			<p style="margin-left: 30px;">Graduate Diploma in Art and Design (Undergraduate)</p>
+
+
+									        	 			<h4><b>Areas of Interest</b></h4>
+									        	 			<p style="margin-left: 30px;">Urban Transport<br>Urban Development<br>Economic Geography<br>Urban Planning</p>
+
+									        	 			<h4><b>Projects</b></h4>
+									        	 			<p style="margin-left: 30px;"><ul class="fa-ul"><li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Project
+															 on MOOCs (Massive Open Online Courses) by using qualitative and
+															quantitative research method, under the guidance of Prof. Preeti
+															Mudliar.</p></li><li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Project on usability testing under the guidance of Prof. Muralidhar Koteshwar.
+															Audit a mobile app called "AUDVISOR", submit a report and give
+															recommendation based on result.</p></li>
+															</ul></p>
+
+
+										        	 	</article>
+
+										        	 	<article>
+									        	 			<h3 style="border-bottom: 3px solid #0e364d;width: 210px;">Umang Luhadia</h3>
+									        	 			<h4><b>Qualifications</b></h4>
+									        	 			<p style="margin-left: 30px;">Bachelor in Computer Applications</p>
+
+
+									        	 			<h4><b>Areas of Interest</b></h4>
+									        	 			<p style="margin-left: 30px;">Project Development and Management<br>Product Designing<br>Human Computer Interaction<br>User Experience and Usability Testing<br>Developing Product Design Strategies</p>
+
+									        	 			<h4><b>Projects</b></h4>
+									        	 			<p style="margin-left: 30px;"><ul class="fa-ul">
+									        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Developed a Carpooling Android Application for A P Developers, Bangalore</p></li><li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>
+									        	 			Research paper on “How Television affected Politics in India” under the guidance of Prof. Janaki Srinivasan</p></li><li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Qualitative and Quantitative research on "Have mobile apps helped people to carpool in Bangalore"</p></li><li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Usability audit and recommendation report for the usability tests performed on "MentorCloud" website under the guidance of Professor Murlidhar Koteshwar</p></li><li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Developed an Android Music Player App that plays music based on the user’s emotion. Emotion detection is based on the user’s facial expressions</p></li><li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Developed a website for people to share their videos on the internet. This project was completed along with the Korean students as a part of their IT internship and training 2013-2014 at Christ University in association with KOTRA</p></li></ul></p>
+
+
+										        	 	</article>
+
+										        	 	<article>
+									        	 			<h3 style="border-bottom: 3px solid #0e364d;width: 95px;">Vidya Y</h3>
+									        	 			<h4> <b>Qualifications</b></h4>
+									        	 			<p style="margin-left: 30px;">Bachelors in Computer Application</p>
+
+
+									        	 			<h4><b>Areas of Interest</b></h4>
+									        	 			<p style="margin-left: 30px;">Programming<br>Qualitative Research<br>Developing Assistive Technology<br>User Requirements/ use of Assistive Technology in order to develop as per user needs<br>Product Design<br>Consultancy for Product/Service design<br>Human computer Interaction<br>User Interface Design<br>Developing Products as per accessibility guidelines</p>
+
+									        	 			<h4><b>Projects</b></h4>
+									        	 			<p style="margin-left: 30px;">
+									        	 			<ul class = "fa-ul">
+									        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>
+									        	 			Worked on a project to understand mobile use patterns amongst primary school peri-urban students.</p></li>
+									        	 			<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Worked on a project to compare mobile use and access patterns amongst urban and rural primary school students and undertook a quantitative analysis.<br>Submitted a term paper on screen readers and their impacts, uses and design. The project also looked at political/social forces that shaped screen readers.</p></li><li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Using HTML, css and javascript, developed a project which segments an image such as a map, and identifies various locations with their names, and could be used for quizzes etc.</p></li><li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Developed a website raiseurvoice.in</p></li></ul></p>
+
+
+										        	 	</article>
+
+
+
+										        	</div>
+												</li>
 											</ul>
 
 
+
+
 										</div>
-
-										<div class="tab-content" style="padding-bottom:25px;">
-										    <div id="courseTab" class="tab-pane fade in active">
-										      
-										      	 <!-- <an  href="#" id="courCSTab">Embedded Systems Design</an> 
-												 <an  href="#" id="courDSTab">System on Chip Design</an> -->
-												 <div><h2>Course Specifications</h2></div>
-
-
-
-												 <div>
-													 <p>
-													 	The course includes subjects which enable you to understand ICT and its deployment from multiple angles:<br><br>
-														Interface design encourages you to think about designing technology for a diverse population. It enlists your brain to think about different types of users who interact with your design. 
-														It also aims to promote intuitive designing.Tracing artifacts back in time allows us to think about how, when and where the idea originated from. It creates the scope for examining how the artifact came to be what it is today.
-														The digital divide has a large amount of scope for research. <br><br>To help students pursue this, we incorporate qualitative and quantitative research methodologies into the curriculum. 
-														Examining technology and understanding it from different standpoints is necessary to understanding the digital divide. There are courses which help you understand the policy implications of ICT. This course also provides you with the understanding of large scale digital systems. This allows students to understand how Request for Proposals for large scale projects come into being. 
-														There are a wide array of electives offered which allows students to dwell deeper into different areas like research, smart city solution deployments and product design.</p>
-													 </p>
-												</div>																				
-										    </div> 
-										    <!-- <closes the course tab> -->
-
-
-										    <div id="menu1" class="tab-pane fade" >
-										    	<div><h2>Possible Job Profiles</h2></div>
-                                              	<div id="projData">                                                  			
-                                              			<p> <ul class="fa-ul">
-                                                    <li style="margin-bottom:20px;">
-									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Organizations engaged in human centered computing for product development
-									        			</li>
-								        				<li style="margin-bottom:20px;">
-									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Development sector organizations interested in ICT-Society interface</p>
-									        			</li>
-									        			<li style="margin-bottom:20px;">
-									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Government agencies and e-Governance programmes</p>				
-									        			</li>
-									        			<li style="margin-bottom:20px;">
-									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Consulting organizations working with the public and development sectors</p>
-									        			</li>
-								        				<li style="margin-bottom:20px;">
-									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>CSR units of corporates interested in leveraging the digital ecology</p>		        				
-									        			</li>
-									        			<li style="margin-bottom:20px;">
-									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p><p>Corporate research labs and Design organizations</p>
-									        			</li>
-								        				<li style="margin-bottom:20px;">
-									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>International development agencies and Policy think-tanks etc.</p>		        				
-									        			</li>
-									        			
-									        		</ul>
-                                                    </p>    
-
-
-                                              	</div>                                                  	                                                        
-										    </div>
-									    	<!-- <closing of job profile> -->
-
-
-
-										    <div id="menu2" class="tab-pane fade">
-
-										      <!-- <h3>Menu 2</h3>
-											      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p> -->
-											      	<!-- <div class="profiles" > -->
-											      	<div>
-											                <table >
-											                	<thead>
-											                    <tr >
-											                        <!-- <td style="background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6FF8F8), color-stop(1, #0E80F5) );">S.<br>No.</td> -->
-											                        <td style="background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6FF8F8), color-stop(1, #0E80F5) );">Roll No.</td>
-											                       <!--  <td>Email id</td> -->
-											                       <td style="background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6FF8F8), color-stop(1, #0E80F5) );">Name</td>
-											                        <td style="background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6FF8F8), color-stop(1, #0E80F5) );">Work Experience</td>
-											                    </tr>
-											                </thead>
-											                <tbody>
-                                                                <tr>
-                                                                <td>DT2016001</td>
-                                                                <td>ABHIJEET BHARADWAJ</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>DT2016002</td>
-                                                                <td>Anuja C</td>
-                                                                <td>Capgemini</td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>DT2016003</td>
-                                                                <td>Ashish Kumar Srivastava</td>
-                                                                <td>Wipro</td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>DT2016005</td>
-                                                                <td>Harishikesh</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>DT2016006</td>
-                                                                <td>Prasaanth B</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>DT2016007</td>
-                                                                <td>Shilpy</td>
-                                                                <td></td>
-                                                                </tr>
-
-
-											                </tbody>
-											                </table>
-											            </div>
-											    </div>
-										    <!-- <end of div for stdent profiles> -->											
-										</div>
-									</article>
-
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 
-			<!-- Footer Wrapper -->
-				<!-- <div id="footer-wrapper">
-					<footer id="footer" class="container">
-						<div class="row">
-							<div class="3u 12u(mobile)">
 
-								
-									<section>
-										<h2>Filler Links</h2>
-										<ul class="divided">
-											<li><a href="#">Quam turpis feugiat dolor</a></li>
-											<li><a href="#">Amet ornare in hendrerit </a></li>
-											<li><a href="#">Semper mod quisturpis nisi</a></li>
-											<li><a href="#">Consequat etiam phasellus</a></li>
-											<li><a href="#">Amet turpis, feugiat et</a></li>
-											<li><a href="#">Ornare hendrerit lectus</a></li>
-											<li><a href="#">Semper mod quis et dolore</a></li>
-											<li><a href="#">Amet ornare in hendrerit</a></li>
-											<li><a href="#">Consequat lorem phasellus</a></li>
-											<li><a href="#">Amet turpis, feugiat amet</a></li>
-											<li><a href="#">Semper mod quisturpis</a></li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="3u 12u(mobile)">
-
-									<section>
-										<h2>More Filler</h2>
-										<ul class="divided">
-											<li><a href="#">Quam turpis feugiat dolor</a></li>
-											<li><a href="#">Amet ornare in in lectus</a></li>
-											<li><a href="#">Semper mod sed tempus nisi</a></li>
-											<li><a href="#">Consequat etiam phasellus</a></li>
-										</ul>
-									</section>
-
-								
-									<section>
-										<h2>Even More Filler</h2>
-										<ul class="divided">
-											<li><a href="#">Quam turpis feugiat dolor</a></li>
-											<li><a href="#">Amet ornare hendrerit lectus</a></li>
-											<li><a href="#">Semper quisturpis nisi</a></li>
-											<li><a href="#">Consequat lorem phasellus</a></li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="6u 12u(mobile)">
-
-								
-									<section>
-										<h2><strong>ZeroFour</strong> by HTML5 UP</h2>
-										<p>Hi! This is <strong>ZeroFour</strong>, a free, fully responsive HTML5 site
-										template by <a href="http://n33.co/">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a>.
-										It's <a href="http://html5up.net/license/">Creative Commons Attribution</a>
-										licensed so use it for any personal or commercial project (just credit us
-										for the design!).</p>
-										<a href="#" class="button alt icon fa-arrow-circle-right">Learn More</a>
-									</section>
-
-								
-									<section>
-										<h2>Get in touch</h2>
-										<div>
-											<div class="row">
-												<div class="6u 12u(mobile)">
-													<dl class="contact">
-														<dt>Twitter</dt>
-														<dd><a href="#">@untitled-corp</a></dd>
-														<dt>Facebook</dt>
-														<dd><a href="#">facebook.com/untitled</a></dd>
-														<dt>WWW</dt>
-														<dd><a href="#">untitled.tld</a></dd>
-														<dt>Email</dt>
-														<dd><a href="#">user@untitled.tld</a></dd>
-													</dl>
-												</div>
-												<div class="6u 12u(mobile)">
-													<dl class="contact">
-														<dt>Address</dt>
-														<dd>
-															1234 Fictional Rd<br />
-															Nashville, TN 00000-0000<br />
-															USA
-														</dd>
-														<dt>Phone</dt>
-														<dd>(000) 000-0000</dd>
-													</dl>
-												</div>
-											</div>
-										</div>
-									</section>
-
-							</div>
-						</div>
-						<div class="row">
-							<div class="12u">
-								<div id="copyright">
-									<ul class="menu">
-										<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</footer>
-				</div> -->
 
 		</div>
 
 		<!-- Scripts -->
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/skel-viewport.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="digisoc_files/jquery.js"></script>
+			<script src="digisoc_files/jquery_002.js"></script>
+			<script src="digisoc_files/skel.js"></script>
+			<script src="digisoc_files/skel-viewport.js"></script>
+			<script src="digisoc_files/util.js"></script>
+			<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+			<script src="digisoc_files/main.js"></script>
 
-	</body>
+
+<div id="titleBar"><a href="#navPanel" class="toggle"></a><span class="title"></span></div><div id="navPanel"><nav><a class="link depth-0" href="index-2.html"><span class="indent-0"></span>Home</a><a class="link depth-0" href="#"><span class="indent-0"></span>M.Tech in IT</a><a class="link depth-1" href="comp_sci.html"><span class="indent-1"></span>Computer Science</a><a class="link depth-1" href="data_sci.html"><span class="indent-1"></span>Data Sciences</a><a class="link depth-1" href="net_com.html"><span class="indent-1"></span>Networking &amp; Communication</a><a class="link depth-1" href="soft_eng.html"><span class="indent-1"></span>Software Engineering</a><a class="link depth-0" href="#"><span class="indent-0"></span>M.Tech in ESD</a><a class="link depth-1" href="soc.html"><span class="indent-1"></span>SOC</a><a class="link depth-1" href="embedded.html"><span class="indent-1"></span>Embedded Systems</a><a class="link depth-0" href="imtech.html"><span class="indent-0"></span>IM.Tech</a><a class="link depth-0" href="digisoc.html"><span class="indent-0"></span>MSc in Digital Society</a><a class="link depth-0" href="ms_research.html"><span class="indent-0"></span>MS by research</a><a class="link depth-0" href="contact.html"><span class="indent-0"></span>Contact Us</a></nav></div></body>
+<!-- Mirrored from placement.iiitb.ac.in/digisoc.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Apr 2017 13:37:17 GMT -->
 </html>

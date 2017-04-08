@@ -5,322 +5,123 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<title>M.Tech in ESD</title>
+
+<!-- Mirrored from placement.iiitb.ac.in/mtechESD.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Apr 2017 13:35:51 GMT -->
+<head>
+		<script src="../ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<title>MTech In ESD</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-
-		<link rel="stylesheet" href="assets/css/popup.css" />
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-
-
-	    <style>
-            #wrapper {
-              margin-right: 200px;
-              position: relative;
-              height: 400px;
-            }
-            #cont {
-              position: relative;
-              float: left;
-              width: 61%;
-              background-color: #FFF;
-
-            }
-            #side {
-            	position: relative;
-              float: right;
-              width: 300px;
-              margin-right: -149px;
-              background-color: #FFF;
-            }
-            #cleared {
-              clear: both;
-            }
-
-
-            table {
-				background: #f5f5f5;
-				border-collapse: separate;
-				box-shadow: inset 0 1px 0 #fff;
-				font-size: 12px;
-				line-height: 24px;
-				margin: 30px auto;
-				text-align: left;
-				width: 100%;
-				table-layout: fixed;
-				font-family: 'Roboto', sans-serif;
-			}	
-
-			th {
-				/*background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);*/
-				border-left: 1px solid #555;
-				border-right: 1px solid #777;
-				border-top: 1px solid #555;
-				border-bottom: 1px solid #333;
-				box-shadow: inset 0 1px 0 #999;
-				color: #fff;
-			  font-weight: bold;
-				padding: 10px 15px;
-				position: relative;
-				text-shadow: 0 1px 0 #000;	
-				background-color: rgba(59, 62, 69, 0.9);
+		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/tabs.css" />
+		<link rel="stylesheet" href="css/popupm.css" />
+		<link rel="stylesheet" href="css/popup.css" />
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<style type="text/css">
+			p {
+			    font-family: 'Roboto', sans-serif;
+			    font-size: 1em;
+			    margin-bottom: 20px;
+			}
+			li{
+				margin-bottom: 20px;
 			}
 
-			th:after {
-				/*background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));*/
-				content: '';
-				display: block;
-				height: 25%;
-				left: 0;
-				margin: 1px 0 0 0;
-				position: absolute;
-				top: 25%;
-				width: 100%;
-				background-color: rgba(59, 62, 69, 0.9);
-			}
+			/*
+			this part for tab within tab*/
 
-			th:first-child {
-				border-left: 1px solid #777;	
-				box-shadow: inset 1px 1px 0 #999;
-			}
-
-			th:last-child {
-				box-shadow: inset -1px 1px 0 #999;
-			}
-
-			td {
-				border-right: 1px solid #fff;
-				border-left: 1px solid #e8e8e8;
-				border-top: 1px solid #fff;
-				border-bottom: 1px solid #e8e8e8;
-				padding: 10px 4px;
-				position: relative;
-				transition: all 300ms;
-				color: #444;
-				font-weight: 500;
-				text-shadow: 0 1px 0 #fff;
-				text-align: center;
-				/*font-size: 0.8em;*/
-				/*word-wrap:break-word;*/
-			}
-
-			td:first-child {
-				box-shadow: inset 1px 0 0 #fff;
-			}	
-
-			td:last-child {
-				border-right: 1px solid #e8e8e8;
-				box-shadow: inset -1px 0 0 #fff;
-			}	
-
-			tr {
-				/*background: url(http://jackrugile.com/images/misc/noise-diagonal.png);	*/
-			}
-
-			tr:nth-child(odd) td {
-				background: #f1f1f1 url(http://jackrugile.com/images/misc/noise-diagonal.png);	
-			}
-
-			tr:last-of-type td {
-				box-shadow: inset 0 -1px 0 #fff; 
-			}
-
-			tr:last-of-type td:first-child {
-				box-shadow: inset 1px -1px 0 #fff;
-			}	
-
-			tr:last-of-type td:last-child {
-				box-shadow: inset -1px -1px 0 #fff;
-			}	
-
-			/*tbody:hover td {
-				color: transparent;
-				text-shadow: 0 0 3px #aaa;
-			}
-
-			tbody:hover tr:hover td {
-				color: #444;
-				text-shadow: 0 1px 0 #fff;
-			}*/
-        </style>
-
-
-
-
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	
-		<style>
 			an{
-	              display:block;
-	              float:left;
-	              height: 30px;
-	              width:50%;
-	              /*background:#d4eaf9;*/
-	              border-style:groove;
-	              border-width:thin;
-	              /*text-decoration:bold;*/
-	              /*font-weight:600;*/
-	              /*font-size: 1.02em;*/
-	              text-align:center;
-	              /*padding:10px 0;*/
-	              color:#3498db;	              
-	            }
-	            an:hover{
-	            	background: rgba(255, 205, 40, 0.36);
-	            }
-
-	            @media screen and (max-width:700px){
-
-            	an{
-	              display:block;
-	              float:left;
-	              height: 75px;
-	              width:50%;
-	              /*background:#d4eaf9;*/
-	              border-style:groove;
-	              border-width:thin;
-	              /*text-decoration:bold;*/
-	              /*font-weight:600;*/
-	              /*font-size: 1.02em;*/
-	              text-align:center;
-	              /*padding:10px 0;*/
-	              color:#3498db;	              
-	            }
-	            an:hover{
-	            	background: rgba(255, 205, 40, 0.36);
-	            }
-
-/*	            nav nav-tabs{
-	            	width:25%;
+			  display:block;
+			  float:left;
+			  height: 65px;
+			  width:50%;
+			  /*background:#d4eaf9;*/
+			  border-style:groove;
+			  border-width:thin;
+			  text-decoration:bold;
+			  font-weight:600;
+			  font-size: 1.02em;
+			  text-align:center;
+			  padding:10px 0;
+			  color:#3498db;
 
 
-	            }
+			}
+                        an:hover{
+                                background: rgba(255, 205, 40, 0.36);
+                        }
+/*
+			an[data-filter="cs"]:focus ~ div:not([data-filter="cs"]){
+				  display: none;
+			}
+
+			an[data-filter="ds"]:focus ~ div:not([data-filter="ds"]){
+			  display: none;
+			 }
+
+			an[data-filter="nc"]:focus ~ div:not([data-filter="nc"]){
+			  	display: none;
+			 }
+
+			an[data-filter="se"]:focus ~  div:not([data-filter="se"]){
+			  display: none;
+			}
 */
+			/*tab within tab ends*/
 
-				.nav>li>a {
-				    position: relative;
-				    display: block;
-				    padding: 10px 14px;
-				    /*width:25%;*/
-				}
-
-				#wrapper {
-	              margin-right: 200px;
-	            }
-	            #cont {
-	              float: left;
-	              width: 61%;
-	              background-color: #FFF;
-	            }
-	            #side {
-	              float: left;
-	              width: 61%;
-	              background-color: #FFF;
-	            }
-	            #cleared {
-	              clear: both;
-	            }
-
-	            
-
-
-
-	        }
 		</style>
-
-		 <script>
-
-
-        $(document).ready(function(){
+	<script>
 
 
-
-//script for the tabs within project tab            
-            $('#projDSData').hide();
-            $('#projNCData').hide();
-            $('#projESData').hide();
-            $('#projCSData').show();
-
-            $("#projCSTab").click(function(){
-                $('#projDSData').hide();
-                $('#projNCData').hide();
-                $('#projESData').hide();
-                $('#projCSData').show();
-            });
-            $('#projDSTab').click(function() {              
-                $('#projNCData').hide();
-                $('#projESData').hide();
-                $('#projCSData').hide();
-                $('#projDSData').show();
-            });    
-            $('#projESTab').click(function() {
-                $('#projDSData').hide();
-                $('#projNCData').hide();                
-                $('#projCSData').hide();
-                $('#projESData').show();
-            });    
-            $('#projNCTab').click(function() {
-                $('#projDSData').hide();                
-                $('#projESData').hide();
-                $('#projCSData').hide();
-                $('#projNCData').show();
-            });
-
-            //end of script for project tab
+		$(document).ready(function(){
 
 
-            $('#courDSData').hide();
-	        $('#courNCData').hide();
-	        $('#courSEData').hide();
-	        $('#courCSData').show();
 
-			$("#courCSTab").click(function(){
-		        $('#courDSData').hide();
-		        $('#courNCData').hide();
-		        $('#courSEData').hide();
-		        $('#courCSData').show();
+//script for the tabs within project tab
+			$('#projSCData').hide();
+			$('#projESData').show();
+		    $("#projESTab").click(function(){
+		        $('#projSCData').hide();
+		        $('#projESData').show();
 		    });
-			$('#courDSTab').click(function() {		  		
-		        $('#courNCData').hide();
-		        $('#courSEData').hide();
-		        $('#courCSData').hide();
-		        $('#courDSData').show();
-			});    
-			$('#courSETab').click(function() {
-		  		$('#courDSData').hide();
-		        $('#courNCData').hide();		        
-		        $('#courCSData').hide();
-		        $('#courSEData').show();
-			});    
-			$('#courNCTab').click(function() {
-		  		$('#courDSData').hide();		        
-		        $('#courSEData').hide();
-		        $('#courCSData').hide();
-		        $('#courNCData').show();
-			});   
-        });
+			$('#projSCTab').click(function() {
+		        $('#projSCData').show();
+		        $('#projESData').hide();
+			});
+
+			//end of script for project tab
+
+			$('#courSCData').hide();
+	        $('#courESData').show();
+
+			$("#courESTab").click(function(){
+		        $('#courSCData').hide();
+	        	$('#courESData').show();
+		    });
+			$('#courSCTab').click(function() {
+		        $('#courESData').hide();
+		        $('#courSCData').show();
+			});
+
+			//end of script for courses tab
+		});
 
 
 
 
 
-        /*
-        */
+		/*
+		*/
 
-    </script>
-
-
+	</script>
 
 
 	</head>
-	<body class="no-sidebar">
+	<body class="left-sidebar">
 		<div id="page-wrapper">
 
 			<!-- Header Wrapper -->
@@ -332,18 +133,35 @@
 								<div class="inner">
 
 									<!-- Logo -->
-										<h1><a href="index.html" id="logo"></a></h1>
+										<h1><a href="index-2.html" id="logo"></a></h1>
 
 									<!-- Nav -->
 										<nav id="nav">
 											<ul>
-													<li><a href="index.html">Home</a></li>
-													<li><a href="test_mtechIT.html">M.Tech - IT</a></li>
-													<li><a href="test_mtechESD.html">M.Tech - ESD</a></li>
-													<li><a href="test.html">Integrated M.Tech</a></li>
-													<li><a href="test_msDIGSOC.html">MSc in Digital Society</a></li>
-													<li><a href="test_msRSRCH.html">MS by Research</a></li>
-													<li><a href="contact.html">Contact Us</a></li>
+												<li><a href="index.html">Home</a></li>
+												<li class="current_page_item">
+													<a href="test_mtechIT">M.Tech-IT</a>
+													<!--<ul>
+														<li>
+															<li><a href="comp_sci.html">Computer Science</a></li>
+															<li><a href="data_sci.html">Data Sciences</a></li>
+															<li><a href="net_com.html">Networking & Communication</a></li>
+															<li><a href="soft_eng.html">Software Engineering</a></li>
+														</li>
+													</ul>-->
+												</li>
+												<li>
+													<a href="test_mtechESD.html">M.Tech-ESD</a>
+													<!--<ul>
+														<li>
+															<li><a href="soc.html">SOC</a></li>
+															<li><a href="embedded.html">Embedded Systems</a></li>
+														</li>
+													</ul>-->
+												</li>
+												<li><a href="test.html">Integrated M.Tech</a></li>
+												<li><a href="test_msDIGSOC.html">MSc in Digital Society</a></li>
+												<li><a href="test_msRSRCH.html">MS by Research</a></li>
 											</ul>
 										</nav>
 
@@ -358,86 +176,93 @@
 					<div class="wrapper style2">
 						<div class="inner">
 							<div class="container">
-								<div id="content">
+								<div class="row">
+									<div class="4u 12u(mobile)">
+										<div id="sidebar">
 
-									<!-- Content -->
+											<!-- Sidebar -->
 
-										<article>
-											<header class="major">
-												<h2>M.Tech in Electronic Systems Design</h2>
-												<p style="font-weight:300; font-size:1.0em;">
+												<section>
+													<header class="major">
+														<h2>M.Tech in Electronic Systems Design</h2>
+													</header>
+													<p style="font-weight:300;">
 													The M.Tech degree in Electronic Systems Design (ESD) is intended to help address the growth of the highly skilled manpower in Chip Design and Embedded System Design needed to support electronics system design and manufacturing (ESDM) in our country. <br> The course, in alignment with the national and state  policies attempts to foster growth and entrepreneurship in ESDM as outlined by the Department of Electronics and Information Technology (DIETY) of the Government of India, and the Government of Karnataka, respectively.  <br><br>
-													The 2-year degree program allows students to specialize in two possible areas:<br><br>	
+													The 2-year degree program allows students to specialize in two possible areas:<br><br>
+													<ul class="fa-ul">
+														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Embedded System Design</p></li>
+														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>System on Chip (SoC) Design</p></li>
+														<br><br>
+													</ul>
+
+
 													</p>
-											</header>
+												</section>
 
-											
-											<div style="padding-bottom:25px;">
-												<ul class="nav nav-tabs">
-												    <li class="active"><a data-toggle="tab" href="#courseTab">Courses</a></li>
-												    <li><a data-toggle="tab" href="#menu1">Projects</a></li>
-												    <li><a data-toggle="tab" href="#menu2">Students</a></li>
-												    <li><a data-toggle="tab" href="#menu4">Labs</a></li>
-												</ul>
+										</div>
+									</div>
+									<div class="8u 12u(mobile) important(mobile)">
+										<div id="content">
+											<ul class="tabs">
 
+												<li>
+													<input type="radio" name="tabs" id="tab0" checked/>
+									        		<label for="tab0">Courses</label>
+									        		<div id="tab-content0" class="tab-content" style="height:700px" align="justify">
 
-											</div>
+									        		 <!--<an  data-filter="cs" tabindex="-1">Computer Science</an>-->
+													 <!--<an  data-filter="ds" tabindex="-1">Data Science</an>-->
+													 <an  id="courESTab">Embedded System Design</an>
+													 <an  id="courSCTab">System on Chip (SoC) Design</an>
 
-												
-
-
-											<div class="tab-content" style="padding-bottom:25px;">
-											    <div id="courseTab" class="tab-pane fade in active">
-											      
-											      	 <an  href="#" id="courCSTab">Embedded Systems Design</an> 
-													 <an  href="#" id="courDSTab">System on Chip Design</an>
-
-
-													 <div id="courCSData" tabindex='1' style="padding-top:25px;">							        	
-									        		<!--<div data-filter="cs">-->							        		
-										        		<p>	
-										        		<b><h2 style="text-align: center;">Embedded Systems</h2>
-										        		</b>
-										        		This stream integrates academic study and the realization of embedded systems with emphasis on building real-world embedded solutions thereby satisfying both the current and the future demands of industries internationally.
-										        		<br><br>
-														The sub-major includes a variety of subjects including the following: <br><br>
-										        		<ul class="fa-ul">
-										        			<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Internet of Things</li>
+													 <!--<an  data-filter="se" tabindex="-1">Software Engineering</an>
+													 <an  data-filter="nc" tabindex="-1">Networking and Communication.</an>-->
+													 <br>
+													 <br>
+													 <br>
+									        		<div id="courESData" tabindex='1'>
+									        		<!--<div data-filter="cs">-->
+									        		<p>
+									        		<b><h2 style="text-align: center;%;">Embedded Systems</h2>
+									        		</b>
+									        		This stream integrates academic study and the realization of embedded systems with emphasis on building real-world embedded solutions thereby satisfying both the current and the future demands of industries internationally.
+									        		<br><br>
+													The sub-major includes a variety of subjects including the following: <br><br>
+									        		<ul class="fa-ul">
+									        			<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Internet of Things&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Real Time Operating Systems		        				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Real Time Operating Systems&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 
 									        			<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Device Drivers
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Device Drivers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>ARM Architecture		
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>ARM Architecture&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Inter-Device Communication<br>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Inter-Device Communication&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Embedded Digital Signal Processing
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Embedded Digital Signal Processing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematical Models of Computation
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematical Models of Computation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Automotive Embedded Systems				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Automotive Embedded Systems&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Machine Perception				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Machine Perception&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
-											        	</ul>
+										        	</ul>
 
 
-										        			</p>	
-										        </div>
-
-
-										        <div id="courDSData" style="padding-top:25px;">
-									        		<!--<div data-filter="ds">-->	
+									        			</p>
+									        </div>
+									        		<div id="courSCData">
+									        		<!--<div data-filter="ds">-->
 
 									        			<p>
 									        			<b><h2 style="text-align: center;%;">System On Chip</h2></b>
@@ -446,109 +271,51 @@
 													This stream offers a variety of subjects including: <br><br>
 									        		<ul class="fa-ul">
 									        			<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Advanced Analog Design</li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Advanced Analog Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Design of VLSI Subsystem		        				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Design of VLSI Subsystem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 
 									        			<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mixed signal Design
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mixed signal Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Circuit Simulation			
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Circuit Simulation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Deep Submicron Design Issues
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Deep Submicron Design Issues&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Functional Verification of SOC
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Functional Verification of SOC’s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Testing And Design For Testability
-										        		</li>										        		
-										        		
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Testing And Design For Testability&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+
 										        	</ul>
 									        			</p>
-													</div>
+</div>
+																									</li>
 
-													<div id="courSEData" style="padding-top:25px;">
-									        		<!--<div data-filter="se">-->								        			<p>
-									        			<b><h2 style="text-align: center;%;">Software Engineering</h2></b>
-									        			This stream has a two-fold mission:<br>
-Firstly, to educate the students to be high quality software engineers, with strong hands-on experience and with strong foundations in computer science concepts.<br>
-Secondly, to contribute original and ground breaking ideas to the state-of-the art in SE by actively involving in research. 
-									        		<br><br>
-													Subjects of this stream include: <br><br>
-									        		<ul class="fa-ul">
+												<li>
+													<input type="radio" name="tabs" id="tab2"/>
+									        		<label for="tab2">Projects</label>
+									        		<div id="tab-content2" class="tab-content" style="height:700px" align="justify">
+
+									        		 <!--<an  data-filter="cs" tabindex="-1">Computer Science</an>-->
+													 <!--<an  data-filter="ds" tabindex="-1">Data Science</an>-->
+													 <an  id="projESTab">Embedded System Design</an>
+													 <an  id="projSCTab">System on Chip (SoC) Design</an>
+													 <!--<an  data-filter="se" tabindex="-1">Software Engineering</an>
+													 <an  data-filter="nc" tabindex="-1">Networking and Communication.</an>-->
+													 <br>
+													 <br>
+													 <br>
+									        		<div id="projESData" tabindex='1'>
+									        		<!--<div data-filter="cs">-->
+									        		<p>	<b><h2 style="text-align: center;%;">Embedded System Design</h2>
+									        		</b><ul class="fa-ul">
 									        			<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Design Patterns</li>
-										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Usability		        				
-										        		</li>
-
-									        			<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Software testing
-										        		</li>
-										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Data Modeling
-										        		</li>
-										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Automated Formal Verification
-										        		</li>
-										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Geographic Information Systems
-										        		</li>										        		
-										        	</ul>
-									        			</p>
-
-									        			</div>
-									        		<div id="courNCData" style="padding-top:25px;">
-									        		<!--<div data-filter="nc">-->
-									        			
-									        			<p>
-									        			<b><h2 style="text-align: center;%;">Networking and Communication</h2></b>
-									        			This stream covers a detailed understanding on various types of communication systems and protocols.
-									        		<br><br>
-													Subjects of this stream include: <br><br>
-									        		<ul class="fa-ul">
-									        			<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Wireless Access Networks</li>
-										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Wireless Sensor networks	        				
-										        		</li>
-
-									        			<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Internet Of Things
-										        		</li>
-										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Digital Image Processing			
-										        		</li>
-										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mobile computing with IMS Architecture
-										        		</li>
-										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Computer Vision
-										        		</li>										        		
-										        	</ul>
-									        			</p>
-									        		</div>
-									
-											    </div>
-											    <div id="menu1" class="tab-pane fade" >
-											      	
-
-											      	<an  id="projCSTab">Embedded Systems Design</an> 
-                                                  	<an  id="projDSTab">System on Chip (SoC) Design</an>                  
-                                                  	<!-- <an  id="projNCTab">Network and Comm</an>
-                                                  	<an  id="projESTab">Software Eng.</an>
-                                                  -->
-
-
-
-                                                  	<div id="projCSData" tabindex='1' style="padding-top:25px;">                                                  			
-                                                  			<p> <b><h2 style="text-align: center;">Embedded System Design</h2>
-                                                    </b><ul class="fa-ul">
-                                                        <li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>EDF(Earlier Deadline First) Scheduler implementation for FreeRTOS.</b><br>
 										        				 A dynamic scheduler implemented for FreeRTOS to run on embedded microcontrollers, facilitates hard deadline real time execution for time critical application.<br>
 										        				<b>Tools used:&nbsp;&nbsp;</b>FreeRTOS software.
@@ -559,13 +326,13 @@ Secondly, to contribute original and ground breaking ideas to the state-of-the a
 										        				A full fledged system (Industrially ready product) where user can give input through an App regarding the amount of Litres he wants and the Time at which the water has to be supplied. The system will take the input and accordingly ON the motor at appropriate time. Alongwith controlling the flow of water, system also monitors how much litres of water has flown and at what rate the water has flown, which can be monitored through a website or App.<br>
 										        				<b>Tools used:&nbsp;&nbsp;</b>Arduino, Raspberry Pi, Water Sensor, Android Studio.
 										        			</li>
-														
+
 														<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b> Building an Ad-hoc network using Raspberry Pi with Raspbian and OpenWrt.</b><br>
 										        				Communication between 2 Raspberry Pis using wireless ad-hoc network (such as file transfer and real time video streaming).<br>
 										        				<b>Tools used:&nbsp;&nbsp;</b>Raspberry Pi, OpenWrt OS and Raspbian OS.
 										        			</li>
-									        				
+
 														<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b> Action Detection using Hidden Markov Model.</b><br>
 										        				Detection of Human Actions using feature based bottom-up approach using low level features with HMM. Cricket strokes were taken as actions and an accuracy of 90% to 100% was achieved for training by 20 and 24 training examples respectively.<br>
@@ -594,18 +361,17 @@ Secondly, to contribute original and ground breaking ideas to the state-of-the a
 										        				One of the major security threat in the home is from LPG leakage. Under the concept of SmartHome,a smart and intelligent system is built which not only notifies hazardous level of LPG leakage to the mobile app but also takes care of home from LPG leakage by taking corrective actions. A web version of the application is also developed so that user will be able to see what is happening at home irrespective of the platform.<br>
 										        				<b>Tools used:&nbsp;&nbsp;</b>Raspberry Pi, Arduino. Android Studio, Google Cloud Messaging, REST Services in JAVA, D3.js for web data visualization
 										        			</li>
+									        			</ul>
+									        			</p>
+									        </div>
+									        		<div id="projSCData">
+									        		<!--<div data-filter="ds">-->
 
-										        			<br>
-										        		</ul>
-                                                        </p>    
+									        			<p>
+									        			<b><h2 style="text-align: center;%;">System on Chip (SoC) Design</h2></b>
+									        		<ul class="fa-ul">
 
-
-                                                  	</div>
-
-                                                  	<div id="projDSData" style="padding-top:25px;" > 
-                                                  		<p> <b><h2 style="text-align: center;">System on Chip (SoC) Design</h2>
-                                                    </b><ul class="fa-ul">
-                                                        <li>
+									        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>SAR ADC</b><br>
 										        				This project involves the Design of Low Power 10 bit Charge Redistribution based SAR ADC consuming less than 10uW at 1MS/s with SNR > 55dB, THD<-60dB, INL and DNL<0.5, SNDR>50dB and ENOB(approximately)=8.5 bit. The design and layout is done using Cadence Virtuoso Suite.<br>
 										        														        			</li>
@@ -619,22 +385,22 @@ Secondly, to contribute original and ground breaking ideas to the state-of-the a
 									        				<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Design and Analysis of StrongARM and Thomas-Cho Latched Comparators</b><br>
 										        				In this project, the design and analysis of two latched comparators namely Strong ARM and Thomas-Cho (also known as Lewis Grey comparator) has been done. It includes the design for different sizes of CMOS and analysis for the parameters like speed and offset. Estimation of offset is obtained by using Monte Carlo Simulation. The design and layout is done using Cadence Virtuoso Suite.<br>
-										        				
+
 										        			</li>
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Command Application Logic for DDR3 controller</b><br>
 										        				 This project involves implementation & verification of command application logic in Xilinx FPGA using Verilog & is based on reference design from Lattice Semiconductors.<br> <b> Tools used: </b> Xilinx ISE Design Suite 13.1 and Xilinx Spartan 6 FPGA board<br>
-										        				
+
 										        			</li>
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>High-gain 3-stage Audio Amplifier Design</b><br>
 										        				 In this project a  3-stage audio amplifier with a dc Gain of 52.8k & Phase Margin of 89.12° was designed in 180nm technology using dual complex pole-zero cancellation(DCPC) technique. The entire design & layout was carried out using Cadence Virtuoso suite. The parasitic extraction was completed using Assura.<br>
-										        				
+
 										        			</li>
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Band Gap Reference Voltage</b><br>
 										        				 This project designs the Band gap Reference circuit, which is more immune to variation in temperature and supply voltage. The Range of temperature over which the circuit acts as a reference generator is -60 to 100 Celsius. The design and layout is done using Cadence Virtuoso Suite.<br>
-										        				
+
 										        			</li>
 <li>
                                                                                                                         <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>SDNA sequence alignment using Smith-Waterman Algorithm</b><br>
@@ -646,427 +412,740 @@ Secondly, to contribute original and ground breaking ideas to the state-of-the a
 										        	<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>UART (Universal Asynchronous Receiver and Transmitter)</b><br>
 										        				 This project involves implementation & verification of UART in Xilinx FPGA using Verilog. UART consists of transmitter and Receiver units. Transmitter transmits the data serially after converting the parallel data to serial data and Receiver receives serially and converts the serial data into parallel data.<br> <b> Tools used: </b> Xilinx ISE Design Suite 13.1 and Two Xilinx Spartan 6 FPGA boards for using as Tx and Rx units.<br>
-										        				
+
 										        			</li>
 										        			</li><li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>All Digital Phase Locked Loops</b><br>
 										        				 The All Digital PLLs are independent of process variations and can be easily ported to different technologies. The design and verification of All Digital Phase Locked Loop (ADPLL) using a Direct Digital Frequency Synthesizer (DDFS) and an All Digital Phase Frequency Detector (ADPFD) with a faster lock-in time using digital components has been done,so as to make the design scalable and portable.<br>
 																<b>Tools used: </b>  Xilinx ISE 14.7,ISIM Simulator, VIS 2.4(Language used-Verilog)<br>
-										        				
+
 										        			</li>
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Design of Switching Capacitor Amplifier with Gain 2</b><br>
 										        				  This project involves designing of a low-voltage gain-of-2 SC amplifier with low output offset error and wide input/output range for a 1-bit/stage 12 bit 10 MHz pipelined stage application. The total thermal noise SNR should be > 70 dB. The design and layout is done using Cadence Virtuoso Suite.<br>
-										        				
+
 										        			</li>
-										        			
+
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Clock Tree Synthesis and Clock Skew Estimation</b><br>
 										        				The operation of most digital circuit systems, such as computer systems, is synchronized by a periodic signal known as a "clock" that dictates the sequence and pacing of the devices on the circuit. This clock is generally distributed from a single source to all the memory elements of the circuit, which are also called registers or flip-flops. The maximum speed at which a system can run must account for the variance that occurs between the various elements of a circuit due to differences in physical composition, temperature, and path length.<br>Clock skew results from the unequal propagation delay of clock paths from the source of the clock tree to the various sink nodes at the latch points and directly impacts the performance of a design.With rapidly increasing clock frequencies, the allowable clock skew is increasingly constrained, making clock skew a critical concern for high-performance processors. Clock skew can be introduced either at design time, during fabrication of the design, or during its operation."<br>
 										        				<b>Tools used:&nbsp;&nbsp;</b>Cadence - Designing; Monte Carlo Simulation - Tool inbulit in Cadence
-										        			</li><br>
-                                                            
-                                                        </ul>
-                                                        </p> 
-                                                  	</div>
+										        			</li>
 
-                                                  	<!-- <div id="projESData" style="padding-top:25px;"> 
-                                                  		<p> <b><h2 style="text-align: center;">Software Engineering</h2>
-                                                    </b><ul class="fa-ul">
-                                                        <li>
-															<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Universal API</b>
-															<br>
-															 Travelport Platform Services Project Universal API (uAPI) is the set of Web Services and APIs which are being developed on top of the Kestrel framework acquired by Travelport.
+									        			</ul>
+									        			</p>
+</div>
 
-															The Developed product will trigger service specific (Air /Hotel/Vehicle/Rail/Cruise) requests to individual GDS like Galileo (1G), Apollo (1V), Worldspan (1P), JAL (1J) and LCC adapter  (Like ACH) and provide support to aggregate multiple distribution systems and low cost carriers.
 
-															After getting the request from User it goes to the appropriate GDS and fires multiple requests to the GDS as per the Service and stores the data in its Local Database and returns the cumulative data to the User.<br>
-															<b>Tools used:&nbsp;&nbsp;</b> Core JAVA, Core Spring, Hibernate, WebService (SOAP), XML, XSD, JibX </li><br>
-
-									        				<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Protype of eBay</b><br>
-																Prototype of eBay was done by the usage of REST services to fulfill the basic requirements of a shopping site. The website contains plethora of features assisting workflows for multitudes of users categorized as admin, seller, buyer and guest. The services includes those offered by standard ecommerce sites such as selling / buying / status / tracking / rating / review / deals of goods of various types including electronics, books and other stationary goods.<br>
-										        				<b>Tools used:&nbsp;&nbsp;</b>Eclipse, MySql, BootStrap, Struts2, Java, Javascript
-										        			</li><br>
-										        			<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Mobile App for Secure, Single Instance Document</b><br>
-										        				An Android mobile application that allows a document to be received from a secure system, stored locally, and sent on to a secure system, with only one copy of the document existing (anywhere) at any one time. Once the document is sent from the mobile to the server, the local copy is deleted thus ensuring that only one copy exists.<br>
-										        				<b>Tools used:&nbsp;&nbsp;</b>Android
-										        			</li><br>
-										        			<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Disaster Management App</b><br>
-										        				The android app is to rescue people affected at the time of flood.There are three different components of the app,for affected person,volunteers (rescuer) and coordinator. On main activity the nearby rescue camps will be shown on the map.Google map APIs are used in the map.The affected person will generate a rescue request.Coordinator will assign the volunteer to that request, push notification will be sent to both volunteer and person. When rescue is done the volunteer will close the request.<br>
-										        				<b>Tools used:&nbsp;&nbsp;</b>Android studio and Eclipse.
-										        			</li><br>
-										        			<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>BLOOD HELP</b><br>
-										        				An android application which uses Google Map API to show the hospitals and donors.<br>
-										        				<b>Tools used:&nbsp;&nbsp;</b>Android Studio 2.0
-										        			</li><br>
-										        			<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Semantic Web- Smart Admissions</b><br>
-										        				A common portal for both Universities and applicants(students) to find their matching i.e. Universities can register and login to find all the students who want to register for course which they are offering and students can find the matching universities which are offering the same course which they have applied.<br>
-										        				<b>Tools used:&nbsp;&nbsp;</b>Protege, Jena, SparQL,javascript, java
-										        			</li><br>
-										        			<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>IIITB SDC</b><br>
-										        				The project is to develop a software center for then IIITB which will be used by the student of college. The project contains three component DevOps, Common Services and application services. DevOps is used to provide a Platform for communication between different team members. JENKINS is used continuous integration and version control. Maven is used to manage build, reporting and documentation of the project. Common Services is a rest service server which will store the data that will be stored by more than one applications and the student data. Application services are the different application merged into one application, the application will be related to the students for day to day work. Like SAC Election application in which student will only be allowed to cast vote one time in a given time period, after that result will be shown.<br>
-										        				<b>Tools used:&nbsp;&nbsp;</b>Eclipse, Jenkins, Maven
-										        			</li><br>                                                         
-                                                        </ul>
-                                                    	</p>
-                                                    </div> -->
-                                                        
-											    </div>
-											    <div id="menu2" class="tab-pane fade">
-
-											      <!-- <h3>Menu 2</h3>
-											      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p> -->
-											      	<!-- <div class="profiles" > -->
-											      	<div>
+										        			</p>
+									        		</div>
+												</li>
+<li>
+													<input type="radio" name="tabs" id="tab4" />
+									        		<label for="tab4">Student Profiles</label>
+									        		<!--<div id="tab-content2" class="tab-content" style="height:780px">-->
+									        		<div id="tab-content2" class="tab-content" style="height:700px">
+									        			<div class="profiles"  >
 											                <table >
-											                	<thead>
-											                    <tr >
-											                        <!-- <td style="background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6FF8F8), color-stop(1, #0E80F5) );">S.<br>No.</td> -->
-											                        <td style="background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6FF8F8), color-stop(1, #0E80F5) );">Roll No.</td>
-											                       <!--  <td>Email id</td> -->
-											                       <td style="background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6FF8F8), color-stop(1, #0E80F5) );">Name</td>
-											                        <td style="background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6FF8F8), color-stop(1, #0E80F5) );">Work Experience</td>
-											                    </tr>
-											                </thead>
-											                <tbody>
-                                                                <tr>
-                                                                <td>MT2016501</td>
-                                                                <td>ADNAN MALIK</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016502</td>
-                                                                <td>ANISH UNNIKRISHNAN M</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016503</td>
-                                                                <td>Anuja S. Morankar</td>
-                                                                <td>Accenture </td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016504</td>
-                                                                <td>Chandrashekhar Choudhary</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016505</td>
-                                                                <td>Chinmoy Mohapatra</td>
-                                                                <td>HSBC</td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016506</td>
-                                                                <td>Desai Khanjan Manishbhai</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016507</td>
-                                                                <td>DIKSHYA PANDA</td>
-                                                                <td>Accenture</td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016508</td>
-                                                                <td>GAURAV SINGH</td>
-                                                                <td>ALL INDIA ROAD CARRIERS</td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016509</td>
-                                                                <td>K GEETHIKA PRANEETHA</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016510</td>
-                                                                <td>K.SIVARANJINI</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016511</td>
-                                                                <td>KANAV GUPTA</td>
-                                                                <td>Mahindra Rise</td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016512</td>
-                                                                <td>Lakshmi Sarathy</td>
-                                                                <td>IBM</td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016513</td>
-                                                                <td>MANDEEP SINGH</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016514</td>
-                                                                <td>NAYAN KHULBE</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016515</td>
-                                                                <td>NIWIN ANTO</td>
-                                                                <td>Broadcom Limited</td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016516</td>
-                                                                <td>Pillalamarri Rama Bala</td>
-                                                                <td>Tata Consultancy Services</td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016517</td>
-                                                                <td>POLAMRAJU SAI SRIVATSAV</td>
-                                                                <td>Tata Consultancy Services, Chennai.</td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016518</td>
-                                                                <td>POLAREDDY BHAVANI LAKSHMI</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016519</td>
-                                                                <td>Prajwal Sharma K</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016520</td>
-                                                                <td>Prashanthi S.K</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016521</td>
-                                                                <td>Rohan Arora</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016522</td>
-                                                                <td>Shruthakeerthi S</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016523</td>
-                                                                <td>SAI DHEERAJ NADELLA</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016524</td>
-                                                                <td>Sanjaydeep.S</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016525</td>
-                                                                <td>Sathyam Panda</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016526</td>
-                                                                <td>Tatineni Mounika</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016527</td>
-                                                                <td>TOMIN SEBASTIAN</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016528</td>
-                                                                <td>VELUVARTHI VSUNDARA KRISHNAMOHAN</td>
-                                                                <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                <td>MT2016529</td>
-                                                                <td>K Deepika Raj</td>
-                                                                <td></td>
-                                                                </tr>
+<tr><td  style="color:white">Sl No</td><td  style="color:white">Name</td><td style="color:white">Email</td><td style="color:white">Experience (Months)</td></tr>
 
-											                </tbody>
-											                </table>
+
+  <tr><td>1</td><td>Abhijeet Shome </td><td>System-On-Chip</td><td>TCS (11)</td></tr>
+ <tr><td>2</td><td>Aman Paturwar</td><td>System-On-Chip</td><td>Accenture (18)</td></tr>
+ <tr><td>3</td><td>Avik Kumar Sen</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>4</td><td>Ayush Nair</td><td>Embedded Systems</td><td>&nbsp;</td></tr>
+ <tr><td>5</td><td>Ajinkya Bhavalkar</td><td>Embedded Systems</td><td>&nbsp;</td></tr>
+ <tr><td>6</td><td>Bony M George</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>7</td><td>Manojkiran Eda</td><td>Embedded Systems</td><td>&nbsp;</td></tr>
+ <tr><td>8</td><td>Edara Naga Srinivasa Rao</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>9</td><td>G.Ramesh Reddy</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>10</td><td>Arjun Iyer</td><td>System-On-Chip</td><td>Larsen & Toubro, Ltd., Mumbai (37)</td></tr>
+ <tr><td>11</td><td>Karimi Nabil M</td><td>Embedded Systems</td><td>&nbsp;</td></tr>
+ <tr><td>12</td><td>Kinjal Kundu</td><td>System-On-Chip</td><td>Infosys (12)</td></tr>
+ <tr><td>13</td><td>Naresh Lekkala</td><td>System-On-Chip</td><td>Unisys Global Services India Pvt Ltd (26)</td></tr>
+ <tr><td>14</td><td>Nitish Jindal</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>15</td><td>Prasoon Dhaneshwar</td><td>Embedded Systems</td><td>&nbsp;</td></tr>
+ <tr><td>16</td><td>Rakesh Mahapatra</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>17</td><td>Sachin I K</td><td>Embedded Systems</td><td>&nbsp;</td></tr>
+ <tr><td>18</td><td>Savaliya Chirag Ashokbhai</td><td>Embedded Systems</td><td>&nbsp;</td></tr>
+ <tr><td>19</td><td>Shivam Singh</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>20</td><td>Shivam Singh</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>21</td><td>Sundar S</td><td>System-On-Chip</td><td>Soliton Technologies (54)</td></tr>
+ <tr><td>22</td><td>Veeraraj M B</td><td>System-On-Chip</td><td>Samsung (47)</td></tr>
+
+
+</table>
 											            </div>
-											    </div>
-											    
+									        		</div>
+												</li>
 
-											    <div id="menu4" class="tab-pane fade">
-											      
-											    	
-													<article>
-                                                        <h3>Computational Sciences Lab</h3>
-                                                    <span class="image featured"><img src="images/csl.jpg" alt="" /></span>
+												<li>
+													<input type="radio" name="tabs" id="tab1"  />
+										        	<label for="tab1">Labs</label>
+										        	<div id="tab-content1" class="tab-content" style="height:780px" >
+										        	<article>
+										        		<h3>Center for Electronics and Embedded Systems</h3>
+													<span class="image featured"><img src="images/ceems.jpg" alt="" /></span>
 
-                                                    
-                                                    <p>The Computational Sciences Lab at IIIT-B is interested broadly in the areas of Algorithms, Optimization, and Robotics.<br>Major focus areas include:
+
+													<p>Focus on Embedded Computing, Wireless Communication and Computer vision. Facilities available in the lab enables world class research and education Collaborates with public and private organizations to do research and development in the emerging areas of embedded systems to bridge the gap between academia output and industry requirements.
+														<!--<br> <br><br> <br> <br><br><br> <br><br>--></p>
+												</article>
+												<article>
+													<h3>High Density Electronics System Lab</h3>
+													<span class="image featured"><img src="images/hides.jpg" alt="" /></span>
+
+
+													<p>Includes projects derived from various Boards and Controllers including Raspberry Pi, Arduino, Intel Galileo, Edison and Kalam Board. Has a very huge range of components and sensors which can bed used to make innovative and useful projects, including I-Robot. Graduate students use this lab to perform research experiments using ABB commercial robot. HFSS, commercial electromagnetic software to design high frequency antenna is also available in the lab.</p>
+												</article>
+
+												<article>
+													<h3>Computational Sciences Lab</h3>
+													<span class="image featured"><img src="images/csl.jpg" alt="" /></span>
+
+
+													<!--<p>Includes projects derived from various Boards and Controllers including Raspberry Pi, Arduino, Intel Galileo, Edison and Kalam Board. Has a very huge range of components and sensors which can bed used to make innovative and useful projects, including I-Robot. Graduate students use this lab to perform research experiments using ABB commercial robot. HFSS, commercial electromagnetic software to design high frequency antenna is also available in the lab.</p>-->
+
+
+
+													<p>The Computational Sciences Lab at IIIT-B is interested broadly in the areas of Algorithms, Optimization, and Robotics.<br><br>Major focus areas include:
                                                         <ul class="fa-ul">
-                                                            <li >
-                                                                <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Robust optimization under uncertainty, with applications to supply chains, real time search, banking, smart grid, transportation, gaming and allied areas
-                                                            </li>
-                                                            <li >
-                                                                <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true" style="margin-bottom=20px;"></i>Approximation algorims, machine learning, cryptography and linguistics, Visualization (scientific and information), high performance computing, computational geometry and topology 
 
-                                                            </li>
-
-                                                            <li >
+                                                        	<li >
                                                                 <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true" style="margin-bottom=20px;"></i>Electronic Design Automation including Statistical timing analysis and Optimization for Digital circuits, Power Analysis and Optimization, Formal Verification, Semiconductor manufacturing, Statistical Optimization, Combinatorial Optimization, Design and Analysis of Alogrithms
 
                                                             </li>
 
-                                                            
+                                                            <li >
+                                                                <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Robust optimization under uncertainty, with applications to supply chains, real time search, banking, smart grid, transportation, gaming and allied areas
+                                                            </li>
+                                                            <br>
+                                                            <li >
+                                                                <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true" style="margin-bottom=20px;"></i>Approximation algorims, machine learning, cryptography and linguistics, Visualization (scientific and information), high performance computing, computational geometry and topology
+
+                                                            </li>  <br>
+
                                                         </ul>
-                                                        </p>
-                                                </article>
-                                                <article>													
-										        	<article>
-											        	<h3>HiDes Lab</h3>
-														<span class="image featured"><img src="images/hides.jpg" alt="" /></span>
-														<p>The High Density Electronic Systems Lab at IIIT-B focuses on research and development in the area of high density and low dimensional electronics. The areas of research include 3D electronics, magnetic logic devices, interconnects, and antennas.</p>
-													</article>
-													<article>
-													<h3>CEEMS Lab</h3>
-														<span class="image featured"><img src="images/ceems.jpg" alt="" /></span>
-														<p>The Center for Electronics and Embedded Systems (CEEMS) Lab's objective is to nurture talent by focusing on Embedded Computing, Wireless Communication and Computer Vision. CEEMS Lab collaborates with public and private organizations with the aim of bridging the gap between academic output and industry requirements, thus providing every learner an equal opportunity to become industry ready.</p>
-													</article> 
 
-													<article>
-											        	<h3>Multi Modal Perception Lab</h3>
-														<!-- <span class="image featured"><img src="images/pic08.jpg" alt="" /></span> -->
-														<p>The Multimodal Perception lab focuses on human-centered sensing
-															and multimodal signal processing methods to observe, measure, and model human behavior. These methods are used in applications that facilitate behavioral training, and social media analysis; and enable human-robot interactions (HRI). The focus is mainly on vision and audio modalities. Probabilistic graphical models from the backbone of the
-															underlying formalism.</p>
-													</article>
-                                                </article>
-											    </div>
-											</div>
+
+
+												</article>
+
+
+												<!-- <article>
+													<h3>SNIA - IIIT-B Lab</h3>
+													<span class="image featured"><img src="images/pic08.jpg" alt="" /></span>
+
+
+													<p>The institute in collaboration with the Storage Network Industry Association host the SNIA IIIT-B Lab, an inter-industry centre  for training, education network and research in all aspect of storage technology. The centre functions as a model centre in this
+													area for academics and industry in India and South Asia in general</p>
+												</article>  -->
+										        	</div>
+												</li>
+																						</ul>
+
+
+
+
 										</div>
-									</article>
-
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 
-			<!-- Footer Wrapper -->
-				<!-- <div id="footer-wrapper">
-					<footer id="footer" class="container">
-						<div class="row">
-							<div class="3u 12u(mobile)">
 
-								
-									<section>
-										<h2>Filler Links</h2>
-										<ul class="divided">
-											<li><a href="#">Quam turpis feugiat dolor</a></li>
-											<li><a href="#">Amet ornare in hendrerit </a></li>
-											<li><a href="#">Semper mod quisturpis nisi</a></li>
-											<li><a href="#">Consequat etiam phasellus</a></li>
-											<li><a href="#">Amet turpis, feugiat et</a></li>
-											<li><a href="#">Ornare hendrerit lectus</a></li>
-											<li><a href="#">Semper mod quis et dolore</a></li>
-											<li><a href="#">Amet ornare in hendrerit</a></li>
-											<li><a href="#">Consequat lorem phasellus</a></li>
-											<li><a href="#">Amet turpis, feugiat amet</a></li>
-											<li><a href="#">Semper mod quisturpis</a></li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="3u 12u(mobile)">
-
-								
-									<section>
-										<h2>More Filler</h2>
-										<ul class="divided">
-											<li><a href="#">Quam turpis feugiat dolor</a></li>
-											<li><a href="#">Amet ornare in in lectus</a></li>
-											<li><a href="#">Semper mod sed tempus nisi</a></li>
-											<li><a href="#">Consequat etiam phasellus</a></li>
-										</ul>
-									</section>
-
-								
-									<section>
-										<h2>Even More Filler</h2>
-										<ul class="divided">
-											<li><a href="#">Quam turpis feugiat dolor</a></li>
-											<li><a href="#">Amet ornare hendrerit lectus</a></li>
-											<li><a href="#">Semper quisturpis nisi</a></li>
-											<li><a href="#">Consequat lorem phasellus</a></li>
-										</ul>
-									</section>
-
-							</div>
-							<div class="6u 12u(mobile)">
-
-								
-									<section>
-										<h2><strong>ZeroFour</strong> by HTML5 UP</h2>
-										<p>Hi! This is <strong>ZeroFour</strong>, a free, fully responsive HTML5 site
-										template by <a href="http://n33.co/">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a>.
-										It's <a href="http://html5up.net/license/">Creative Commons Attribution</a>
-										licensed so use it for any personal or commercial project (just credit us
-										for the design!).</p>
-										<a href="#" class="button alt icon fa-arrow-circle-right">Learn More</a>
-									</section>
-
-								
-									<section>
-										<h2>Get in touch</h2>
-										<div>
-											<div class="row">
-												<div class="6u 12u(mobile)">
-													<dl class="contact">
-														<dt>Twitter</dt>
-														<dd><a href="#">@untitled-corp</a></dd>
-														<dt>Facebook</dt>
-														<dd><a href="#">facebook.com/untitled</a></dd>
-														<dt>WWW</dt>
-														<dd><a href="#">untitled.tld</a></dd>
-														<dt>Email</dt>
-														<dd><a href="#">user@untitled.tld</a></dd>
-													</dl>
-												</div>
-												<div class="6u 12u(mobile)">
-													<dl class="contact">
-														<dt>Address</dt>
-														<dd>
-															1234 Fictional Rd<br />
-															Nashville, TN 00000-0000<br />
-															USA
-														</dd>
-														<dt>Phone</dt>
-														<dd>(000) 000-0000</dd>
-													</dl>
-												</div>
-											</div>
-										</div>
-									</section>
-
-							</div>
-						</div>
-						<div class="row">
-							<div class="12u">
-								<div id="copyright">
-									<ul class="menu">
-										<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</footer>
-				</div> -->
 
 		</div>
 
 		<!-- Scripts -->
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/skel-viewport.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.dropotron.min.js"></script>
+			<script src="js/skel.min.js"></script>
+			<script src="js/skel-viewport.min.js"></script>
+			<script src="js/util.js"></script>
+			<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+			<script src="js/main.js"></script>
 
 	</body>
+
+<!-- Mirrored from placement.iiitb.ac.in/mtechESD.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Apr 2017 13:35:51 GMT -->
+</html><!DOCTYPE HTML>
+<!--
+	ZeroFour by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<!-- Mirrored from placement.iiitb.ac.in/mtechESD.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Apr 2017 13:35:51 GMT -->
+<head>
+		<script src="../ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<title>MTech In ESD</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/tabs.css" />
+		<link rel="stylesheet" href="css/popupm.css" />
+		<link rel="stylesheet" href="css/popup.css" />
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<style type="text/css">
+			p {
+			    font-family: 'Roboto', sans-serif;
+			    font-size: 1em;
+			    margin-bottom: 20px;
+			}
+			li{
+				margin-bottom: 20px;
+			}
+
+			/*
+			this part for tab within tab*/
+
+			an{
+			  display:block;
+			  float:left;
+			  height: 65px;
+			  width:50%;
+			  /*background:#d4eaf9;*/
+			  border-style:groove;
+			  border-width:thin;
+			  text-decoration:bold;
+			  font-weight:600;
+			  font-size: 1.02em;
+			  text-align:center;
+			  padding:10px 0;
+			  color:#3498db;
+
+
+			}
+                        an:hover{
+                                background: rgba(255, 205, 40, 0.36);
+                        }
+/*
+			an[data-filter="cs"]:focus ~ div:not([data-filter="cs"]){
+				  display: none;
+			}
+
+			an[data-filter="ds"]:focus ~ div:not([data-filter="ds"]){
+			  display: none;
+			 }
+
+			an[data-filter="nc"]:focus ~ div:not([data-filter="nc"]){
+			  	display: none;
+			 }
+
+			an[data-filter="se"]:focus ~  div:not([data-filter="se"]){
+			  display: none;
+			}
+*/
+			/*tab within tab ends*/
+
+		</style>
+	<script>
+
+
+		$(document).ready(function(){
+
+
+
+//script for the tabs within project tab
+			$('#projSCData').hide();
+			$('#projESData').show();
+		    $("#projESTab").click(function(){
+		        $('#projSCData').hide();
+		        $('#projESData').show();
+		    });
+			$('#projSCTab').click(function() {
+		        $('#projSCData').show();
+		        $('#projESData').hide();
+			});
+
+			//end of script for project tab
+
+			$('#courSCData').hide();
+	        $('#courESData').show();
+
+			$("#courESTab").click(function(){
+		        $('#courSCData').hide();
+	        	$('#courESData').show();
+		    });
+			$('#courSCTab').click(function() {
+		        $('#courESData').hide();
+		        $('#courSCData').show();
+			});
+
+			//end of script for courses tab
+		});
+
+
+
+
+
+		/*
+		*/
+
+	</script>
+
+
+	</head>
+	<body class="left-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header Wrapper -->
+				<div id="header-wrapper">
+					<div class="container">
+
+						<!-- Header -->
+							<header id="header">
+								<div class="inner">
+
+									<!-- Logo -->
+										<h1><a href="index-2.html" id="logo"></a></h1>
+
+									<!-- Nav -->
+										<nav id="nav">
+											<ul>
+												<li><a href="index.html">Home</a></li>
+												<li class="current_page_item">
+													<a href="test_mtechIT.html">M.Tech-IT</a>
+													<!--<ul>
+														<li>
+															<li><a href="comp_sci.html">Computer Science</a></li>
+															<li><a href="data_sci.html">Data Sciences</a></li>
+															<li><a href="net_com.html">Networking & Communication</a></li>
+															<li><a href="soft_eng.html">Software Engineering</a></li>
+														</li>
+													</ul>-->
+												</li>
+												<li>
+													<a href="test_mtechESD.html">M.Tech-ESD</a>
+													<!--<ul>
+														<li>
+															<li><a href="soc.html">SOC</a></li>
+															<li><a href="embedded.html">Embedded Systems</a></li>
+														</li>
+													</ul>-->
+												</li>
+												<li><a href="test.html">Integrated M.Tech</a></li>
+												<li><a href="test_msDIGSOC.html">MSc in Digital Society</a></li>
+												<li><a href="test_msRSRCH.html">MS by Research</a></li>
+											</ul>
+										</nav>
+
+								</div>
+							</header>
+
+					</div>
+				</div>
+
+			<!-- Main Wrapper -->
+				<div id="main-wrapper">
+					<div class="wrapper style2">
+						<div class="inner">
+							<div class="container">
+								<div class="row">
+									<div class="4u 12u(mobile)">
+										<div id="sidebar">
+
+											<!-- Sidebar -->
+
+												<section>
+													<header class="major">
+														<h2>M.Tech in Electronic Systems Design</h2>
+													</header>
+													<p style="font-weight:300;">
+													The M.Tech degree in Electronic Systems Design (ESD) is intended to help address the growth of the highly skilled manpower in Chip Design and Embedded System Design needed to support electronics system design and manufacturing (ESDM) in our country. <br> The course, in alignment with the national and state  policies attempts to foster growth and entrepreneurship in ESDM as outlined by the Department of Electronics and Information Technology (DIETY) of the Government of India, and the Government of Karnataka, respectively.  <br><br>
+													The 2-year degree program allows students to specialize in two possible areas:<br><br>
+													<ul class="fa-ul">
+														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>Embedded System Design</p></li>
+														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><p>System on Chip (SoC) Design</p></li>
+														<br><br>
+													</ul>
+
+
+													</p>
+												</section>
+
+										</div>
+									</div>
+									<div class="8u 12u(mobile) important(mobile)">
+										<div id="content">
+											<ul class="tabs">
+
+												<li>
+													<input type="radio" name="tabs" id="tab0" checked/>
+									        		<label for="tab0">Courses</label>
+									        		<div id="tab-content0" class="tab-content" style="height:700px" align="justify">
+
+									        		 <!--<an  data-filter="cs" tabindex="-1">Computer Science</an>-->
+													 <!--<an  data-filter="ds" tabindex="-1">Data Science</an>-->
+													 <an  id="courESTab">Embedded System Design</an>
+													 <an  id="courSCTab">System on Chip (SoC) Design</an>
+
+													 <!--<an  data-filter="se" tabindex="-1">Software Engineering</an>
+													 <an  data-filter="nc" tabindex="-1">Networking and Communication.</an>-->
+													 <br>
+													 <br>
+													 <br>
+									        		<div id="courESData" tabindex='1'>
+									        		<!--<div data-filter="cs">-->
+									        		<p>
+									        		<b><h2 style="text-align: center;%;">Embedded Systems</h2>
+									        		</b>
+									        		This stream integrates academic study and the realization of embedded systems with emphasis on building real-world embedded solutions thereby satisfying both the current and the future demands of industries internationally.
+									        		<br><br>
+													The sub-major includes a variety of subjects including the following: <br><br>
+									        		<ul class="fa-ul">
+									        			<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Internet of Things&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+										        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Real Time Operating Systems&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+
+									        			<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Device Drivers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+										        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>ARM Architecture&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+										        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Inter-Device Communication&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+										        		</li>
+										        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Embedded Digital Signal Processing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+										        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematical Models of Computation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+										        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Automotive Embedded Systems&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+										        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Machine Perception&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+										        	</ul>
+
+
+									        			</p>
+									        </div>
+									        		<div id="courSCData">
+									        		<!--<div data-filter="ds">-->
+
+									        			<p>
+									        			<b><h2 style="text-align: center;%;">System On Chip</h2></b>
+									        			This program covers Analog and Digital VLSI Circuit Design and Verification aspects which are applied on real time challenges faced by VLSI Industry.
+									        		<br><br>
+													This stream offers a variety of subjects including: <br><br>
+									        		<ul class="fa-ul">
+									        			<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Advanced Analog Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+										        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Design of VLSI Subsystem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+
+									        			<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mixed signal Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+										        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Circuit Simulation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+										        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Deep Submicron Design Issues&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+										        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Functional Verification of SOC’s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+										        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Testing And Design For Testability&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										        		</li>
+
+										        	</ul>
+									        			</p>
+</div>
+																									</li>
+
+												<li>
+													<input type="radio" name="tabs" id="tab2"/>
+									        		<label for="tab2">Projects</label>
+									        		<div id="tab-content2" class="tab-content" style="height:700px" align="justify">
+
+									        		 <!--<an  data-filter="cs" tabindex="-1">Computer Science</an>-->
+													 <!--<an  data-filter="ds" tabindex="-1">Data Science</an>-->
+													 <an  id="projESTab">Embedded System Design</an>
+													 <an  id="projSCTab">System on Chip (SoC) Design</an>
+													 <!--<an  data-filter="se" tabindex="-1">Software Engineering</an>
+													 <an  data-filter="nc" tabindex="-1">Networking and Communication.</an>-->
+													 <br>
+													 <br>
+													 <br>
+									        		<div id="projESData" tabindex='1'>
+									        		<!--<div data-filter="cs">-->
+									        		<p>	<b><h2 style="text-align: center;%;">Embedded System Design</h2>
+									        		</b><ul class="fa-ul">
+									        			<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>EDF(Earlier Deadline First) Scheduler implementation for FreeRTOS.</b><br>
+										        				 A dynamic scheduler implemented for FreeRTOS to run on embedded microcontrollers, facilitates hard deadline real time execution for time critical application.<br>
+										        				<b>Tools used:&nbsp;&nbsp;</b>FreeRTOS software.
+										        			</li>
+
+														<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Remote Water Flow Controller and Calculator</b><br>
+										        				A full fledged system (Industrially ready product) where user can give input through an App regarding the amount of Litres he wants and the Time at which the water has to be supplied. The system will take the input and accordingly ON the motor at appropriate time. Alongwith controlling the flow of water, system also monitors how much litres of water has flown and at what rate the water has flown, which can be monitored through a website or App.<br>
+										        				<b>Tools used:&nbsp;&nbsp;</b>Arduino, Raspberry Pi, Water Sensor, Android Studio.
+										        			</li>
+
+														<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b> Building an Ad-hoc network using Raspberry Pi with Raspbian and OpenWrt.</b><br>
+										        				Communication between 2 Raspberry Pis using wireless ad-hoc network (such as file transfer and real time video streaming).<br>
+										        				<b>Tools used:&nbsp;&nbsp;</b>Raspberry Pi, OpenWrt OS and Raspbian OS.
+										        			</li>
+
+														<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b> Action Detection using Hidden Markov Model.</b><br>
+										        				Detection of Human Actions using feature based bottom-up approach using low level features with HMM. Cricket strokes were taken as actions and an accuracy of 90% to 100% was achieved for training by 20 and 24 training examples respectively.<br>
+										        				<b>Tools used:&nbsp;&nbsp;</b>Image Processing and Machine Learning, OpenCV, C++.
+										        			</li>
+
+														<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Volume Estimation of an Object in the Scene Using Intel RealSense.</b><br>
+										        				 The project goal is to approximately find the volume of any object which is present in the scene using the intel real sense depth camera.<br>
+										        				<b>Tools used:&nbsp;&nbsp;</b>Intel RealSense SDK,OpenCV
+										        			</li>
+
+														<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Quadcopter controller using gyroscope and arduino uno.</b><br>
+										        				A control unit of quadcopter to receive wireless signals and to control motor speed and flight. Gyroscope is used to balance the quadcopter using PID feedback control system.<br>
+										        				<b>Tools used:&nbsp;&nbsp;</b>Arduino, Quadcopter chassis, accelerometer, gyroscope.
+										        			</li>
+
+										        			<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Image Processing Based Smart Board</b><br>
+										        				In this Application user can write on a white board with normal marker pen. Using a camera and manipulation of the images obtained from it, along with the image processing and other machine learning algorithms, the written text is extracted and then added to the PPT in real time which can be used to project on different screens simultaneously or can be saved for future reference. Only Webcam is required for this.<br>
+										        				<b>Tools used:&nbsp;&nbsp;</b>Python & Opencv
+										        			</li>
+										        			<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>IoT solution for LPG leakage detection</b><br>
+										        				One of the major security threat in the home is from LPG leakage. Under the concept of SmartHome,a smart and intelligent system is built which not only notifies hazardous level of LPG leakage to the mobile app but also takes care of home from LPG leakage by taking corrective actions. A web version of the application is also developed so that user will be able to see what is happening at home irrespective of the platform.<br>
+										        				<b>Tools used:&nbsp;&nbsp;</b>Raspberry Pi, Arduino. Android Studio, Google Cloud Messaging, REST Services in JAVA, D3.js for web data visualization
+										        			</li>
+									        			</ul>
+									        			</p>
+									        </div>
+									        		<div id="projSCData">
+									        		<!--<div data-filter="ds">-->
+
+									        			<p>
+									        			<b><h2 style="text-align: center;%;">System on Chip (SoC) Design</h2></b>
+									        		<ul class="fa-ul">
+
+									        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>SAR ADC</b><br>
+										        				This project involves the Design of Low Power 10 bit Charge Redistribution based SAR ADC consuming less than 10uW at 1MS/s with SNR > 55dB, THD<-60dB, INL and DNL<0.5, SNDR>50dB and ENOB(approximately)=8.5 bit. The design and layout is done using Cadence Virtuoso Suite.<br>
+										        														        			</li>
+	<li>
+                                                                                                                        <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Design of a new SPI interface based on OCP protocol and its integration into a RISC processor</b><br>
+                                                                                                                         This project involves the design of a serial peripheral interface (SPI) to a RISC processor to enable its communication with external devices. The design of the SPI is done in Verilog and validated by synthesizing both the SPI and the RISC processor in Xilinx FPGA. Finally, it has been taken up for a full custom implementation in the Cadence Full Custom flow.<br>
+
+                                                                                                                </li>
+
+
+									        				<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Design and Analysis of StrongARM and Thomas-Cho Latched Comparators</b><br>
+										        				In this project, the design and analysis of two latched comparators namely Strong ARM and Thomas-Cho (also known as Lewis Grey comparator) has been done. It includes the design for different sizes of CMOS and analysis for the parameters like speed and offset. Estimation of offset is obtained by using Monte Carlo Simulation. The design and layout is done using Cadence Virtuoso Suite.<br>
+
+										        			</li>
+										        			<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Command Application Logic for DDR3 controller</b><br>
+										        				 This project involves implementation & verification of command application logic in Xilinx FPGA using Verilog & is based on reference design from Lattice Semiconductors.<br> <b> Tools used: </b> Xilinx ISE Design Suite 13.1 and Xilinx Spartan 6 FPGA board<br>
+
+										        			</li>
+										        			<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>High-gain 3-stage Audio Amplifier Design</b><br>
+										        				 In this project a  3-stage audio amplifier with a dc Gain of 52.8k & Phase Margin of 89.12° was designed in 180nm technology using dual complex pole-zero cancellation(DCPC) technique. The entire design & layout was carried out using Cadence Virtuoso suite. The parasitic extraction was completed using Assura.<br>
+
+										        			</li>
+										        			<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Band Gap Reference Voltage</b><br>
+										        				 This project designs the Band gap Reference circuit, which is more immune to variation in temperature and supply voltage. The Range of temperature over which the circuit acts as a reference generator is -60 to 100 Celsius. The design and layout is done using Cadence Virtuoso Suite.<br>
+
+										        			</li>
+<li>
+                                                                                                                        <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>SDNA sequence alignment using Smith-Waterman Algorithm</b><br>
+                                                                                                                        Computing alignment index between two genetic sequence is a computationally intensive process in DNA sequencing. Smith  Waterman algorithm, a dynamic programming methodology, is commonly employed to determine the alignment score matrix. In this project the design and implementation of Smith Waterman based score generation matrix on Xilinx FPGA platform has been done. The design has fastened the score matrix generation compared to the conventional CPU based approaches.<br>
+
+                                                                                       </li>
+
+
+										        	<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>UART (Universal Asynchronous Receiver and Transmitter)</b><br>
+										        				 This project involves implementation & verification of UART in Xilinx FPGA using Verilog. UART consists of transmitter and Receiver units. Transmitter transmits the data serially after converting the parallel data to serial data and Receiver receives serially and converts the serial data into parallel data.<br> <b> Tools used: </b> Xilinx ISE Design Suite 13.1 and Two Xilinx Spartan 6 FPGA boards for using as Tx and Rx units.<br>
+
+										        			</li>
+										        			</li><li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>All Digital Phase Locked Loops</b><br>
+										        				 The All Digital PLLs are independent of process variations and can be easily ported to different technologies. The design and verification of All Digital Phase Locked Loop (ADPLL) using a Direct Digital Frequency Synthesizer (DDFS) and an All Digital Phase Frequency Detector (ADPFD) with a faster lock-in time using digital components has been done,so as to make the design scalable and portable.<br>
+																<b>Tools used: </b>  Xilinx ISE 14.7,ISIM Simulator, VIS 2.4(Language used-Verilog)<br>
+
+										        			</li>
+										        			<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Design of Switching Capacitor Amplifier with Gain 2</b><br>
+										        				  This project involves designing of a low-voltage gain-of-2 SC amplifier with low output offset error and wide input/output range for a 1-bit/stage 12 bit 10 MHz pipelined stage application. The total thermal noise SNR should be > 70 dB. The design and layout is done using Cadence Virtuoso Suite.<br>
+
+										        			</li>
+
+										        			<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Clock Tree Synthesis and Clock Skew Estimation</b><br>
+										        				The operation of most digital circuit systems, such as computer systems, is synchronized by a periodic signal known as a "clock" that dictates the sequence and pacing of the devices on the circuit. This clock is generally distributed from a single source to all the memory elements of the circuit, which are also called registers or flip-flops. The maximum speed at which a system can run must account for the variance that occurs between the various elements of a circuit due to differences in physical composition, temperature, and path length.<br>Clock skew results from the unequal propagation delay of clock paths from the source of the clock tree to the various sink nodes at the latch points and directly impacts the performance of a design.With rapidly increasing clock frequencies, the allowable clock skew is increasingly constrained, making clock skew a critical concern for high-performance processors. Clock skew can be introduced either at design time, during fabrication of the design, or during its operation."<br>
+										        				<b>Tools used:&nbsp;&nbsp;</b>Cadence - Designing; Monte Carlo Simulation - Tool inbulit in Cadence
+										        			</li>
+
+									        			</ul>
+									        			</p>
+</div>
+
+
+										        			</p>
+									        		</div>
+												</li>
+<li>
+													<input type="radio" name="tabs" id="tab4" />
+									        		<label for="tab4">Student Profiles</label>
+									        		<!--<div id="tab-content2" class="tab-content" style="height:780px">-->
+									        		<div id="tab-content2" class="tab-content" style="height:700px">
+									        			<div class="profiles"  >
+											                <table >
+<tr><td  style="color:white">Sl No</td><td  style="color:white">Name</td><td style="color:white">Email</td><td style="color:white">Experience (Months)</td></tr>
+
+
+  <tr><td>1</td><td>Abhijeet Shome </td><td>System-On-Chip</td><td>TCS (11)</td></tr>
+ <tr><td>2</td><td>Aman Paturwar</td><td>System-On-Chip</td><td>Accenture (18)</td></tr>
+ <tr><td>3</td><td>Avik Kumar Sen</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>4</td><td>Ayush Nair</td><td>Embedded Systems</td><td>&nbsp;</td></tr>
+ <tr><td>5</td><td>Ajinkya Bhavalkar</td><td>Embedded Systems</td><td>&nbsp;</td></tr>
+ <tr><td>6</td><td>Bony M George</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>7</td><td>Manojkiran Eda</td><td>Embedded Systems</td><td>&nbsp;</td></tr>
+ <tr><td>8</td><td>Edara Naga Srinivasa Rao</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>9</td><td>G.Ramesh Reddy</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>10</td><td>Arjun Iyer</td><td>System-On-Chip</td><td>Larsen & Toubro, Ltd., Mumbai (37)</td></tr>
+ <tr><td>11</td><td>Karimi Nabil M</td><td>Embedded Systems</td><td>&nbsp;</td></tr>
+ <tr><td>12</td><td>Kinjal Kundu</td><td>System-On-Chip</td><td>Infosys (12)</td></tr>
+ <tr><td>13</td><td>Naresh Lekkala</td><td>System-On-Chip</td><td>Unisys Global Services India Pvt Ltd (26)</td></tr>
+ <tr><td>14</td><td>Nitish Jindal</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>15</td><td>Prasoon Dhaneshwar</td><td>Embedded Systems</td><td>&nbsp;</td></tr>
+ <tr><td>16</td><td>Rakesh Mahapatra</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>17</td><td>Sachin I K</td><td>Embedded Systems</td><td>&nbsp;</td></tr>
+ <tr><td>18</td><td>Savaliya Chirag Ashokbhai</td><td>Embedded Systems</td><td>&nbsp;</td></tr>
+ <tr><td>19</td><td>Shivam Singh</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>20</td><td>Shivam Singh</td><td>System-On-Chip</td><td>&nbsp;</td></tr>
+ <tr><td>21</td><td>Sundar S</td><td>System-On-Chip</td><td>Soliton Technologies (54)</td></tr>
+ <tr><td>22</td><td>Veeraraj M B</td><td>System-On-Chip</td><td>Samsung (47)</td></tr>
+
+
+</table>
+											            </div>
+									        		</div>
+												</li>
+
+												<li>
+													<input type="radio" name="tabs" id="tab1"  />
+										        	<label for="tab1">Labs</label>
+										        	<div id="tab-content1" class="tab-content" style="height:780px" >
+										        	<article>
+										        		<h3>Center for Electronics and Embedded Systems</h3>
+													<span class="image featured"><img src="images/ceems.jpg" alt="" /></span>
+
+
+													<p>Focus on Embedded Computing, Wireless Communication and Computer vision. Facilities available in the lab enables world class research and education Collaborates with public and private organizations to do research and development in the emerging areas of embedded systems to bridge the gap between academia output and industry requirements.
+														<!--<br> <br><br> <br> <br><br><br> <br><br>--></p>
+												</article>
+												<article>
+													<h3>High Density Electronics System Lab</h3>
+													<span class="image featured"><img src="images/hides.jpg" alt="" /></span>
+
+
+													<p>Includes projects derived from various Boards and Controllers including Raspberry Pi, Arduino, Intel Galileo, Edison and Kalam Board. Has a very huge range of components and sensors which can bed used to make innovative and useful projects, including I-Robot. Graduate students use this lab to perform research experiments using ABB commercial robot. HFSS, commercial electromagnetic software to design high frequency antenna is also available in the lab.</p>
+												</article>
+
+												<article>
+													<h3>Computational Sciences Lab</h3>
+													<span class="image featured"><img src="images/csl.jpg" alt="" /></span>
+
+
+													<!--<p>Includes projects derived from various Boards and Controllers including Raspberry Pi, Arduino, Intel Galileo, Edison and Kalam Board. Has a very huge range of components and sensors which can bed used to make innovative and useful projects, including I-Robot. Graduate students use this lab to perform research experiments using ABB commercial robot. HFSS, commercial electromagnetic software to design high frequency antenna is also available in the lab.</p>-->
+
+
+
+													<p>The Computational Sciences Lab at IIIT-B is interested broadly in the areas of Algorithms, Optimization, and Robotics.<br><br>Major focus areas include:
+                                                        <ul class="fa-ul">
+
+                                                        	<li >
+                                                                <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true" style="margin-bottom=20px;"></i>Electronic Design Automation including Statistical timing analysis and Optimization for Digital circuits, Power Analysis and Optimization, Formal Verification, Semiconductor manufacturing, Statistical Optimization, Combinatorial Optimization, Design and Analysis of Alogrithms
+
+                                                            </li>
+
+                                                            <li >
+                                                                <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Robust optimization under uncertainty, with applications to supply chains, real time search, banking, smart grid, transportation, gaming and allied areas
+                                                            </li>
+                                                            <br>
+                                                            <li >
+                                                                <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true" style="margin-bottom=20px;"></i>Approximation algorims, machine learning, cryptography and linguistics, Visualization (scientific and information), high performance computing, computational geometry and topology
+
+                                                            </li>  <br>
+
+                                                        </ul>
+
+
+
+												</article>
+
+
+												<!-- <article>
+													<h3>SNIA - IIIT-B Lab</h3>
+													<span class="image featured"><img src="images/pic08.jpg" alt="" /></span>
+
+
+													<p>The institute in collaboration with the Storage Network Industry Association host the SNIA IIIT-B Lab, an inter-industry centre  for training, education network and research in all aspect of storage technology. The centre functions as a model centre in this
+													area for academics and industry in India and South Asia in general</p>
+												</article>  -->
+										        	</div>
+												</li>
+																						</ul>
+
+
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+
+		</div>
+
+		<!-- Scripts -->
+
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.dropotron.min.js"></script>
+			<script src="js/skel.min.js"></script>
+			<script src="js/skel-viewport.min.js"></script>
+			<script src="js/util.js"></script>
+			<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+			<script src="js/main.js"></script>
+
+	</body>
+
+<!-- Mirrored from placement.iiitb.ac.in/mtechESD.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Apr 2017 13:35:51 GMT -->
 </html>
