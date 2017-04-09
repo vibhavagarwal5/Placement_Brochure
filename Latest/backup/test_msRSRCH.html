@@ -1,0 +1,633 @@
+<!DOCTYPE HTML>
+<!--
+	ZeroFour by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<title>MS By Research</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<link rel="stylesheet" href="assets/css/popup.css" />
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+	    <style>
+            #wrapper {
+              margin-right: 200px;
+              position: relative;
+              height: 400px;
+            }
+            #cont {
+              position: relative;
+              float: left;
+              width: 61%;
+              background-color: #FFF;
+
+            }
+            #side {
+            	position: relative;
+              float: right;
+              width: 300px;
+              margin-right: -149px;
+              background-color: #FFF;
+            }
+            #cleared {
+              clear: both;
+            }
+
+
+            table {
+				background: #f5f5f5;
+				border-collapse: separate;
+				box-shadow: inset 0 1px 0 #fff;
+				font-size: 12px;
+				line-height: 24px;
+				margin: 30px auto;
+				text-align: left;
+				width: 100%;
+				table-layout: fixed;
+				font-family: 'Roboto', sans-serif;
+			}	
+
+			th {
+				/*background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);*/
+				border-left: 1px solid #555;
+				border-right: 1px solid #777;
+				border-top: 1px solid #555;
+				border-bottom: 1px solid #333;
+				box-shadow: inset 0 1px 0 #999;
+				color: #fff;
+			  font-weight: bold;
+				padding: 10px 15px;
+				position: relative;
+				text-shadow: 0 1px 0 #000;	
+				background-color: rgba(59, 62, 69, 0.9);
+			}
+
+			th:after {
+				/*background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));*/
+				content: '';
+				display: block;
+				height: 25%;
+				left: 0;
+				margin: 1px 0 0 0;
+				position: absolute;
+				top: 25%;
+				width: 100%;
+				background-color: rgba(59, 62, 69, 0.9);
+			}
+
+			th:first-child {
+				border-left: 1px solid #777;	
+				box-shadow: inset 1px 1px 0 #999;
+			}
+
+			th:last-child {
+				box-shadow: inset -1px 1px 0 #999;
+			}
+
+			td {
+				border-right: 1px solid #fff;
+				border-left: 1px solid #e8e8e8;
+				border-top: 1px solid #fff;
+				border-bottom: 1px solid #e8e8e8;
+				padding: 10px 4px;
+				position: relative;
+				transition: all 300ms;
+				color: #444;
+				font-weight: 500;
+				text-shadow: 0 1px 0 #fff;
+				text-align: center;
+				/*font-size: 0.8em;*/
+				/*word-wrap:break-word;*/
+			}
+
+			td:first-child {
+				box-shadow: inset 1px 0 0 #fff;
+			}	
+
+			td:last-child {
+				border-right: 1px solid #e8e8e8;
+				box-shadow: inset -1px 0 0 #fff;
+			}	
+
+			tr {
+				/*background: url(http://jackrugile.com/images/misc/noise-diagonal.png);	*/
+			}
+
+			tr:nth-child(odd) td {
+				background: #f1f1f1 url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+			}
+
+			tr:last-of-type td {
+				box-shadow: inset 0 -1px 0 #fff; 
+			}
+
+			tr:last-of-type td:first-child {
+				box-shadow: inset 1px -1px 0 #fff;
+			}	
+
+			tr:last-of-type td:last-child {
+				box-shadow: inset -1px -1px 0 #fff;
+			}	
+
+			/*tbody:hover td {
+				color: transparent;
+				text-shadow: 0 0 3px #aaa;
+			}
+
+			tbody:hover tr:hover td {
+				color: #444;
+				text-shadow: 0 1px 0 #fff;
+			}*/
+        </style>
+
+
+
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	
+		<style>
+			an{
+	              display:block;
+	              float:left;
+	              height: 30px;
+	              width:50%;
+	              /*background:#d4eaf9;*/
+	              border-style:groove;
+	              border-width:thin;
+	              /*text-decoration:bold;*/
+	              /*font-weight:600;*/
+	              /*font-size: 1.02em;*/
+	              text-align:center;
+	              /*padding:10px 0;*/
+	              color:#3498db;	              
+	            }
+	            an:hover{
+	            	background: rgba(255, 205, 40, 0.36);
+	            }
+
+	            @media screen and (max-width:700px){
+
+            	an{
+	              display:block;
+	              float:left;
+	              height: 75px;
+	              width:50%;
+	              /*background:#d4eaf9;*/
+	              border-style:groove;
+	              border-width:thin;
+	              /*text-decoration:bold;*/
+	              /*font-weight:600;*/
+	              /*font-size: 1.02em;*/
+	              text-align:center;
+	              /*padding:10px 0;*/
+	              color:#3498db;	              
+	            }
+	            an:hover{
+	            	background: rgba(255, 205, 40, 0.36);
+	            }
+
+/*	            nav nav-tabs{
+	            	width:25%;
+
+
+	            }
+*/
+
+				.nav>li>a {
+				    position: relative;
+				    display: block;
+				    padding: 10px 14px;
+				    /*width:25%;*/
+				}
+
+				#wrapper {
+	              margin-right: 200px;
+	            }
+	            #cont {
+	              float: left;
+	              width: 61%;
+	              background-color: #FFF;
+	            }
+	            #side {
+	              float: left;
+	              width: 61%;
+	              background-color: #FFF;
+	            }
+	            #cleared {
+	              clear: both;
+	            }
+
+	            
+
+
+
+	        }
+		</style>
+
+		 <script>
+
+
+        $(document).ready(function(){
+
+
+
+//script for the tabs within project tab            
+            $('#projDSData').hide();
+            $('#projNCData').hide();
+            $('#projESData').hide();
+            $('#projCSData').show();
+
+            $("#projCSTab").click(function(){
+                $('#projDSData').hide();
+                $('#projNCData').hide();
+                $('#projESData').hide();
+                $('#projCSData').show();
+            });
+            $('#projDSTab').click(function() {              
+                $('#projNCData').hide();
+                $('#projESData').hide();
+                $('#projCSData').hide();
+                $('#projDSData').show();
+            });    
+            $('#projESTab').click(function() {
+                $('#projDSData').hide();
+                $('#projNCData').hide();                
+                $('#projCSData').hide();
+                $('#projESData').show();
+            });    
+            $('#projNCTab').click(function() {
+                $('#projDSData').hide();                
+                $('#projESData').hide();
+                $('#projCSData').hide();
+                $('#projNCData').show();
+            });
+
+            //end of script for project tab
+
+
+            $('#courDSData').hide();
+	        $('#courNCData').hide();
+	        $('#courSEData').hide();
+	        $('#courCSData').show();
+
+			$("#courCSTab").click(function(){
+		        $('#courDSData').hide();
+		        $('#courNCData').hide();
+		        $('#courSEData').hide();
+		        $('#courCSData').show();
+		    });
+			$('#courDSTab').click(function() {		  		
+		        $('#courNCData').hide();
+		        $('#courSEData').hide();
+		        $('#courCSData').hide();
+		        $('#courDSData').show();
+			});    
+			$('#courSETab').click(function() {
+		  		$('#courDSData').hide();
+		        $('#courNCData').hide();		        
+		        $('#courCSData').hide();
+		        $('#courSEData').show();
+			});    
+			$('#courNCTab').click(function() {
+		  		$('#courDSData').hide();		        
+		        $('#courSEData').hide();
+		        $('#courCSData').hide();
+		        $('#courNCData').show();
+			});   
+        });
+
+
+
+
+
+        /*
+        */
+
+    </script>
+
+
+
+
+	</head>
+	<body class="no-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header Wrapper -->
+				<div id="header-wrapper">
+					<div class="container">
+
+						<!-- Header -->
+							<header id="header">
+								<div class="inner">
+
+									<!-- Logo -->
+										<h1><a href="index.html" id="logo"></a></h1>
+
+									<!-- Nav -->
+										<nav id="nav">
+											<ul>
+													<li><a href="index.html">Home</a></li>
+													<li><a href="test_mtechIT.html">M.Tech - IT</a></li>
+													<li><a href="test_mtechESD.html">M.Tech - ESD</a></li>
+													<li><a href="test.html">Integrated M.Tech</a></li>
+													<li><a href="test_msDIGSOC.html">MSc in Digital Society</a></li>
+													<li><a href="test_msRSRCH.html">MS by Research</a></li>
+													<li><a href="contact.html">Contact Us</a></li>
+											</ul>
+										</nav>
+
+								</div>
+							</header>
+
+					</div>
+				</div>
+
+			<!-- Main Wrapper -->
+				<div id="main-wrapper">
+					<div class="wrapper style2">
+						<div class="inner">
+							<div class="container">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+											<div>
+												<header class="major">
+													<h2>Master of Science by Research/PhD</h2>
+													<p style="font-weight:300; font-size:1.0em;">
+														The M.S. by Research degree is intended for mature students who wish to learn and perform research in a supportive academic environment. It is awarded upon successful completion of a graduate-level research program, usually lasting four semesters. Beyond the satisfaction of a relatively small number of coursework requirements, the major focus of the program is on developing research skills,leading to the completion of a Master's thesis describing significant original results. <br><br>The Doctor of Philosophy is the terminal, research-oriented degree in the subject, intended to prepare students for research, teaching, and scholarly careers in academic settings or research laboratories. It connotes a superior comprehension of the field and a high aptitude for research, and is awarded upon completion of a program that takes from 3 to 5 years (there are no hard limits). Beyond the satisfaction of a relatively small number of coursework requirements, the major focus is on carrying out a significant body of original research and the writing and defense of a doctoral dissertation describing this work.
+														</p>
+												</header>
+											</div>
+
+
+											
+										<div style="padding-bottom:25px;">
+											<ul class="nav nav-tabs">
+											    <li class="active"><a data-toggle="tab" href="#courseTab">Research Areas</a></li>
+											    <li><a data-toggle="tab" href="#menu1">Projects</a></li>
+											    <li><a data-toggle="tab" href="#menu2">Students</a></li>											    
+											</ul>
+
+
+										</div>
+
+										<div class="tab-content" style="padding-bottom:25px;">
+										    <div id="courseTab" class="tab-pane fade in active">
+										      
+										      	 <!-- <an  href="#" id="courCSTab">Embedded Systems Design</an> 
+												 <an  href="#" id="courDSTab">System on Chip Design</an> -->
+												 <div><h2>Current Research Domains</h2></div>
+
+
+
+												 <div>
+													 <ul class="fa-ul">
+														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Computer Science</li>
+														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematics and Basic Sciences</li>
+														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Electronic Systems Design</li>
+														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Networking,Communication and Signal Processing</li>
+														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Data Information Technology and Society</li>
+														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Software Engineering</li>
+													</ul>
+												</div>																				
+										    </div> 
+										    <!-- <closes the course tab> -->
+
+
+										    <div id="menu1" class="tab-pane fade" >
+										    	<div><h2>Ongoing Projects</h2></div>
+                                              	<div id="projData">                                                  			
+                                              			<p> <ul class="fa-ul">
+                                                    <li style="margin-bottom:20px;">
+									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Communication Skill measurement</b><br>
+									        				Asynchronous Video Interviews vs Face-to-Face Interviews For Communication Skill Measurement: A Systematic Study – submitted to ICMI 2016
+									        			</li>
+								        				<li style="margin-bottom:20px;">
+									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Fluency Predictor</b><br>
+									        				Automatic Prediction of Fluency in Interface Based Video Interviews – submitted to ACM Multimedia 2016
+									        			</li>
+									        			<li style="margin-bottom:20px;">
+									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Optimization under uncertainty for Energy Management in Smart Grid</b><br>Modeling and optimization of energy management; optimal operation schedule of appliances, price and demand uncertainty, MILP and heuristic approaches, convexification techniques, limited system observability, large scale simulations and implementation.							        				
+									        			</li>
+									        			<li style="margin-bottom:20px;">
+									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Movie Recommendation using collaborative filtering </b><br>
+									        			</li>
+								        				<li style="margin-bottom:20px;">
+									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Auto regressive and RNN models for forecasting time series data</b><br>							        				
+									        			</li>
+									        			
+									        		</ul>
+                                                    </p>    
+
+
+                                              	</div>                                                  	                                                        
+										    </div>
+									    	<!-- <closing of projects> -->
+
+
+
+										    <div id="menu2" class="tab-pane fade">
+
+										      <!-- <h3>Menu 2</h3>
+										      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p> -->
+										      	<!-- <div class="profiles" > -->
+										      	<div>
+									                <table >
+									                	<thead>
+										                    <tr >
+										                        <!-- <td style="background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6FF8F8), color-stop(1, #0E80F5) );">S.<br>No.</td> -->
+										                        <td style="background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6FF8F8), color-stop(1, #0E80F5) );">Roll No</td>
+										                       <!--  <td>Email id</td> -->
+										                       <td style="background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6FF8F8), color-stop(1, #0E80F5) );">Name</td>
+										                        <td style="background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6FF8F8), color-stop(1, #0E80F5) );">Experience (Months)</td>
+										                    </tr>
+										                </thead>
+										                <tbody>
+										                    <tr>
+										                        <td>MS2015009</td>
+										                        <td>Pooja Rao S B</td>										                        
+										                        <td>Fidelity Investments (2 yrs)</td>
+										                    </tr>
+										                    <tr>
+										                        <td>MS2015004</td>
+										                        <td>Jeevan E L</td>											                        
+										                        <td>Rovi Corp (8 yrs)</td>
+										                    </tr>
+										                    <tr>
+										                        <td>MS2015012</td>
+										                        <td>Sharath Srivatsa</td>									                        
+										                        <td>SONY India Software Centre (12 yrs)</td>
+										                    </tr>
+										                    <tr>
+										                        <td>MS2015006</td>
+										                        <td>Maithily Diwan </td>
+										                        <td>Robert Bosch (9 yrs)</td>
+										                    </tr>
+										                    <tr>
+										                        <td>PH2009902</td>
+										                        <td>Sunil Kumar Vuppala</td>
+										                        <td>Infosys (12 yrs)</td>
+										                    </tr>
+										                    <tr>
+										                        <td>PH2015014</td>
+										                        <td>Anjana Prabhakar</td>
+										                        <td>Infosys technologies, KIIT University (5 yrs)</td>
+										                    </tr>										                    
+										                    <tr>
+										                        <td>PH2015020</td>
+										                        <td>P Surya</td>
+										                        <td></td>
+										                    </tr>										                    
+
+										                </tbody>
+										       		</table>
+									            </div>
+										    </div>	
+										    <!-- <end of div for stdent profiles> -->											
+										</div>
+									</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+			<!-- Footer Wrapper -->
+				<!-- <div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="3u 12u(mobile)">
+
+								
+									<section>
+										<h2>Filler Links</h2>
+										<ul class="divided">
+											<li><a href="#">Quam turpis feugiat dolor</a></li>
+											<li><a href="#">Amet ornare in hendrerit </a></li>
+											<li><a href="#">Semper mod quisturpis nisi</a></li>
+											<li><a href="#">Consequat etiam phasellus</a></li>
+											<li><a href="#">Amet turpis, feugiat et</a></li>
+											<li><a href="#">Ornare hendrerit lectus</a></li>
+											<li><a href="#">Semper mod quis et dolore</a></li>
+											<li><a href="#">Amet ornare in hendrerit</a></li>
+											<li><a href="#">Consequat lorem phasellus</a></li>
+											<li><a href="#">Amet turpis, feugiat amet</a></li>
+											<li><a href="#">Semper mod quisturpis</a></li>
+										</ul>
+									</section>
+
+							</div>
+							<div class="3u 12u(mobile)">
+
+								
+									<section>
+										<h2>More Filler</h2>
+										<ul class="divided">
+											<li><a href="#">Quam turpis feugiat dolor</a></li>
+											<li><a href="#">Amet ornare in in lectus</a></li>
+											<li><a href="#">Semper mod sed tempus nisi</a></li>
+											<li><a href="#">Consequat etiam phasellus</a></li>
+										</ul>
+									</section>
+
+								
+									<section>
+										<h2>Even More Filler</h2>
+										<ul class="divided">
+											<li><a href="#">Quam turpis feugiat dolor</a></li>
+											<li><a href="#">Amet ornare hendrerit lectus</a></li>
+											<li><a href="#">Semper quisturpis nisi</a></li>
+											<li><a href="#">Consequat lorem phasellus</a></li>
+										</ul>
+									</section>
+
+							</div>
+							<div class="6u 12u(mobile)">
+
+								
+									<section>
+										<h2><strong>ZeroFour</strong> by HTML5 UP</h2>
+										<p>Hi! This is <strong>ZeroFour</strong>, a free, fully responsive HTML5 site
+										template by <a href="http://n33.co/">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a>.
+										It's <a href="http://html5up.net/license/">Creative Commons Attribution</a>
+										licensed so use it for any personal or commercial project (just credit us
+										for the design!).</p>
+										<a href="#" class="button alt icon fa-arrow-circle-right">Learn More</a>
+									</section>
+
+
+									<section>
+										<h2>Get in touch</h2>
+										<div>
+											<div class="row">
+												<div class="6u 12u(mobile)">
+													<dl class="contact">
+														<dt>Twitter</dt>
+														<dd><a href="#">@untitled-corp</a></dd>
+														<dt>Facebook</dt>
+														<dd><a href="#">facebook.com/untitled</a></dd>
+														<dt>WWW</dt>
+														<dd><a href="#">untitled.tld</a></dd>
+														<dt>Email</dt>
+														<dd><a href="#">user@untitled.tld</a></dd>
+													</dl>
+												</div>
+												<div class="6u 12u(mobile)">
+													<dl class="contact">
+														<dt>Address</dt>
+														<dd>
+															1234 Fictional Rd<br />
+															Nashville, TN 00000-0000<br />
+															USA
+														</dd>
+														<dt>Phone</dt>
+														<dd>(000) 000-0000</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div> -->
+
+		</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
