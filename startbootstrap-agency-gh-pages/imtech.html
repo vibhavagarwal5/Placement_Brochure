@@ -136,11 +136,11 @@
 /*
             this part for tab within tab*/
 
-            an{
+            anCourse{
       			  display:block;
       			  float:left;
       			  height: 65px;
-      			  width:25%;
+      			  width:16.33%;
       			  background:#d4eaf9;
       			  border-style:solid;
       			  border-color: inherit;
@@ -148,17 +148,41 @@
       			  border-width:thin;
       			  text-decoration:bold;
       			  font-weight:600;
-      			  font-size: 1.02em;
+      			  font-size: 0.6em;
       			  text-align:center;
       			  padding:10px 0;
       			  color:#3498db;
       			  cursor: default;
 
       			}
-      			an:hover{
+      			anCourse:hover{
       			  background: #4286f4;
       			  color: white;
       			}
+
+            an{
+              display:block;
+              float:left;
+              height: 65px;
+              width:25%;
+              background:#d4eaf9;
+              border-style:solid;
+              border-color: inherit;
+              border-radius:10px;
+              border-width:thin;
+              text-decoration:bold;
+              font-weight:600;
+              font-size: 1.02em;
+              text-align:center;
+              padding:10px 0;
+              color:#3498db;
+              cursor: default;
+
+            }
+            an:hover{
+              background: #4286f4;
+              color: white;
+            }
 
 		</style>
 
@@ -168,7 +192,63 @@
 
 
         $(document).ready(function(){
+// js for the tabs under courses tabs
 
+          $('#courDSData').hide();
+          $('#courNCData').hide();
+          $('#courECData').hide();
+          $('#courBSData').hide();
+          $('#courMiscData').hide();
+          $('#courCSData').show();
+
+          $("#courCSTab").click(function(){
+            $('#courDSData').hide();
+            $('#courNCData').hide();
+            $('#courECData').hide();
+            $('#courBSData').hide();
+            $('#courMiscData').hide();
+            $('#courCSData').show();
+          });
+          $('#courDSTab').click(function() {
+            $('#courDSData').show();
+            $('#courNCData').hide();
+            $('#courECData').hide();
+            $('#courBSData').hide();
+            $('#courMiscData').hide();
+            $('#courCSData').hide();
+          });
+          $('#courECTab').click(function() {
+            $('#courDSData').hide();
+            $('#courNCData').hide();
+            $('#courECData').show();
+            $('#courBSData').hide();
+            $('#courMiscData').hide();
+            $('#courCSData').hide();
+          });
+          $('#courNCTab').click(function() {
+            $('#courDSData').hide();
+            $('#courNCData').show();
+            $('#courECData').hide();
+            $('#courBSData').hide();
+            $('#courMiscData').hide();
+            $('#courCSData').hide();
+          });
+          $('#courBSTab').click(function() {
+            $('#courDSData').hide();
+            $('#courNCData').hide();
+            $('#courECData').hide();
+            $('#courBSData').show();
+            $('#courMiscData').hide();
+            $('#courCSData').hide();
+          });
+          $('#courMiscTab').click(function() {
+            $('#courDSData').hide();
+            $('#courNCData').hide();
+            $('#courECData').hide();
+            $('#courBSData').hide();
+            $('#courMiscData').show();
+            $('#courCSData').hide();
+          });
 
 
 //script for the tabs within project tab
@@ -266,8 +346,18 @@
 													<input type="radio" name="tabs" id="tab1" checked />
 									        		<label for="tab1">Courses</label>
 									        		<div id="tab-content1" class="tab-content" style="width:100%; height:735px;">
-									        		<div>
-                                                    <h2 style="margin:auto;width:35%;">Computer Science</h2>
+                                <anCourse  id="courCSTab">Computer Science</anCourse>
+                                <anCourse  id="courDSTab">Data Science</anCourse>
+                                <anCourse  id="courNCTab">Networking and Communication</anCourse>
+                                <anCourse  id="courECTab">Electronics and Communication</anCourse>
+                                <anCourse  id="courBSTab">Basic Science</anCourse>
+                                <anCourse  id="courMiscTab">Miscellaneous</anCourse>
+
+                           <br>
+                           <br>
+                           <br>
+                           <div id="courCSData">
+                              <h2 style="margin:auto;width:30%; text-align:center;"><b>Computer Science</b></h2>
                                                     <div id="wrapper">
                                                         <div id="cont">
                                                             <h3>Core Courses</h3>
@@ -302,9 +392,10 @@
                                                         </div>
                                                         </div>
                                                         <div id="clear"></div>
-                                                    </div>
-                                                    <div>
-                                                    <h2 style="position: relative;margin:auto;width:47%;">Data Science</h2>
+                                                  </div>
+
+                                                    <div id="courDSData">
+                                                    <h2 style="position: relative;margin:auto;width:47%; text-align:center;"><b>Data Science</b></h2>
                                                     <div id="wrapper">
                                                         <div id="cont" style="width:110%;">
                                                             <h3>Specialization Electives</h3>
@@ -325,8 +416,8 @@
                                                     </div>
                                                     <div id="clear"></div>
                                                     </div>
-                                                    <div>
-                                                    <h2 style="margin:auto;width:30%;">Electronics & Communication</h2>
+                                                    <div id="courECData">
+                                                    <h2 style="margin:auto;width:30%; text-align:center;"><b>Electronics & Communication</b></h2>
                                                     <div id="wrapper">
                                                         <div id="cont">
                                                             <h3>Core Courses</h3>
@@ -355,8 +446,8 @@
                                                     </div>
                                                     <div id="clear"></div>
                                                     </div>
-                                                    <div>
-                                                    <h2 style="position: relative;margin:auto;width:20%;">Networks & Communication</h2>
+                                                    <div id="courNCData">
+                                                    <h2 style="position: relative;margin:auto;width:20%; text-align:center;"><b>Networking & Communication</b></h2>
                                                     <div id="wrapper">
                                                         <div id="cont" style="width:110%;">
                                                             <h3>Specialization Electives</h3>
@@ -372,8 +463,8 @@
                                                     </div>
                                                     <div id="clear"></div>
                                                     </div>
-                                                    <div>
-                                                    <h2 style="position: relative;margin:auto;width:30%;">Basic Science</h2>
+                                                    <div id="courBSData">
+                                                    <h2 style="position: relative;margin:auto;width:30%;text-align:center;"><b>Basic Science</b></h2>
                                                     <div id="wrapper">
                                                         <div id="cont" style="width:110%;">
                                                             <h3>Core Courses</h3>
@@ -390,8 +481,8 @@
                                                     </div>
                                                     <div id="clear"></div>
                                                     </div>
-                                                    <div>
-                                                    <h2 style="position: relative;margin:auto;width:30%;">Miscellaneous</h2>
+                                                    <div id="courMiscData">
+                                                    <h2 style="position: relative;margin:auto;width:30%;text-align:center;"><b>Miscellaneous</b></h2>
                                                     <div id="wrapper">
                                                         <div id="cont" style="width:110%;">
                                                             <h3>Core Courses</h3>
