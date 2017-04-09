@@ -95,29 +95,42 @@
             #cleared {
               clear: both;
             }
+
         </style>
 
 
         <style type="text/css">
 
-			p{
-				font-family: 'Roboto', sans-serif;
-				font-size: 1em;
-				margin-bottom: 20px;
-			}
-			li{
-				margin-bottom: -20px;
-				margin-left: 1px;
-			}
-			th{
-				background: blue;
-			}
-			/*ul{
-				margin-top: 20px;
-			}*/
-
-
-
+    			p{
+    				font-family: 'Roboto', sans-serif;
+    				font-size: 1em;
+    				margin-bottom: 20px;
+    			}
+    			li{
+    				margin-bottom: -20px;
+    				margin-left: 1px;
+    			}
+    			th{
+            background-color: rgb(112, 196, 105);
+            color: white;
+            padding: 20px 30px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 20px;			
+          }
+          td{
+            background-color: rgb(238, 238, 238);
+            color: rgb(111, 111, 111);
+            padding: 20px 30px;
+          }
+          .flat-table {
+            display: block;
+            font-family: sans-serif;
+            -webkit-font-smoothing: antialiased;
+            font-size: 100%;
+            overflow: auto;
+            width: auto;
+          }
 /*
             this part for tab within tab*/
 
@@ -636,13 +649,13 @@ jobs keeping in mind the peak and off-peak periods.<br>&nbsp;
 													<input type="radio" name="tabs" id="tab4" />
 									        		<label for="tab4">Student Profiles</label>
 									        		<div id="tab-content4" class="tab-content" style="width:100%;height:735px;">
-									        			<div class="profiles" >
-											                <table >
+									        			<div class="table" >
+											                <table class="flat-table">
 											                    <tr>
-											                        <td style="color:white">Roll Number</td>
-											                        <td style="color:white">Name</td>
+											                        <th>Roll Number</th>
+											                        <th>Name</th>
 											                       <!--  <td>Email id</td> -->
-											                        <td style="color:white">Internship Experience</td>
+											                        <th>Internship Experience</th>
 											                    </tr>
 											                    <tr>
 											                        <td>IMT2012001</td>

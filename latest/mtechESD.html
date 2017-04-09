@@ -81,6 +81,27 @@
 			li{
 				margin-bottom: 20px;
 			}
+    			th{
+            background-color: rgb(112, 196, 105);
+            color: white;
+            padding: 20px 30px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 20px;			
+          }
+          td{
+            background-color: rgb(238, 238, 238);
+            color: rgb(111, 111, 111);
+            padding: 20px 30px;
+          }
+          .flat-table {
+            display: block;
+            font-family: sans-serif;
+            -webkit-font-smoothing: antialiased;
+            font-size: 100%;
+            overflow: auto;
+            width: auto;
+          }
 
 			/*
 			this part for tab within tab*/
@@ -443,10 +464,14 @@
 									        		<label for="tab4">Student Profiles</label>
 									        		<!--<div id="tab-content2" class="tab-content" style="height:780px">-->
 									        		<div id="tab-content2" class="tab-content" style="height:700px">
-									        			<div class="profiles"  >
-											                <table >
-<tr><td  style="color:white">Sl No</td><td  style="color:white">Name</td><td style="color:white">Email</td><td style="color:white">Experience (Months)</td></tr>
-
+									        			<div class="table" >
+											                <table class="flat-table">
+<tr>
+<th>S.No</th>
+<th>Name</th>
+<th>Specialization</th>
+<th>Experience (Months)</th>
+</tr>
 
   <tr><td>1</td><td>Abhijeet Shome </td><td>System-On-Chip</td><td>TCS (11)</td></tr>
  <tr><td>2</td><td>Aman Paturwar</td><td>System-On-Chip</td><td>Accenture (18)</td></tr>

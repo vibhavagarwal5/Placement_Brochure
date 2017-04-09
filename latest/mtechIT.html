@@ -107,24 +107,28 @@
 			an:hover{
 			  background: #4286f4;
 			  color: white;
-			}/*
-			an[data-filter="cs"]:focus ~ div:not([data-filter="cs"]){
-				  display: none;
 			}
-
-			an[data-filter="ds"]:focus ~ div:not([data-filter="ds"]){
-			  display: none;
-			 }
-
-			an[data-filter="nc"]:focus ~ div:not([data-filter="nc"]){
-			  	display: none;
-			 }
-
-			an[data-filter="se"]:focus ~  div:not([data-filter="se"]){
-			  display: none;
-			}
-*/
-			/*tab within tab ends*/
+			th{
+            background-color: rgb(112, 196, 105);
+            color: white;
+            padding: 20px 30px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 20px;			
+          }
+          td{
+            background-color: rgb(238, 238, 238);
+            color: rgb(111, 111, 111);
+            padding: 20px 30px;
+          }
+          .flat-table {
+            display: block;
+            font-family: sans-serif;
+            -webkit-font-smoothing: antialiased;
+            font-size: 100%;
+            overflow: auto;
+            width: auto;
+          }
 
 		</style>
 	<script>
@@ -639,9 +643,14 @@ After getting the request from User it goes to the appropriate GDS and fires mul
 									        		<label for="tab4">Student Profiles</label>
 									        		<!--<div id="tab-content2" class="tab-content" style="height:780px">-->
 									        		<div id="tab-content2" class="tab-content" style="height:700px">
-									        			<div class="profiles"  >
-											                <table >
-<tr><td  style="color:white">Sl No</td><td  style="color:white">Name</td><td  style="color:white">Specialization</td><td  style="color:white">Experience (Months)</td></tr>
+									        			<div class="table" >
+											                <table class="flat-table">
+<tr>
+<th>S.No</th>
+<th>Name</th>
+<th>Specialization</th>
+<th>Experience (Months)</th>
+</tr>
 
  <tr><td>1</td><td>Aamer Ramzan</td><td>Computer Science</td><td>&nbsp;</td></tr>
  <tr><td>2</td><td>Abhinav Anand</td><td>Data Sciences</td><td>&nbsp;</td></tr>
