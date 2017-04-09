@@ -9,6 +9,11 @@
     background-image: none
 }
 
+.img-icon{
+    font-size: 60px;
+    float: right;
+}
+
 .navigationMenu{
     width:95%;
     margin: auto;
@@ -47,9 +52,7 @@
 .currentPage{
         border: 2px solid;
         border-color: #444;
-}
-.scecrow{
-    display: inline-block;
+        background: #fed136;
 }
 
 body {
@@ -155,7 +158,8 @@ a.active, a:active, a:focus, a:hover {
 }
 
 .navbar-custom .navbar-brand {
-    color: #fff;
+    color: #fed136;
+    font-size: 18px;
     font-family: "Arial", cursive;
 }
 
@@ -195,14 +199,14 @@ a.active, a:active, a:focus, a:hover {
 }
 
 .navbar-custom .navbar-nav>.active>a {
-    border-radius: 0;
-    color: #fff;
-    background-color: #fed136
+    border-radius: 6px;
+    color: #fed136;
+    background-color: transparent;
 }
 
 .navbar-custom .navbar-nav>.active>a:focus, .navbar-custom .navbar-nav>.active>a:hover {
     color: #fff;
-    background-color: #fec503
+    background-color: #fec503;
 }
 /*
 @media (min-width: 768px) {
@@ -237,7 +241,6 @@ header {
     background-image: url(../img/clg.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
-    margin-top: 100px;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -278,7 +281,7 @@ header .intro-text .intro-heading {
     header .intro-text .intro-lead-in {
         font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-style: italic;
-        font-size: 40px;
+        font-size: 60px;
         line-height: 40px;
         margin-bottom: 25px
     }
@@ -316,7 +319,8 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
     section {
-        padding: 150px 0
+        padding: 50px 0;
+        padding-bottom:30px;
     }
 }
 
@@ -391,7 +395,10 @@ section h3.section-subheading {
 }
 
 footer span.copyright, footer ul.quicklinks {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(116,128,139);
+    font-size: 15px;
+
 }
 
 #portfolio * {
@@ -686,8 +693,8 @@ section#contact .text-danger {
 }
 
 footer {
-    padding: 25px 0;
-    text-align: center
+    padding: 15px 0;
+    text-align: center;
 }
 
 footer span.copyright {
