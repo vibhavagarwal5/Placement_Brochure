@@ -33,7 +33,7 @@
   transition: all 0.2s ease-in-out;
 }
 .tabs label:hover {
-  background: #244D6C;
+  background: rgb(1, 16, 28);
 }
 .tabs .tab-content {
   z-index: 2;
@@ -41,7 +41,7 @@
   overflow: hidden;
   width: 100%;
   height: 850px;
-  overflow-y:scroll; 
+  overflow-y:scroll;
   font-size: 17px;
   line-height: 25px;
   padding: 25px;
