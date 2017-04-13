@@ -12,7 +12,54 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'> -->
-	    <link href="css/agency.min.css" rel="stylesheet">
+
+	    <!-- Theme CSS -->
+        <link href="css/agency.min.css" rel="stylesheet">
+        <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top ">
+            <div class="navigationMenu">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <!--<img src="img/logo.jpg">-->
+                     <a  class="page-scroll" href="index.html">
+                		<img src="img/logo.jpg">
+               		 </a>
+                    <!-- <a class="navbar-brand page-scroll navBarHeading" href="index.html">IIIT - Bangalore</a> -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+	                    <li style="margin:0px">
+                            <a class="toolbarButton" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="toolbarButton" href="mtechIT.html">M.Tech - IT</a>
+                        </li>
+                        <li>
+                            <a class="toolbarButton" href="mtechESD.html">M.Tech - ESD</a>
+                        </li>
+                        <li>
+                            <a class="toolbarButton" href="imtech.html">Integrated M.Tech</a>
+                        </li>
+                        <li>
+                            <a class="currentPage toolbarButton" href="ms_research.html">Research Programmes</a>
+                        </li>
+                        <li>
+                            <a class="toolbarButton" href="digisoc.html">MSc in Digital Society</a>
+                        </li>
+                        <li>
+                            <a class="toolbarButton" href="achievements.html">Achievements</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
 
 			<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 			<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -22,10 +69,8 @@
 
         <!-- Theme CSS -->
         <link href="css/agency.min.css" rel="stylesheet">
-	</head>
-	<body class="no-sidebar">
 
-	<style type="text/css">
+     	<style type="text/css">
 	.imgcustom{
 	    display: block;
 	    margin-left: 10px;
@@ -49,65 +94,9 @@
         margin-bottom: -20px;
     }
 	</style>
-
-		<div id="page-wrapper">
-			<!-- Header Wrapper -->
-			<div id="header-wrapper">
-				<div class="container">
-					<!-- Header -->
-					<div id="header">
-						<div class="inner">
-							<!-- Logo -->
-							<h1><a href="index.html" id="logo"></a></h1>
-							<!-- Nav -->
-                            <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top ">
-                                <div class="navigationMenu">
-                                    <!-- Brand and toggle get grouped for better mobile display -->
-                                    <div class="navbar-header page-scroll">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                            <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                                        </button>
-                                        <!--<img src="img/logo.jpg">-->
-                                        <a  class="page-scroll" href="index.html">
-                							<img src="img/logo.jpg">
-               							</a>
-                                        <!-- <a class="navbar-brand page-scroll navBarHeading" href="index.html">IIIT - Bangalore</a> -->
-                                    </div>
-
-                                    <!-- Collect the nav links, forms, and other content for toggling -->
-                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-bottom: 8px;">
-                                        <ul class="nav navbar-nav navbar-right">
-	                                        <li style="margin:0px">
-					                            <a class="toolbarButton" href="index.html">Home</a>
-					                        </li>
-                                            <li>
-                                                <a class="toolbarButton" href="mtechIT.html">M.Tech - IT</a>
-                                            </li>
-                                            <li>
-                                                <a class="toolbarButton" href="mtechESD.html">M.Tech - ESD</a>
-                                            </li>
-                                            <li>
-                                                <a class="toolbarButton" href="imtech.html">Integrated M.Tech</a>
-                                            </li>
-                                            <li>
-                                                <a class="toolbarButton" href="ms_research.html">Research Programmes</a>
-                                            </li>
-                                            <li>
-                                                <a class="toolbarButton" href="digisoc.html">MSc in Digital Society</a>
-                                            </li>
-                                            <li>
-                                                <a class="currentPage toolbarButton" href="achievements.html">Achievements</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!-- /.navbar-collapse -->
-                                </div>
-                                <!-- /.container-fluid -->
-                            </nav>
-					</div>
-				</div>
-			</div>
-
+	   
+	</head>
+	<body class="no-sidebar">
 			<!-- Main Wrapper -->
 				<div id="main-wrapper">
 					<div class="wrapper style2">
@@ -203,12 +192,15 @@
 								<p>&nbsp;</p>
 
 								<article>
-									<span class="image featured"><img class="imgcustom" align="left" src="img/girlTeam.jpg" width="50%" alt="" /></span>
+									<div class="image featured">
+										<img class="imgcustom" align="left" src="img/girlTeam.jpg" width="50%" alt="" />
+									</div>
+									<div>
 						        	<h3 style="text-align:center">Coding Competitions</h3>
 
-									<p style="margin-left:16cm;text-align: justify;">
+									<p style="text-align: justify;">
 										There is an active coding habit present in the students and they keep participating in various coding competitions to show their mettle. A few of the popular events where our iMtech students have stood out are:
-										<ul class="fa-ul" style="margin-left:16.5cm;">
+										<ul class="fa-ul">
 											<li>
 											<i class="fa-li fa fa-check-square fa-1x" aria-hidden="false"></i>
 											<b>ACM ICPC 2017 World Finalist</b>
@@ -241,9 +233,9 @@
 											<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>
 											Winner in Morgan Stanley Women Codeathon 2015, Runner up in Tesco Codeathon 2016, Finalist in Sears Dots and Arrows Challenge 2016, Rank 12 in Broadridge India CODE-BEE 2015
 											</li><br>
-
 										</ul>
 									</p>
+									</div>
 								</article>
 								<p>&nbsp;</p>
 
