@@ -77,36 +77,42 @@
 			/*
 			this part for tab within tab*/
 
-			an{
-			  display:block;
-			  float:left;
-			  height: 65px;
-			  width:25%;
-			  background:#d4eaf9;
-			  border-style:solid;
-			  border-color: inherit;
-			  border-radius:10px;
-			  border-width:thin;
-			  text-decoration:bold;
-			  font-weight:600;
-			  font-size: 1.02em;
-			  text-align:center;
-			  padding:10px 0;
-			  color:#3498db;
-			  cursor: default;
+            an{
+              display:block;
+              float:left;
+              /*height: 65px;*/
+              width:wrap-content;
+              /*width:16%;*/
+              background:#d4eaf9;
+              border-style:solid;
 
-			}
-			an:hover{
-			  background: #4286f4;
-			  color: white;
-			}
+              border-color: inherit;
+              border-radius:10px;
+              border-width:thin;
+              text-decoration:bold;
+              font-weight:600;
+              font-size: 1.02em;
+              text-align:center;
+              padding:10px 10px;
+              color:#3498db;
+              cursor: default;
+              margin:10px;
+
+            }
+            an:hover{
+                border-color:black;
+                -webkit-transition-duration: 0.7s; /* Safari */
+                transition-duration: 0.7s;
+              background: #4286f4;
+              color: white;
+            }
 			th{
             background-color: rgb(112, 196, 105);
             color: white;
             padding: 20px 30px;
             text-align: left;
             font-weight: bold;
-            font-size: 20px;			
+            font-size: 20px;
           }
           td{
             background-color: rgb(238, 238, 238);
@@ -215,7 +221,7 @@
 				<div id="header-wrapper">
 					<div class="container">
 
-						
+
 
 					</div>
 				</div>
@@ -238,7 +244,7 @@
 													</p>
 											</div>
 
-											
+
 											<div style="padding-bottom:25px;">
 												<ul class="nav nav-tabs">
 												    <li class="active"><a data-toggle="tab" href="#courseTab">Courses</a></li>
@@ -250,21 +256,21 @@
 
 											</div>
 
-												
+
 
 
 											<div class="tab-content" style="padding-bottom:25px;">
 											    <div id="courseTab" class="tab-pane fade in active">
-											      
-											      	 <an  href="#" id="courCSTab">Computer Science</an> 
+
+											      	 <an  href="#" id="courCSTab">Computer Science</an>
 													 <an  href="#" id="courDSTab">Data Science</an>
 													 <an  id="courSETab">Software Eng.</an>
 													 <an  id="courNCTab">Network and Comm.</an>
 
 
-													 <div id="courCSData" tabindex='1' style="padding-top:25px;">							        	
-									        		<!--<div data-filter="cs">-->							        		
-										        		<p>	
+													 <div id="courCSData" tabindex='1' style="padding-top:25px;">
+									        		<!--<div data-filter="cs">-->
+										        		<p>
 										        		<b><h2 style="text-align: center;padding-top: 50px;">Computer Science</h2>
 										        		</b>
 										        		Starting from problem solving using computers, students of this stream learn concepts from a wide range of softwares.
@@ -274,14 +280,14 @@
 										        			<li>
 											        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Theory Of Computation</li>
 											        		<li>
-											        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Artificial Intelligence		        				
+											        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Artificial Intelligence
 											        		</li>
 
 										        			<li>
 											        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Competitive Programming
 											        		</li>
 											        		<li>
-											        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Distributed Computing		
+											        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Distributed Computing
 											        		</li>
 											        		<li>
 											        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Cryptography and Network Security
@@ -293,17 +299,17 @@
 											        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematical Models of Computation
 											        		</li>
 											        		<li>
-											        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Theoretical Computer Sciences		
+											        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Theoretical Computer Sciences
 											        		</li>
 											        	</ul>
 
 
-										        			</p>	
+										        			</p>
 										        </div>
 
 
 										        <div id="courDSData" style="padding-top:25px;">
-									        		<!--<div data-filter="ds">-->	
+									        		<!--<div data-filter="ds">-->
 
 									        			<p>
 									        			<b><h2 style="text-align: center;padding-top: 50px;">Data Science</h2></b>
@@ -314,14 +320,14 @@
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Data Modeling</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Data Analytics		        				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Data Analytics
 										        		</li>
 
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Multi Agent Systems
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Advanced Database Management Systems			
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Advanced Database Management Systems
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Web Information Retrieval
@@ -331,12 +337,12 @@
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Foundations of Big Data
-										        		</li>										        		
-										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Machine learning				
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Algorithms for Massive datasets			
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Machine learning
+										        		</li>
+										        		<li>
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Algorithms for Massive datasets
 										        		</li>
 										        	</ul>
 									        			</p>
@@ -347,14 +353,14 @@
 									        			<b><h2 style="text-align: center;padding-top: 50px;">Software Engineering</h2></b>
 									        			This stream has a two-fold mission:<br>
 Firstly, to educate the students to be high quality software engineers, with strong hands-on experience and with strong foundations in computer science concepts.<br>
-Secondly, to contribute original and ground breaking ideas to the state-of-the art in SE by actively involving in research. 
+Secondly, to contribute original and ground breaking ideas to the state-of-the art in SE by actively involving in research.
 									        		<br><br>
 													Subjects of this stream include: <br><br>
 									        		<ul class="fa-ul">
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Design Patterns</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Usability		        				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Usability
 										        		</li>
 
 									        			<li>
@@ -368,14 +374,14 @@ Secondly, to contribute original and ground breaking ideas to the state-of-the a
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Geographic Information Systems
-										        		</li>										        		
+										        		</li>
 										        	</ul>
 									        			</p>
 
 									        			</div>
 									        		<div id="courNCData" style="padding-top:25px;">
 									        		<!--<div data-filter="nc">-->
-									        			
+
 									        			<p>
 									        			<b><h2 style="text-align: center;padding-top: 50px;padding-top: 50px;">Networking and Communication</h2></b>
 									        			This stream covers a detailed understanding on various types of communication systems and protocols.
@@ -385,38 +391,38 @@ Secondly, to contribute original and ground breaking ideas to the state-of-the a
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Wireless Access Networks</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Wireless Sensor networks	        				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Wireless Sensor networks
 										        		</li>
 
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Internet Of Things
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Digital Image Processing			
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Digital Image Processing
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mobile computing with IMS Architecture
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Computer Vision
-										        		</li>										        		
+										        		</li>
 										        	</ul>
 									        			</p>
 									        		</div>
-									
+
 											    </div>
 											    <div id="menu1" class="tab-pane fade" >
-											      	
 
-											      	<an  id="projCSTab">Computer Science</an> 
-                                                  	<an  id="projDSTab">Data Science</an>                  
+
+											      	<an  id="projCSTab">Computer Science</an>
+                                                  	<an  id="projDSTab">Data Science</an>
                                                   	<an  id="projNCTab">Network and Comm</an>
                                                   	<an  id="projESTab">Software Eng.</an>
-                                                 
 
 
 
-                                                  	<div id="projCSData" tabindex='1' style="padding-top:25px;">                                                  			
+
+                                                  	<div id="projCSData" tabindex='1' style="padding-top:25px;">
                                                   			<p> <b><h2 style="text-align: center;padding-top: 50px;">Computer Science</h2>
                                                     </b><ul class="fa-ul">
                                                         <li>
@@ -456,12 +462,12 @@ The project involves the study of Assembly language for 8086 Architecture and ai
 										        			</li>
 
 										        			<br>
-                                                        </p>    
+                                                        </p>
 
 
                                                   	</div>
 
-                                                  	<div id="projDSData" style="padding-top:25px;" > 
+                                                  	<div id="projDSData" style="padding-top:25px;" >
                                                   		<p> <b><h2 style="text-align: center;padding-top: 50px;">Data Science</h2>
                                                     </b><ul class="fa-ul">
                                                         <li>
@@ -505,7 +511,7 @@ To implement and optimize various machine learning algorithms on embedded system
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Temporal XML </b><br>
 										        				Imposing temporal features to XML Database. Inculcate the factor of time in XML Database <br>
-										        				<b>Tools used:&nbsp;&nbsp;</b>eXistdb, java 
+										        				<b>Tools used:&nbsp;&nbsp;</b>eXistdb, java
 										        			</li><br>
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>ASL(American Sign Language)Translator</b><br><br>
@@ -530,7 +536,7 @@ To implement and optimize various machine learning algorithms on embedded system
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Web Telescope </b><br>
 										        				This project is under web - observatory in IIITB. Web telescope  monitors data on social network (twitter as of  now) to collect  those data from social network a single application has been built which  provides you an API through which you can access all top  conversations given a specific search query (the  direct REST api was  not there by twitter officials and developers were demanding api like  this since 2008)<br>
-										        				<b>Tools used:&nbsp;&nbsp;</b>python, twitter api, tweepy, node.js 
+										        				<b>Tools used:&nbsp;&nbsp;</b>python, twitter api, tweepy, node.js
 										        			</li><br>
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Analysis of Meetup.com</b><br>
@@ -554,10 +560,10 @@ To implement and optimize various machine learning algorithms on embedded system
 										        				<b>Tools used:&nbsp;&nbsp;</b>Caffe, Python, AWS GPU Instance
 										        			</li><br>
                                                         </ul>
-                                                        </p> 
+                                                        </p>
                                                   	</div>
 
-                                                  	<div id="projNCData" style="padding-top:25px;"> 
+                                                  	<div id="projNCData" style="padding-top:25px;">
                                                   		<p> <b><h2 style="text-align: center;padding-top: 50px;">Networking and Communication</h2>
                                                     </b>
                                                     <ul class="fa-ul">
@@ -571,12 +577,12 @@ To implement and optimize various machine learning algorithms on embedded system
 										        				Implementation of MWF framework for Open city using node.js. Open City is dealing with huge volume of data generated by IoT and its analysation. This leads to large data traffic generated on the Internet. To define access control mechanism to selected subsets of data for different application developers, the proposed solution is to use MWF framework built using node.js<br>
 										        				<b>Tools used:&nbsp;&nbsp;</b>MEAN stack, eclipse, mongoDB, angularjs, nodejs
 										        			</li><br>
-                                                            
+
                                                         </ul>
-                                                        </p> 
+                                                        </p>
                                                   	</div>
 
-                                                  	<div id="projESData" style="padding-top:25px;"> 
+                                                  	<div id="projESData" style="padding-top:25px;">
                                                   		<p> <b><h2 style="text-align: center;padding-top: 50px;">Software Engineering</h2>
                                                     </b><ul class="fa-ul">
                                                         <li>
@@ -618,11 +624,11 @@ To implement and optimize various machine learning algorithms on embedded system
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>IIITB SDC</b><br>
 										        				The project is to develop a software center for then IIITB which will be used by the student of college. The project contains three component DevOps, Common Services and application services. DevOps is used to provide a Platform for communication between different team members. JENKINS is used continuous integration and version control. Maven is used to manage build, reporting and documentation of the project. Common Services is a rest service server which will store the data that will be stored by more than one applications and the student data. Application services are the different application merged into one application, the application will be related to the students for day to day work. Like SAC Election application in which student will only be allowed to cast vote one time in a given time period, after that result will be shown.<br>
 										        				<b>Tools used:&nbsp;&nbsp;</b>Eclipse, Jenkins, Maven
-										        			</li><br>                                                         
+										        			</li><br>
                                                         </ul>
                                                     	</p>
                                                     </div>
-                                                        
+
 											    </div>
 											    <div id="menu2" class="tab-pane fade">
 
@@ -635,7 +641,7 @@ To implement and optimize various machine learning algorithms on embedded system
 																<th>S.No</th>
 																<th>Name</th>
 																<th>Specialization</th>
-																</tr>         	
+																</tr>
 											                        <tr>
                                                                     <td>MT2016001</td>
                                                                     <td>Aarushi Singhal</td>
@@ -1374,10 +1380,10 @@ To implement and optimize various machine learning algorithms on embedded system
 											                </table>
 											            </div>
 											    </div>
-											    
+
 
 											    <div id="menu4" class="tab-pane fade">
-											      
+
 											    	<h2 style="text-decoration: underline;">Computer Science</h2>
 										        	<article
 											        	<h3>Web Sciences Lab</h3>
@@ -1393,14 +1399,14 @@ To implement and optimize various machine learning algorithms on embedded system
                                                         <h3>Computational Sciences Lab</h3>
                                                     <span class="image featured"><img src="images/csl.jpg" alt="" /></span>
 
-                                                    
+
                                                     <p>The Computational Sciences Lab at IIIT-B is interested broadly in the areas of Algorithms, Optimization, and Robotics.<br>Major focus areas include:
                                                         <ul class="fa-ul">
                                                             <li >
                                                                 <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Robust optimization under uncertainty, with applications to supply chains, real time search, banking, smart grid, transportation, gaming and allied areas
                                                             </li>
                                                             <li >
-                                                                <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true" style="margin-bottom=20px;"></i>Approximation algorims, machine learning, cryptography and linguistics, Visualization (scientific and information), high performance computing, computational geometry and topology 
+                                                                <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true" style="margin-bottom=20px;"></i>Approximation algorims, machine learning, cryptography and linguistics, Visualization (scientific and information), high performance computing, computational geometry and topology
 
                                                             </li>
 
@@ -1409,7 +1415,7 @@ To implement and optimize various machine learning algorithms on embedded system
 
                                                             </li>
 
-                                                            
+
                                                         </ul>
                                                         </p>
                                                 </article>
@@ -1424,7 +1430,7 @@ To implement and optimize various machine learning algorithms on embedded system
 													<h3>CEEMS Lab</h3>
 														<span class="image featured"><img src="images/ceems.jpg" alt="" /></span>
 														<p>The Center for Electronics and Embedded Systems (CEEMS) Lab's objective is to nurture talent by focusing on Embedded Computing, Wireless Communication and Computer Vision. CEEMS Lab collaborates with public and private organizations with the aim of bridging the gap between academic output and industry requirements, thus providing every learner an equal opportunity to become industry ready.</p>
-													</article> 
+													</article>
 
 													<h2 style="text-decoration: underline;">Networking & Signal Processing</h2>
 										        	<article>
@@ -1449,7 +1455,7 @@ To implement and optimize various machine learning algorithms on embedded system
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 
 			<!-- Footer Wrapper -->
@@ -1458,7 +1464,7 @@ To implement and optimize various machine learning algorithms on embedded system
 						<div class="row">
 							<div class="3u 12u(mobile)">
 
-								
+
 									<section>
 										<h2>Filler Links</h2>
 										<ul class="divided">
@@ -1479,7 +1485,7 @@ To implement and optimize various machine learning algorithms on embedded system
 							</div>
 							<div class="3u 12u(mobile)">
 
-								
+
 									<section>
 										<h2>More Filler</h2>
 										<ul class="divided">
@@ -1490,7 +1496,7 @@ To implement and optimize various machine learning algorithms on embedded system
 										</ul>
 									</section>
 
-								
+
 									<section>
 										<h2>Even More Filler</h2>
 										<ul class="divided">
@@ -1504,7 +1510,7 @@ To implement and optimize various machine learning algorithms on embedded system
 							</div>
 							<div class="6u 12u(mobile)">
 
-								
+
 									<section>
 										<h2><strong>ZeroFour</strong> by HTML5 UP</h2>
 										<p>Hi! This is <strong>ZeroFour</strong>, a free, fully responsive HTML5 site
@@ -1515,7 +1521,7 @@ To implement and optimize various machine learning algorithms on embedded system
 										<a href="#" class="button alt icon fa-arrow-circle-right">Learn More</a>
 									</section>
 
-								
+
 									<section>
 										<h2>Get in touch</h2>
 										<div>

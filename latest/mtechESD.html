@@ -80,7 +80,7 @@
             padding: 20px 30px;
             text-align: left;
             font-weight: bold;
-            font-size: 20px;			
+            font-size: 20px;
           }
           td{
             background-color: rgb(238, 238, 238);
@@ -99,29 +99,35 @@
 			/*
 			this part for tab within tab*/
 
-			an{
-			  display:block;
-			  float:left;
-			  height: 65px;
-			  width:50%;
-			  background:#d4eaf9;
-			  border-style:solid;
-			  border-color: inherit;
-			  border-radius:10px;
-			  border-width:thin;
-			  text-decoration:bold;
-			  font-weight:600;
-			  font-size: 1.02em;
-			  text-align:center;
-			  padding:10px 0;
-			  color:#3498db;
-			  cursor: default;
+            an{
+              display:block;
+              float:left;
+              /*height: 65px;*/
+              width:wrap-content;
+              /*width:16%;*/
+              background:#d4eaf9;
+              border-style:solid;
 
-			}
-			an:hover{
-			  background: #4286f4;
-			  color: white;
-			}
+              border-color: inherit;
+              border-radius:10px;
+              border-width:thin;
+              text-decoration:bold;
+              font-weight:600;
+              font-size: 1.02em;
+              text-align:center;
+              padding:10px 10px;
+              color:#3498db;
+              cursor: default;
+              margin:10px;
+
+            }
+            an:hover{
+                border-color:black;
+                -webkit-transition-duration: 0.7s; /* Safari */
+                transition-duration: 0.7s;
+              background: #4286f4;
+              color: white;
+            }
 
 
 		</style>
@@ -132,7 +138,7 @@
 
 
 
-//script for the tabs within project tab            
+//script for the tabs within project tab
             $('#projDSData').hide();
             $('#projNCData').hide();
             $('#projESData').hide();
@@ -144,20 +150,20 @@
                 $('#projESData').hide();
                 $('#projCSData').show();
             });
-            $('#projDSTab').click(function() {              
+            $('#projDSTab').click(function() {
                 $('#projNCData').hide();
                 $('#projESData').hide();
                 $('#projCSData').hide();
                 $('#projDSData').show();
-            });    
+            });
             $('#projESTab').click(function() {
                 $('#projDSData').hide();
-                $('#projNCData').hide();                
+                $('#projNCData').hide();
                 $('#projCSData').hide();
                 $('#projESData').show();
-            });    
+            });
             $('#projNCTab').click(function() {
-                $('#projDSData').hide();                
+                $('#projDSData').hide();
                 $('#projESData').hide();
                 $('#projCSData').hide();
                 $('#projNCData').show();
@@ -177,24 +183,24 @@
 		        $('#courSEData').hide();
 		        $('#courCSData').show();
 		    });
-			$('#courDSTab').click(function() {		  		
+			$('#courDSTab').click(function() {
 		        $('#courNCData').hide();
 		        $('#courSEData').hide();
 		        $('#courCSData').hide();
 		        $('#courDSData').show();
-			});    
+			});
 			$('#courSETab').click(function() {
 		  		$('#courDSData').hide();
-		        $('#courNCData').hide();		        
+		        $('#courNCData').hide();
 		        $('#courCSData').hide();
 		        $('#courSEData').show();
-			});    
+			});
 			$('#courNCTab').click(function() {
-		  		$('#courDSData').hide();		        
+		  		$('#courDSData').hide();
 		        $('#courSEData').hide();
 		        $('#courCSData').hide();
 		        $('#courNCData').show();
-			});   
+			});
         });
 
 
@@ -217,7 +223,7 @@
 				<div id="header-wrapper">
 					<div class="container">
 
-						
+
 
 					</div>
 				</div>
@@ -236,11 +242,11 @@
 												<h2 style="padding-top: 40px;">M.Tech in Electronic Systems Design</h2>
 												<p style="font-weight:300; font-size:1.0em;">
 													The M.Tech degree in Electronic Systems Design (ESD) is intended to help address the growth of the highly skilled manpower in Chip Design and Embedded System Design needed to support electronics system design and manufacturing (ESDM) in our country. <br> The course, in alignment with the national and state  policies attempts to foster growth and entrepreneurship in ESDM as outlined by the Department of Electronics and Information Technology (DIETY) of the Government of India, and the Government of Karnataka, respectively.  <br><br>
-													The 2-year degree program allows students to specialize in two possible areas:<br><br>	
+													The 2-year degree program allows students to specialize in two possible areas:<br><br>
 													</p>
 											</div>
 
-											
+
 											<div style="padding-bottom:25px;">
 												<ul class="nav nav-tabs">
 												    <li class="active"><a data-toggle="tab" href="#courseTab">Courses</a></li>
@@ -252,19 +258,19 @@
 
 											</div>
 
-												
+
 
 
 											<div class="tab-content" style="padding-bottom:25px;">
 											    <div id="courseTab" class="tab-pane fade in active">
-											      
-											      	 <an  href="#" id="courCSTab">Embedded Systems Design</an> 
+
+											      	 <an  href="#" id="courCSTab">Embedded Systems Design</an>
 													 <an  href="#" id="courDSTab">System on Chip Design</an>
 
 
-													 <div id="courCSData" tabindex='1' style="padding-top:25px;">							        	
-									        		<!--<div data-filter="cs">-->							        		
-										        		<p>	
+													 <div id="courCSData" tabindex='1' style="padding-top:25px;">
+									        		<!--<div data-filter="cs">-->
+										        		<p>
 										        		<b><h2 style="text-align: center;padding-top: 50px;">Embedded Systems</h2>
 										        		</b>
 										        		This stream integrates academic study and the realization of embedded systems with emphasis on building real-world embedded solutions thereby satisfying both the current and the future demands of industries internationally.
@@ -274,14 +280,14 @@
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Internet of Things</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Real Time Operating Systems		        				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Real Time Operating Systems
 										        		</li>
 
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Device Drivers
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>ARM Architecture		
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>ARM Architecture
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Inter-Device Communication<br>
@@ -293,20 +299,20 @@
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematical Models of Computation
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Automotive Embedded Systems				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Automotive Embedded Systems
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Machine Perception				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Machine Perception
 										        		</li>
 											        	</ul>
 
 
-										        			</p>	
+										        			</p>
 										        </div>
 
 
 										        <div id="courDSData" style="padding-top:25px;">
-									        		<!--<div data-filter="ds">-->	
+									        		<!--<div data-filter="ds">-->
 
 									        			<p>
 									        			<b><h2 style="text-align: center;padding-top: 50px;">System On Chip</h2></b>
@@ -317,14 +323,14 @@
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Advanced Analog Design</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Design of VLSI Subsystem		        				
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Design of VLSI Subsystem
 										        		</li>
 
 									        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mixed signal Design
 										        		</li>
 										        		<li>
-										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Circuit Simulation			
+										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Circuit Simulation
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Deep Submicron Design Issues
@@ -334,25 +340,25 @@
 										        		</li>
 										        		<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Testing And Design For Testability
-										        		</li>										        		
-										        		
+										        		</li>
+
 										        	</ul>
 									        			</p>
 													</div>
 
 											    </div>
 											    <div id="menu1" class="tab-pane fade" >
-											      	
 
-											      	<an  id="projCSTab">Embedded Systems Design</an> 
-                                                  	<an  id="projDSTab">System on Chip (SoC) Design</an>                  
+
+											      	<an  id="projCSTab">Embedded Systems Design</an>
+                                                  	<an  id="projDSTab">System on Chip (SoC) Design</an>
                                                   	<!-- <an  id="projNCTab">Network and Comm</an>
                                                   	<an  id="projESTab">Software Eng.</an>
                                                   -->
 
 
 
-                                                  	<div id="projCSData" tabindex='1' style="padding-top:25px;">                                                  			
+                                                  	<div id="projCSData" tabindex='1' style="padding-top:25px;">
                                                   			<p> <b><h2 style="text-align: center;padding-top: 50px;">Embedded System Design</h2>
                                                     </b><ul class="fa-ul">
                                                         <li>
@@ -366,13 +372,13 @@
 										        				A full fledged system (Industrially ready product) where user can give input through an App regarding the amount of Litres he wants and the Time at which the water has to be supplied. The system will take the input and accordingly ON the motor at appropriate time. Alongwith controlling the flow of water, system also monitors how much litres of water has flown and at what rate the water has flown, which can be monitored through a website or App.<br>
 										        				<b>Tools used:&nbsp;&nbsp;</b>Arduino, Raspberry Pi, Water Sensor, Android Studio.
 										        			</li>
-														
+
 														<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b> Building an Ad-hoc network using Raspberry Pi with Raspbian and OpenWrt.</b><br>
 										        				Communication between 2 Raspberry Pis using wireless ad-hoc network (such as file transfer and real time video streaming).<br>
 										        				<b>Tools used:&nbsp;&nbsp;</b>Raspberry Pi, OpenWrt OS and Raspbian OS.
 										        			</li>
-									        				
+
 														<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b> Action Detection using Hidden Markov Model.</b><br>
 										        				Detection of Human Actions using feature based bottom-up approach using low level features with HMM. Cricket strokes were taken as actions and an accuracy of 90% to 100% was achieved for training by 20 and 24 training examples respectively.<br>
@@ -404,12 +410,12 @@
 
 										        			<br>
 										        		</ul>
-                                                        </p>    
+                                                        </p>
 
 
                                                   	</div>
 
-                                                  	<div id="projDSData" style="padding-top:25px;" > 
+                                                  	<div id="projDSData" style="padding-top:25px;" >
                                                   		<p> <b><h2 style="text-align: center;padding-top: 50px;">System on Chip (SoC) Design</h2>
                                                     </b><ul class="fa-ul">
                                                         <li>
@@ -426,22 +432,22 @@
 									        				<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Design and Analysis of StrongARM and Thomas-Cho Latched Comparators</b><br>
 										        				In this project, the design and analysis of two latched comparators namely Strong ARM and Thomas-Cho (also known as Lewis Grey comparator) has been done. It includes the design for different sizes of CMOS and analysis for the parameters like speed and offset. Estimation of offset is obtained by using Monte Carlo Simulation. The design and layout is done using Cadence Virtuoso Suite.<br>
-										        				
+
 										        			</li>
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Command Application Logic for DDR3 controller</b><br>
 										        				 This project involves implementation & verification of command application logic in Xilinx FPGA using Verilog & is based on reference design from Lattice Semiconductors.<br> <b> Tools used: </b> Xilinx ISE Design Suite 13.1 and Xilinx Spartan 6 FPGA board<br>
-										        				
+
 										        			</li>
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>High-gain 3-stage Audio Amplifier Design</b><br>
 										        				 In this project a  3-stage audio amplifier with a dc Gain of 52.8k & Phase Margin of 89.12° was designed in 180nm technology using dual complex pole-zero cancellation(DCPC) technique. The entire design & layout was carried out using Cadence Virtuoso suite. The parasitic extraction was completed using Assura.<br>
-										        				
+
 										        			</li>
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Band Gap Reference Voltage</b><br>
 										        				 This project designs the Band gap Reference circuit, which is more immune to variation in temperature and supply voltage. The Range of temperature over which the circuit acts as a reference generator is -60 to 100 Celsius. The design and layout is done using Cadence Virtuoso Suite.<br>
-										        				
+
 										        			</li>
 <li>
                                                             <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>SDNA sequence alignment using Smith-Waterman Algorithm</b><br>
@@ -453,32 +459,32 @@
 										        	<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>UART (Universal Asynchronous Receiver and Transmitter)</b><br>
 										        				 This project involves implementation & verification of UART in Xilinx FPGA using Verilog. UART consists of transmitter and Receiver units. Transmitter transmits the data serially after converting the parallel data to serial data and Receiver receives serially and converts the serial data into parallel data.<br> <b> Tools used: </b> Xilinx ISE Design Suite 13.1 and Two Xilinx Spartan 6 FPGA boards for using as Tx and Rx units.<br>
-										        				
+
 										        			</li>
 										        			</li><li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>All Digital Phase Locked Loops</b><br>
 										        				 The All Digital PLLs are independent of process variations and can be easily ported to different technologies. The design and verification of All Digital Phase Locked Loop (ADPLL) using a Direct Digital Frequency Synthesizer (DDFS) and an All Digital Phase Frequency Detector (ADPFD) with a faster lock-in time using digital components has been done,so as to make the design scalable and portable.<br>
 																<b>Tools used: </b>  Xilinx ISE 14.7,ISIM Simulator, VIS 2.4(Language used-Verilog)<br>
-										        				
+
 										        			</li>
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Design of Switching Capacitor Amplifier with Gain 2</b><br>
 										        				  This project involves designing of a low-voltage gain-of-2 SC amplifier with low output offset error and wide input/output range for a 1-bit/stage 12 bit 10 MHz pipelined stage application. The total thermal noise SNR should be > 70 dB. The design and layout is done using Cadence Virtuoso Suite.<br>
-										        				
+
 										        			</li>
-										        			
+
 										        			<li>
 										        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Clock Tree Synthesis and Clock Skew Estimation</b><br>
 										        				The operation of most digital circuit systems, such as computer systems, is synchronized by a periodic signal known as a "clock" that dictates the sequence and pacing of the devices on the circuit. This clock is generally distributed from a single source to all the memory elements of the circuit, which are also called registers or flip-flops. The maximum speed at which a system can run must account for the variance that occurs between the various elements of a circuit due to differences in physical composition, temperature, and path length.<br>Clock skew results from the unequal propagation delay of clock paths from the source of the clock tree to the various sink nodes at the latch points and directly impacts the performance of a design.With rapidly increasing clock frequencies, the allowable clock skew is increasingly constrained, making clock skew a critical concern for high-performance processors. Clock skew can be introduced either at design time, during fabrication of the design, or during its operation."<br>
 										        				<b>Tools used:&nbsp;&nbsp;</b>Cadence - Designing; Monte Carlo Simulation - Tool inbulit in Cadence
 										        			</li><br>
-                                                            
+
                                                         </ul>
-                                                        </p> 
+                                                        </p>
                                                   	</div>
 
-                                                  	
-                                                        
+
+
 											    </div>
 											    <div id="menu2" class="tab-pane fade">
 
@@ -640,23 +646,23 @@
 											                </table>
 											            </div>
 											    </div>
-											    
+
 
 											    <div id="menu4" class="tab-pane fade">
-											      
-											    	
+
+
 													<article>
                                                         <h3>Computational Sciences Lab</h3>
                                                     <span class="image featured"><img src="images/csl.jpg" alt="" /></span>
 
-                                                    
+
                                                     <p>The Computational Sciences Lab at IIIT-B is interested broadly in the areas of Algorithms, Optimization, and Robotics.<br>Major focus areas include:
                                                         <ul class="fa-ul">
                                                             <li >
                                                                 <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Robust optimization under uncertainty, with applications to supply chains, real time search, banking, smart grid, transportation, gaming and allied areas
                                                             </li>
                                                             <li >
-                                                                <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true" style="margin-bottom=20px;"></i>Approximation algorims, machine learning, cryptography and linguistics, Visualization (scientific and information), high performance computing, computational geometry and topology 
+                                                                <i class="fa-li fa fa-check-square fa-1x" aria-hidden="true" style="margin-bottom=20px;"></i>Approximation algorims, machine learning, cryptography and linguistics, Visualization (scientific and information), high performance computing, computational geometry and topology
 
                                                             </li>
 
@@ -665,11 +671,11 @@
 
                                                             </li>
 
-                                                            
+
                                                         </ul>
                                                         </p>
                                                 </article>
-                                                <article>													
+                                                <article>
 										        	<article>
 											        	<h3>HiDes Lab</h3>
 														<span class="image featured"><img src="images/hides.jpg" alt="" /></span>
@@ -679,7 +685,7 @@
 													<h3>CEEMS Lab</h3>
 														<span class="image featured"><img src="images/ceems.jpg" alt="" /></span>
 														<p>The Center for Electronics and Embedded Systems (CEEMS) Lab's objective is to nurture talent by focusing on Embedded Computing, Wireless Communication and Computer Vision. CEEMS Lab collaborates with public and private organizations with the aim of bridging the gap between academic output and industry requirements, thus providing every learner an equal opportunity to become industry ready.</p>
-													</article> 
+													</article>
 
 													<article>
 											        	<h3>Multi Modal Perception Lab</h3>
@@ -698,7 +704,7 @@
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 
 
