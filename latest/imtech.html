@@ -103,7 +103,7 @@
             padding: 20px 30px;
             text-align: left;
             font-weight: bold;
-            font-size: 20px;      
+            font-size: 20px;
           }
           td{
             background-color: rgb(238, 238, 238);
@@ -148,10 +148,11 @@
             an{
               display:block;
               float:left;
-              height: 65px;
-              width:25%;
+              /*height: 65px;*/
+              width:wrap-content;
               background:#d4eaf9;
               border-style:solid;
+
               border-color: inherit;
               border-radius:10px;
               border-width:thin;
@@ -159,9 +160,10 @@
               font-weight:600;
               font-size: 1.02em;
               text-align:center;
-              padding:10px 0;
+              padding:10px 10px;
               color:#3498db;
               cursor: default;
+              margin:10px;
 
             }
             an:hover{
@@ -338,9 +340,19 @@
                       <div class="tab-content" style="padding-bottom:25px;">
                           <div id="courseTab" class="tab-pane fade in active">
 
-                                                <div id="course" style="position:relative;height:auto;">
-                                                    <h2 style="width:100%;text-align:center;">Computer Science</h2>
-                                                    <div id="wrapper" style="height:400px;">
+                                <div class="container" style="text-align:center;">
+                                      <an  id="courCSTab">Computer Science</an>
+                                      <an  id="courECTab">Electronics and Communications</an>
+                                      <an  id="courDSTab">Data Science</an>
+                                      <an  id="courNCTab">Networks and Communications</an>
+                                      <an  id="courBSTab">Basic Sciences</an>
+                                      <an  id="courMiscTab"> Miscellaneous </an>
+                                  </div>
+                                                    <div class="container" id="courCSData" tabindex='1' style="padding-top:25px;">
+
+
+                                                        <h2 style="width:100%;text-align:center;">Computer Science</h2>
+                                                        <div id="wrapper" style="height:400px;">
                                                         <div id="cont">
                                                             <h3>Core Courses</h3>
                                                             <ul class="fa-ul">
@@ -379,11 +391,13 @@
                                                             </ul>
                                                         </div>
                                                       </div>
-                                                        
-                                                    <div id="wrapper" style="height:370px;">
-                                                        <div id="cont" style="width:110%;">
+                                                    </div>
+
+
+                                                    <div class="container" id="courDSData" tabindex='1' style="padding-top:25px;">
+                                                        <div id="cont" style="width:100%;">
                                                             <div id="course" style="position:relative;height:auto;">
-                                                              <h2 style="position:relative;margin:auto;width:100%;text-align:center;">Data Science</h2>
+                                                              <h2 style="text-align:center;">Data Science</h2>
                                                             </div>
                                                             <h3>Specialization Electives</h3>
                                                             <ul class="fa-ul" style="position: relative;">
@@ -403,7 +417,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div style="position:relative;height:auto;">
+                                                    <div class="container" id="courECData" tabindex='1' style="padding-top:25px;">
                                                       <h2 style="margin:auto;width:100%;text-align:center;">Electronics and Communication</h2>
                                                       <div id="wrapper" style="height:300px;">
                                                           <div id="cont">
@@ -432,12 +446,13 @@
                                                           </ul>
                                                       </div>
                                                     </div>
-                                                  </div>
+                                                    </div>
 
-                                                  <div style="position:relative;height:auto;">      
+                                                  <div class="container" id="courNCData" tabindex='1' style="padding-top:25px;">
+                                                        <h2 style="margin:auto;width:100%;text-align:center;">Networks and Communication</h2>
                                                     <div id="wrapper" style="height:320px;">
-                                                        <div id="cont" style="width:110%;">
-                                                              <h2 style="position: relative;margin:auto;width:100%;text-align:center;">Networks and Communication</h2>
+                                                        <div id="cont" style="width:100%;">
+
                                                             <h3>Specialization Electives</h3>
                                                             <ul class="fa-ul" style="position: relative;">
                                                                 <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Wireless Area Networks</li>
@@ -450,30 +465,31 @@
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                  </div>
+                                                </div>
+                                                <div class="container" id="courBSData" tabindex='1' style="padding-top:25px;">
+                                                    <h2 style="margin:auto;width:100%;text-align:center;">Basic Science</h2>
+                                                        <div id="wrapper" style="height:300px;">
+                                                            <div id="cont" style="width:100%;">
 
-                                                  <div style="position:relative;height:auto;">            
-                                                    <div id="wrapper" style="height:300px;">
-                                                        <div id="cont" style="width:110%;">
-                                                            <h2 style="position: relative;margin:auto;width:100%;text-align:center;">Basic Science</h2>
-                                                            <h3>Core Courses</h3>
-                                                            <ul class="fa-ul" style="position: relative;">
-                                                                <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Physics - I</li>
-                                                                <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Physics - II</li>
-                                                                <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Intro to Bio-Sciences / Chemistry</li>
-                                                                <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematics - I ( Calculus )</li>
-                                                                <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematics - II ( Differential Equations )</li>
-                                                                <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematics - III ( Statistics, Probability<br> and Complex Analysis )</li>
-                                                                <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematics - IV ( Linear Algebra )</li>
-                                                            </ul>
+                                                                <h3>Core Courses</h3>
+                                                                <ul class="fa-ul" style="position: relative;">
+                                                                    <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Physics - I</li>
+                                                                    <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Physics - II</li>
+                                                                    <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Intro to Bio-Sciences / Chemistry</li>
+                                                                    <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematics - I ( Calculus )</li>
+                                                                    <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematics - II ( Differential Equations )</li>
+                                                                    <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematics - III ( Statistics, Probability<br> and Complex Analysis )</li>
+                                                                    <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematics - IV ( Linear Algebra )</li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                    </div>
+
                                                   </div>
 
-                                                  <div style="position:relative;height:auto;">
+                                                  <div class="container" id="courMiscData" tabindex='1' style="padding-top:25px;">
                                                         <h2 style="position: relative;margin:auto;width:100%;text-align:center;">Miscellaneous</h2>
                                                     <div id="wrapper" style="height:320px;">
-                                                        <div id="cont" style="width:110%;">
+                                                        <div id="cont" style="width:100%;">
                                                             <h3>Core Courses</h3>
                                                                 <ul class="fa-ul" style="position: relative;">
                                                                     <li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>English I</li>
@@ -487,13 +503,13 @@
                                                     </div>
                                                   </div>
 
-                                              </div>
-                                                    
+
+
                                           </div>
                           <div id="menu1" class="tab-pane fade" >
 
 
-                              <an  id="projCSTab">Computer Science</an>
+                                                    <an  id="projCSTab">Computer Science</an>
                                                     <an  id="projDSTab">Data Science</an>
                                                     <an  id="projNCTab">Networking and Comm</an>
                                                     <an  id="projESTab">Electronic System Design</an>
@@ -970,7 +986,7 @@ with Perceptual and Interaction Capabilities'</b> presented at INDICON 2016 (hel
                             </ul>
                           </article>
 
-                              
+
 
                           </div>
 
