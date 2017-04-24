@@ -42,6 +42,7 @@
     margin-left: 2px;
     margin-right: 2px;
     border-radius: 6px;
+    margin-top: 10px;
     /*text-align: center;*/
     /*display: inline;*/
     /*font-size: 12px;*/
@@ -62,7 +63,7 @@ body {
 }
 
 .btn-primary, .btn-xl, h1, h2, h3, h4, h5, h6 {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700
 }
@@ -248,7 +249,7 @@ header {
     -o-background-size: cover;
     text-align: center;
     color: #fff;
-    padding-top: 100px;
+    padding-top: 170px;
 }
 
 header .intro-text {
@@ -321,6 +322,7 @@ section h3.section-subheading {
     section {
         padding: 50px 0;
         padding-bottom:30px;
+        padding-top: 100px;
     }
 }
 
