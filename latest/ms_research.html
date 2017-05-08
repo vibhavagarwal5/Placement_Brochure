@@ -81,7 +81,7 @@
             padding: 20px 30px;
             text-align: left;
             font-weight: bold;
-            font-size: 20px;			
+            font-size: 20px;
           }
           td{
             background-color: rgb(238, 238, 238);
@@ -105,7 +105,7 @@
 
 
 
-//script for the tabs within project tab            
+//script for the tabs within project tab
             $('#projDSData').hide();
             $('#projNCData').hide();
             $('#projESData').hide();
@@ -117,20 +117,20 @@
                 $('#projESData').hide();
                 $('#projCSData').show();
             });
-            $('#projDSTab').click(function() {              
+            $('#projDSTab').click(function() {
                 $('#projNCData').hide();
                 $('#projESData').hide();
                 $('#projCSData').hide();
                 $('#projDSData').show();
-            });    
+            });
             $('#projESTab').click(function() {
                 $('#projDSData').hide();
-                $('#projNCData').hide();                
+                $('#projNCData').hide();
                 $('#projCSData').hide();
                 $('#projESData').show();
-            });    
+            });
             $('#projNCTab').click(function() {
-                $('#projDSData').hide();                
+                $('#projDSData').hide();
                 $('#projESData').hide();
                 $('#projCSData').hide();
                 $('#projNCData').show();
@@ -150,24 +150,24 @@
 		        $('#courSEData').hide();
 		        $('#courCSData').show();
 		    });
-			$('#courDSTab').click(function() {		  		
+			$('#courDSTab').click(function() {
 		        $('#courNCData').hide();
 		        $('#courSEData').hide();
 		        $('#courCSData').hide();
 		        $('#courDSData').show();
-			});    
+			});
 			$('#courSETab').click(function() {
 		  		$('#courDSData').hide();
-		        $('#courNCData').hide();		        
+		        $('#courNCData').hide();
 		        $('#courCSData').hide();
 		        $('#courSEData').show();
-			});    
+			});
 			$('#courNCTab').click(function() {
-		  		$('#courDSData').hide();		        
+		  		$('#courDSData').hide();
 		        $('#courSEData').hide();
 		        $('#courCSData').hide();
 		        $('#courNCData').show();
-			});   
+			});
         });
 
 
@@ -214,12 +214,12 @@
 											</div>
 
 
-											
+
 										<div style="padding-bottom:25px;">
 											<ul class="nav nav-tabs">
 											    <li class="active"><a data-toggle="tab" href="#courseTab">Research Areas</a></li>
 											    <li><a data-toggle="tab" href="#menu1">Projects</a></li>
-											    <li><a data-toggle="tab" href="#menu2">Students</a></li>											    
+											    <li><a data-toggle="tab" href="#menu2">Students</a></li>
 											</ul>
 
 
@@ -227,8 +227,8 @@
 
 										<div class="tab-content" style="padding-bottom:25px;">
 										    <div id="courseTab" class="tab-pane fade in active">
-										      
-										      	 <!-- <an  href="#" id="courCSTab">Embedded Systems Design</an> 
+
+										      	 <!-- <an  href="#" id="courCSTab">Embedded Systems Design</an>
 												 <an  href="#" id="courDSTab">System on Chip Design</an> -->
 												 <div><h2>Current Research Domains</h2></div>
 
@@ -236,45 +236,60 @@
 
 												 <div>
 													 <ul class="fa-ul">
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Computer Science</li>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Mathematics and Basic Sciences</li>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Electronic Systems Design</li>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Networking,Communication and Signal Processing</li>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Data Information Technology and Society</li>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Software Engineering</li>
+														<li>
+															<i class="glyphicon glyphicon-chevron-right"></i>Computer Science
+														</li>
+														<li>
+															<i class="glyphicon glyphicon-chevron-right"></i>
+															</i>Mathematics and Basic Sciences</li>
+														<li>
+															<i class="glyphicon glyphicon-chevron-right"></i>
+															</i>Electronic Systems Design</li>
+														<li>
+															<i class="glyphicon glyphicon-chevron-right"></i>
+															Networking,Communication and Signal Processing
+														</li>
+														<li>
+															<i class="glyphicon glyphicon-chevron-right"></i>
+															Data Information Technology and Society
+														</li>
+														<li>
+															<i class="glyphicon glyphicon-chevron-right"></i>
+															Software Engineering
+														</li>
 													</ul>
-												</div>																				
-										    </div> 
+												</div>
+										    </div>
 										    <!-- <closes the course tab> -->
 
 
 										    <div id="menu1" class="tab-pane fade" >
 										    	<div><h2>Ongoing Projects</h2></div>
-                                              	<div id="projData">                                                  			
+                                              	<div id="projData">
                                               			<p> <ul class="fa-ul">
                                                     <li style="margin-bottom:20px;">
-									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Communication Skill measurement</b><br>
+									        				<i class="glyphicon glyphicon-chevron-right"></i><b>Communication Skill measurement</b><br>
 									        				Asynchronous Video Interviews vs Face-to-Face Interviews For Communication Skill Measurement: A Systematic Study – submitted to ICMI 2016
 									        			</li>
 								        				<li style="margin-bottom:20px;">
-									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Fluency Predictor</b><br>
+									        				<i class="glyphicon glyphicon-chevron-right"></i><b>Fluency Predictor</b><br>
 									        				Automatic Prediction of Fluency in Interface Based Video Interviews – submitted to ACM Multimedia 2016
 									        			</li>
 									        			<li style="margin-bottom:20px;">
-									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Optimization under uncertainty for Energy Management in Smart Grid</b><br>Modeling and optimization of energy management; optimal operation schedule of appliances, price and demand uncertainty, MILP and heuristic approaches, convexification techniques, limited system observability, large scale simulations and implementation.							        				
+									        				<i class="glyphicon glyphicon-chevron-right"></i><b>Optimization under uncertainty for Energy Management in Smart Grid</b><br>Modeling and optimization of energy management; optimal operation schedule of appliances, price and demand uncertainty, MILP and heuristic approaches, convexification techniques, limited system observability, large scale simulations and implementation.
 									        			</li>
 									        			<li style="margin-bottom:20px;">
-									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Movie Recommendation using collaborative filtering </b><br>
+									        				<i class="glyphicon glyphicon-chevron-right"></i><b>Movie Recommendation using collaborative filtering </b><br>
 									        			</li>
 								        				<li style="margin-bottom:20px;">
-									        				<i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>Auto regressive and RNN models for forecasting time series data</b><br>							        				
+									        				<i class="glyphicon glyphicon-chevron-right"></i><b>Auto regressive and RNN models for forecasting time series data</b><br>
 									        			</li>
-									        			
+
 									        		</ul>
-                                                    </p>    
+                                                    </p>
 
 
-                                              	</div>                                                  	                                                        
+                                              	</div>
 										    </div>
 									    	<!-- <closing of projects> -->
 
@@ -294,17 +309,17 @@
 																</tr>
 										                    <tr>
 										                        <td>MS2015009</td>
-										                        <td>Pooja Rao S B</td>										                        
+										                        <td>Pooja Rao S B</td>
 										                        <td>Fidelity Investments (2 yrs)</td>
 										                    </tr>
 										                    <tr>
 										                        <td>MS2015004</td>
-										                        <td>Jeevan E L</td>											                        
+										                        <td>Jeevan E L</td>
 										                        <td>Rovi Corp (8 yrs)</td>
 										                    </tr>
 										                    <tr>
 										                        <td>MS2015012</td>
-										                        <td>Sharath Srivatsa</td>									                        
+										                        <td>Sharath Srivatsa</td>
 										                        <td>SONY India Software Centre (12 yrs)</td>
 										                    </tr>
 										                    <tr>
@@ -321,17 +336,17 @@
 										                        <td>PH2015014</td>
 										                        <td>Anjana Prabhakar</td>
 										                        <td>Infosys technologies, KIIT University (5 yrs)</td>
-										                    </tr>										                    
+										                    </tr>
 										                    <tr>
 										                        <td>PH2015020</td>
 										                        <td>P Surya</td>
 										                        <td></td>
-										                    </tr>										                    
+										                    </tr>
 
 										       		</table>
 									            </div>
-										    </div>	
-										    <!-- <end of div for stdent profiles> -->											
+										    </div>
+										    <!-- <end of div for stdent profiles> -->
 										</div>
 									</article>
 
@@ -339,7 +354,7 @@
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 
 		</div>
