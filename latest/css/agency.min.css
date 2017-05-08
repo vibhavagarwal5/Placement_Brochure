@@ -9,6 +9,10 @@
     background-image: none
 }
 
+.glyphicon-style{
+    margin-right: 10px;
+}
+
 .img-icon{
     font-size: 60px;
     float: right;
