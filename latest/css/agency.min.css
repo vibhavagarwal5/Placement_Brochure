@@ -9,6 +9,14 @@
     background-image: none
 }
 
+.para{
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 250%;
+    margin-bottom: -5px;
+    text-align: center;
+}
+
 .glyphicon-style{
     margin-right: 10px;
 }
@@ -267,7 +275,7 @@ header .intro-text .intro-lead-in {
     font-style: italic;
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
 }
 
 header .intro-text .intro-heading {
@@ -307,7 +315,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0
+    padding: 20px 0
 }
 
 section h2.section-heading {
