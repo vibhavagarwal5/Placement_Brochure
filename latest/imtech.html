@@ -5,19 +5,18 @@
   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <title>Integrated MTech</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
-
     <link rel="stylesheet" href="assets/css/popup.css" />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-<!-- Theme CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top ">
         <div class="navigationMenu">
@@ -27,12 +26,11 @@
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <!--<img src="img/logo.jpg">-->
-                <a  class="page-scroll" href="index.html">
+                <a class="page-scroll" href="index.html">
                     <img src="img/logo.jpg">
-                  </a>
+                </a>
                 <!-- <a class="navbar-brand page-scroll navBarHeading" href="index.html">IIIT - Bangalore</a> -->
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -63,1021 +61,981 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-      <style>
-            #wrapper {
-              margin-right: 200px;
-            }
-            #cont {
-              float: left;
-              width: 61%;
-              background-color: #FFF;
-            }
-            #side {
-              float: right;
-              width: 300px;
-              margin-right: -149px;
-              background-color: #FFF;
-            }
-            #cleared {
-              clear: both;
-            }
-
-        </style>
-
-
-        <style type="text/css">
-
-          p{
-            font-family: 'Roboto', sans-serif;
-            font-size: 1em;
-            margin-bottom: 20px;
-          }
-          li{
-            margin-bottom: 10px;
-            margin-left: 1px;
-          }
-          th{
-            background-color: rgb(112, 196, 105);
-            color: white;
-            padding: 20px 30px;
-            text-align: left;
-            font-weight: bold;
-            font-size: 20px;
-          }
-          td{
-            background-color: rgb(238, 238, 238);
-            color: rgb(111, 111, 111);
-            padding: 20px 30px;
-          }
-          .flat-table {
-            display: block;
-            font-family: sans-serif;
-            -webkit-font-smoothing: antialiased;
-            font-size: 100%;
-            overflow: auto;
-            width: auto;
-          }
-/*
-            this part for tab within tab*/
-
-            anCourse{
-              display:block;
-              float:left;
-              height: 65px;
-              width:16.6%;
-              background:#d4eaf9;
-              border-style:solid;
-              border-color: inherit;
-              border-radius:10px;
-              border-width:thin;
-              text-decoration:bold;
-              font-weight:600;
-              font-size: 0.77em;
-              text-align:center;
-              padding:10px 0;
-              color:#3498db;
-              cursor: default;
-
-            }
-            anCourse:hover{
-              background: #4286f4;
-              color: white;
-            }
-
-            an{
-              display:block;
-              float:left;
-              /*height: 65px;*/
-              width:wrap-content;
-              /*width:16%;*/
-              background:#d4eaf9;
-              border-style:solid;
-
-              border-color: inherit;
-              border-radius:10px;
-              border-width:thin;
-              text-decoration:bold;
-              font-weight:600;
-              font-size: 1.02em;
-              text-align:center;
-              padding:10px 10px;
-              color:#3498db;
-              cursor: default;
-              margin:10px;
-
-            }
-            an:hover{
-                border-color:black;
-                -webkit-transition-duration: 0.7s; /* Safari */
-                transition-duration: 0.7s;
-              background: #4286f4;
-              color: white;
-            }
-
+    <style>
+    #wrapper {
+        margin-right: 200px;
+    }
+    
+    #cont {
+        float: left;
+        width: 61%;
+        background-color: #FFF;
+    }
+    
+    #side {
+        float: right;
+        width: 300px;
+        margin-right: -149px;
+        background-color: #FFF;
+    }
+    
+    #cleared {
+        clear: both;
+    }
     </style>
+    <style type="text/css">
+    p {
+        font-family: 'arvo', 'Droid Sans';
+        font-size: 1.1em;
+        margin-bottom: 20px;
+        font-weight: 300;
+        color: #3a3a36;
+    }
+    
+    li {
+        font-size: 1.0em;
+        margin-bottom: 20px;
+        color: #3a3a36;
+    }
+    
+    th {
+        background-color: rgb(112, 196, 105);
+        color: white;
+        padding: 20px 30px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    td {
+        background-color: rgb(238, 238, 238);
+        color: rgb(111, 111, 111);
+        padding: 20px 30px;
+    }
+    
+    .flat-table {
+        display: block;
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 100%;
+        overflow: auto;
+        width: auto;
+    }
+    /*
+            this part for tab within tab*/
+    
+    anCourse {
+        display: block;
+        float: left;
+        height: 65px;
+        width: 16.6%;
+        background: #d4eaf9;
+        border-style: solid;
+        border-color: inherit;
+        border-radius: 10px;
+        border-width: thin;
+        text-decoration: bold;
+        font-weight: 600;
+        font-size: 0.77em;
+        text-align: center;
+        padding: 10px 0;
+        color: #3498db;
+        cursor: default;
+    }
+    
+    anCourse:hover {
+        background: #4286f4;
+        color: white;
+    }
+    
+    an {
+        display: block;
+        float: left;
+        /*height: 65px;*/
+        width: wrap-content;
+        /*width:16%;*/
+        background: #d4eaf9;
+        border-style: solid;
+        border-color: inherit;
+        border-radius: 10px;
+        border-width: thin;
+        text-decoration: bold;
+        font-weight: 600;
+        font-size: 1.02em;
+        text-align: center;
+        padding: 10px 10px;
+        color: #3498db;
+        cursor: default;
+        margin: 10px;
+    }
+    
+    an:hover {
+        border-color: black;
+        -webkit-transition-duration: 0.7s;
+        /* Safari */
+        transition-duration: 0.7s;
+        background: #4286f4;
+        color: white;
+    }
 
-
+    anLab {
+        display: block;
+        float: left;
+        width: wrap-content;
+        background: #d4eaf9;
+        border-style: solid;
+        border-color: inherit;
+        border-radius: 10px;
+        border-width: thin;
+        text-decoration: bold;
+        font-weight: 600;
+        font-size: 1.02em;
+        text-align: center;
+        padding: 10px 10px;
+        color: #3498db;
+        cursor: default;
+        margin: 10px;
+    }
+    
+    anLab:hover {
+        border-color: black;
+        -webkit-transition-duration: 0.7s;
+        /* Safari */
+        transition-duration: 0.7s;
+        background: #4286f4;
+        color: white;
+    }
+    </style>
     <script>
+    $(document).ready(function() {
+        // js for the tabs under courses tabs
 
+        $('#courDSData').hide();
+        $('#courNCData').hide();
+        $('#courECData').hide();
+        $('#courBSData').hide();
+        $('#courMiscData').hide();
+        $('#courCSData').show();
 
-        $(document).ready(function(){
-// js for the tabs under courses tabs
-
-          $('#courDSData').hide();
-          $('#courNCData').hide();
-          $('#courECData').hide();
-          $('#courBSData').hide();
-          $('#courMiscData').hide();
-          $('#courCSData').show();
-
-          $("#courCSTab").click(function(){
+        $("#courCSTab").click(function() {
             $('#courDSData').hide();
             $('#courNCData').hide();
             $('#courECData').hide();
             $('#courBSData').hide();
             $('#courMiscData').hide();
             $('#courCSData').show();
-          });
-          $('#courDSTab').click(function() {
+        });
+        $('#courDSTab').click(function() {
             $('#courDSData').show();
             $('#courNCData').hide();
             $('#courECData').hide();
             $('#courBSData').hide();
             $('#courMiscData').hide();
             $('#courCSData').hide();
-          });
-          $('#courECTab').click(function() {
+        });
+        $('#courECTab').click(function() {
             $('#courDSData').hide();
             $('#courNCData').hide();
             $('#courECData').show();
             $('#courBSData').hide();
             $('#courMiscData').hide();
             $('#courCSData').hide();
-          });
-          $('#courNCTab').click(function() {
+        });
+        $('#courNCTab').click(function() {
             $('#courDSData').hide();
             $('#courNCData').show();
             $('#courECData').hide();
             $('#courBSData').hide();
             $('#courMiscData').hide();
             $('#courCSData').hide();
-          });
-          $('#courBSTab').click(function() {
+        });
+        $('#courBSTab').click(function() {
             $('#courDSData').hide();
             $('#courNCData').hide();
             $('#courECData').hide();
             $('#courBSData').show();
             $('#courMiscData').hide();
             $('#courCSData').hide();
-          });
-          $('#courMiscTab').click(function() {
+        });
+        $('#courMiscTab').click(function() {
             $('#courDSData').hide();
             $('#courNCData').hide();
             $('#courECData').hide();
             $('#courBSData').hide();
             $('#courMiscData').show();
             $('#courCSData').hide();
-          });
+        });
 
 
-//script for the tabs within project tab
+        //script for the tabs within project tab
+        $('#projDSData').hide();
+        $('#projNCData').hide();
+        $('#projESData').hide();
+        $('#projCSData').show();
+
+        $("#projCSTab").click(function() {
             $('#projDSData').hide();
             $('#projNCData').hide();
             $('#projESData').hide();
             $('#projCSData').show();
-
-            $("#projCSTab").click(function(){
-                $('#projDSData').hide();
-                $('#projNCData').hide();
-                $('#projESData').hide();
-                $('#projCSData').show();
-            });
-            $('#projDSTab').click(function() {
-                $('#projNCData').hide();
-                $('#projESData').hide();
-                $('#projCSData').hide();
-                $('#projDSData').show();
-            });
-            $('#projESTab').click(function() {
-                $('#projDSData').hide();
-                $('#projNCData').hide();
-                $('#projCSData').hide();
-                $('#projESData').show();
-            });
-            $('#projNCTab').click(function() {
-                $('#projDSData').hide();
-                $('#projESData').hide();
-                $('#projCSData').hide();
-                $('#projNCData').show();
-            });
-
-            //end of script for project tab
+        });
+        $('#projDSTab').click(function() {
+            $('#projNCData').hide();
+            $('#projESData').hide();
+            $('#projCSData').hide();
+            $('#projDSData').show();
+        });
+        $('#projESTab').click(function() {
+            $('#projDSData').hide();
+            $('#projNCData').hide();
+            $('#projCSData').hide();
+            $('#projESData').show();
+        });
+        $('#projNCTab').click(function() {
+            $('#projDSData').hide();
+            $('#projESData').hide();
+            $('#projCSData').hide();
+            $('#projNCData').show();
         });
 
+        //end of script for project tab
+
+        $('#labCS').show();
+        $('#labEC').hide();
+        $('#labNP').hide();
+
+        $("#labCSTab").click(function() {
+            $('#labCS').show();
+            $('#labEC').hide();
+            $('#labNP').hide();
+        });
+        $('#labECTab').click(function() {
+            $('#labCS').hide();
+            $('#labEC').show();
+            $('#labNP').hide();
+        });
+        $('#labNPTab').click(function() {
+            $('#labCS').hide();
+            $('#labEC').hide();
+            $('#labNP').show();
+        });
+
+        //end of script for labs tab
+    });
 
 
 
 
-        /*
-        */
 
+    /*
+     */
     </script>
+</head>
 
-
-
-
-
-  </head>
-  <body class="no-sidebar">
+<body class="no-sidebar">
     <div id="page-wrapper">
-
-      <!-- Header Wrapper -->
+        <!-- Header Wrapper -->
         <div id="header-wrapper">
-          <div class="container">
-
-          </div>
-        </div>
-
-      <!-- Main Wrapper -->
-        <div id="main-wrapper">
-          <div class="wrapper style2">
-            <div class="inner">
-              <div class="container">
-                <div id="content">
-
-                  <!-- Content -->
-
-                    <article>
-                      <div class="major">
-                        <h2 style="padding-top: 10px;">Integrated MTech</h2>
-                        <!-- <p style="font-weight:300; font-size:1.0em;"> -->
-                        <p style="font-weight:300;">
-                          The iM.Tech course curriculum consists of Core Courses and Electives spanning ten semesters.<br>
-                                                    While the same set of core courses have to be completed by all the students every semester, the students are free
-                                                    to choose their electives. While core courses help in creating a strong foundation in the Information Technology
-                                                    field, electives allow students to learn and specialize in their own areas of interest.<br><br> The core courses,
-                                                    categorized into Computer Science, Electronics and Communication, Basic Sciences and Miscellaneous entirely make
-                                                    up the first five semesters. Electives are also categorized into Computer Science, Electronics & Communication, Data Science,
-                                                    Networks & Communication along with other core courses, are taken up from sixth semester till the ninth semster<br><br>Though the
-                                                    electives of students may vary as per their
-                                                    interests, the number of electives per semester remains the
-                                                    same. The current(ninth) semester requires students to take
-                                                    any two electives and a twelve credit Project under the supervision of a Professor in the college. During the tenth semester, a student can either take up an industry internship or academic research at the institute leading to a thesis.
-                          </p>
-                      </div>
-
-
-                      <div style="padding-bottom:25px;">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#courseTab">Courses</a></li>
-                            <li><a data-toggle="tab" href="#menu1">Projects</a></li>
-                            <li><a data-toggle="tab" href="#menu2">Students</a></li>
-                            <li><a data-toggle="tab" href="#menu4">Labs</a></li>
-                        </ul>
-
-
-                      </div>
-
-
-                      <div class="tab-content" style="padding-bottom:25px;">
-                          <div id="courseTab" class="tab-pane fade in active">
-
-                                <div class="container" style="text-align:center;">
-                                      <an  id="courCSTab">Computer Science</an>
-                                      <an  id="courECTab">Electronics and Communications</an>
-                                      <an  id="courDSTab">Data Science</an>
-                                      <an  id="courNCTab">Networks and Communications</an>
-                                      <an  id="courBSTab">Basic Sciences</an>
-                                      <an  id="courMiscTab"> Miscellaneous </an>
-                                  </div>
-                                                    <div class="container" id="courCSData" tabindex='1' style="padding-top:25px;">
-
-
-                                                        <h2 style="width:100%;text-align:center;">Computer Science</h2>
-
-                                                        <div class="row">
-                                                        <div class="col-md-6">
-                                                            <h3>Core Courses</h3>
-                                                            <ul class="fa-ul">
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Programming - 1 ( Python and C )</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Data Structures and Algorithms</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Discrete Mathematics</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Programming - 2 ( C++ and Java )</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Data Structures and Algorithms</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Design and Analysis of Algorithms</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Operating Systems</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Database Systems</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Software Engineering</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Programming Languages</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <h3>Specialization Electives</h3>
-                                                            <ul class="fa-ul">
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Introduction to Automata Theory and Computability</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Distributed Computing</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Artificial Intelligence</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Approximation Algorithms</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Advanced Algorithms</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Convex Optimization</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Foundations of Cryptography</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Computing on Private Data</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Computer Graphics</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Advanced Computer Graphics</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Computational Geometry</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Digital Image Processing</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Advanced Digital Image Processing</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Multi Agent Systems</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Automated Formal Verification</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Object Oriented Analysis and Design(Software Engineering)</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Design Patterns and Enterprise System Development(Software Engineering)</li>
-                                                            </ul>
-                                                        </div>
-
-
-                                                      </div>
-                                                    </div>
-
-
-                                                    <div class="container" id="courDSData" tabindex='1' style="padding-top:25px;">
-                                                        <div id="cont" style="width:100%;">
-                                                            <div id="course" style="position:relative;height:auto;">
-                                                              <h2 style="text-align:center;">Data Science</h2>
-                                                            </div>
-                                                            <h3>Specialization Electives</h3>
-                                                            <ul class="fa-ul" style="position: relative;">
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Data Modeling</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Foundations for Big Data Algorithms</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Machine Learning - I</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Machine Learning - II</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Data Analytics</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Machine Perception</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Advanced Machine Perception</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Network Sciences for the Web</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Multi Agent Systems</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Data Visualization</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Geographical Information Systems</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Automated Speech Recognition</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="container" id="courECData" tabindex='1' style="padding-top:25px;">
-                                                      <h2 style="margin:auto;width:100%;text-align:center;">Electronics and Communication</h2>
-                                                      <div class="row">
-                                                          <div class="col-md-6">
-                                                            <h3>Core Courses</h3>
-                                                            <ul class="fa-ul">
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Basic Electronics, Digital Logic and Circuits</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Signals & Systems</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Computer Networks</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Computer Architecture and Organisation</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Digital Signal Processing</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Digital Communication</li>
-                                                            </ul>
-                                                          </div>
-                                                      <div class="col-md-6">
-                                                          <h3>Specialization Electives</h3>
-                                                          <ul class="fa-ul">
-                                                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Real Time Operating Systems</li>
-                                                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Modern Operating Systems</li>
-                                                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Inter Device Communication</li>
-                                                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Internet of Things</li>
-                                                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Machine Perception</li>
-                                                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Advanced Machine Perception</li>
-                                                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Analysis and Design of VLSI Sub Systems</li>
-                                                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Hardware Software Co-Synthesis</li>
-                                                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Testing and Design for Testability</li>
-                                                          </ul>
-                                                      </div>
-                                                    </div>
-                                                    </div>
-
-                                                  <div class="container" id="courNCData" tabindex='1' style="padding-top:25px;">
-                                                        <h2 style="margin:auto;width:100%;text-align:center;">Networks and Communication</h2>
-                                                    <div id="wrapper" style="height:320px;">
-                                                        <div id="cont" style="width:100%;">
-
-                                                            <h3>Specialization Electives</h3>
-                                                            <ul class="fa-ul" style="position: relative;">
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Wireless Area Networks</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Internet Of Things</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Network Security</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Techno-Economics of Networks</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>IMS</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Software Defined Networkings</li>
-                                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Mathematical Analysis of Networks</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="container" id="courBSData" tabindex='1' style="padding-top:25px;">
-                                                    <h2 style="margin:auto;width:100%;text-align:center;">Basic Science</h2>
-                                                        <div id="wrapper" style="height:300px;">
-                                                            <div id="cont" style="width:100%;">
-
-                                                                <h3>Core Courses</h3>
-                                                                <ul class="fa-ul" style="position: relative;">
-                                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Physics - I</li>
-                                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Physics - II</li>
-                                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Intro to Bio-Sciences / Chemistry</li>
-                                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Mathematics - I ( Calculus )</li>
-                                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Mathematics - II ( Differential Equations )</li>
-                                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Mathematics - III ( Statistics, Probability<br> and Complex Analysis )</li>
-                                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Mathematics - IV ( Linear Algebra )</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-
-                                                  </div>
-
-                                                  <div class="container" id="courMiscData" tabindex='1' style="padding-top:25px;">
-                                                        <h2 style="position: relative;margin:auto;width:100%;text-align:center;">Miscellaneous</h2>
-                                                    <div id="wrapper" style="height:320px;">
-                                                        <div id="cont" style="width:100%;">
-                                                            <h3>Core Courses</h3>
-                                                                <ul class="fa-ul" style="position: relative;">
-                                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>English I</li>
-                                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Macro Economics / English II</li>
-                                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>The City: The Cradle of Information<br> Exchange and Innovation</li>
-                                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>The History of Ideas</li>
-                                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Introduction to Profession</li>
-                                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Technical Communication</li>
-                                                                </ul>
-                                                        </div>
-                                                    </div>
-                                                  </div>
-
-
-
-                                          </div>
-                          <div id="menu1" class="tab-pane fade" >
-                                                  <div class="container" style="text-align:center;">
-                                                    <an  id="projCSTab">Computer Science</an>
-                                                    <an  id="projDSTab">Data Science</an>
-                                                    <an  id="projNCTab">Networking and Comm</an>
-                                                    <an  id="projESTab">Electronic System Design</an>
-                                                  </div>
-
-                                                    <div id="projCSData" tabindex='1' style="padding-top:25px;">
-                                                        <p>
-                                                        <b><h2 style="text-align: center;">Computer Science</h2>
-                                                        </b>
-                                                    <ul class="fa-ul">
-                                                        <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Virtual Stock Guru</b><br>
-                                                                 This project tries to simulate the real stock market by providing users virtual cash and letting them trade on live stock values. It provides a good platform for beginner level investors to hone their stock market skills. It is written using Ruby on Rails and Python.
-                                                                 <br>&nbsp;
-                                                            </li>
-                                                          <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Web for all</b><br>
-                                                                This project tries to create a Heroku like setup to enable every student in college to have their own websites at <rollnumber>.iiitb.org. This tries to cut down the requirement of Virtual Machines as well as Hardware Infrastructure and give the full control to end users who write their own code and build scripts which can then be easily deployed.<br>&nbsp;
-                                                            </li>
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Animation in OpenGL using SceneGraph</b><br>
-                                                                Designed and rendered a complex scene in C++ using the OpenGL library, utilizing scene-graph and MVC concepts. The scene had multiple independent and interdependent objects, various types of stationary and mobile light sources, optional textures and a GUI to let the user control various parts of the animation.<br>&nbsp;
-                                                            </li>
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Security in Cyber-Physical Systems</b><br>
-
-Used FMEA and game theory for modelling and analysing the security of cyber-physical systems with the automobile industry as a case-study. Formulated an asymmetric non-zero sum sequential game between the attacker and the defender.<br>&nbsp;
-                                                            </li>
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Protoype for Facebook</b><br>
-                                                                The main aim of the project is to develop a prototype of Facebook using concepts of Object Oriented Programming. The technologies involved are Java and JDBC for backend, MySQL for Data storage and management. Also, HTML and Twitter Bootstrap are used for Front-end whereas JavaScript and Jersey framework are used for REST services and servlets for integrating Front-end and Back-end.<br>&nbsp;
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-
-
-                                                    </div>
-
-                                                    <div id="projDSData" style="padding-top:25px;" >
-                                                      <p> <b><h2 style="text-align: center;">Data Science</h2>
-                                                    </b><ul class="fa-ul">
-                                                        <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Distracted Driver Detection</b><br>
-                                                                Created a neural network to detect some basic distractions that a driver can face while driving and warn him appropriately to focus on the drive. The warning was customised to be given in the voice of a close person to create an emotional connect instead of viewing it as an annoyance.</li>
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>DNA – phred recalibration</b><br>
-
-DNA analysis assigns a phred score to every location in the DNA. A model was created to find non-real mutations (arising from the chemical process of extraction of the DNA as compared to genuine biological mutations) from the variant callset consisting of all the mutations detected, using machine learning techniques.</li>
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b> Deception Detection - Automatic Recognition of Fake News using Adversarial IR </b><br>
-                                                                Given a news article the goal of the project was to build a model which could classify the article as genuine or fake. The main algorithm used was the Weighted Majority Algorithm (WMA). WMA algorithm has experts and the experts used were neural networks and certain semantic based classifiers.
-                                </li>
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Cognitive Human Robot Intelligence</b><br>
-                                                                Formulate a robot model that can adjust its behavior to interact and collaborate effectively with a human whose own behavior and performance are subject to unpredictable changes like mood swings, changes of emotional states, boredom etc.
-<br>&nbsp;
-                                                            </li>
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Recognise Nametag and Rank from Army Uniform</b><br>
-                                                                 Detect and recognise name-tag and rank of an army soldier from a video using Image Processing and Deep Learning.</li>
-                  <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Machine Translation between Indian Languages Telugu-Hindi</b><br>
-                                                                Machine Translation (MT) is translation of a natural language content from one language to the other. Created Statistical Machine Translation to translate between Hindi and Telugu languages. It is an automated system with greater translation accuracy ideally without any kind of human intervention.
-                                </li>
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Personalised Web Search:</b><br>
-                                                                A challenge to personalize the web search using the history of users' search behaviour with clicks and dwell time. A model was built which used the results from the traditional retrieval using Page Rank and reranked the pages based on Topic-Sensitive Page-Rank(TSPR) values given a query and a user.<br>&nbsp;
-                                                            </li>
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Implementation of deep neural networks for Object recognition in C</b><br>
-                                                                A challenge to personalize the web search using the history of users' search behaviour with clicks and dwell time. A model was built which used the results from the traditional retrieval using Page Rank and reranked the pages based on Topic-Sensitive Page-Rank(TSPR) values given a query and a user.<br>&nbsp;
-                                                            </li>
-                                                        </ul>
-                                                        </p>
-                                                    </div>
-
-                                                    <div id="projNCData" style="padding-top:25px;">
-                                                      <p> <b><h2 style="text-align: center;">Networking and Communication</h2>
-                                                    </b>
-                                                    <ul class="fa-ul">
-                                                        <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b> VOIP call over OpenIMS</b><br>
-                                                                VOIP call over OpenIMS, which consists of P-CSCF, I-CSCF, S-CSCF using SIP call setup and registration.<br>&nbsp;
-                                                            </li>
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Tactical Communication System</b><br>
-                                                                Simulation of Tactical Communication System (TCS) for Network Centric Warfare (NCW) using OMNeT++ simulator<br>&nbsp;
-                                                            </li>
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Security in Software Defined Networking (SDN)</b><br>
-                                                                Analyzing SDN control traffic using machine learning algorithms in order to detect anomalies in the SDN control plane.<br>&nbsp;
-                                                            </li>
-
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Hierarchical Caching Algorithm for Content Centric Networking</b><br>
-                                                                A new caching algorithm was proposed to handle the duplication of cached data without using control messages, thereby saving bandwidth and decreasing latency.<br>&nbsp;
-
-                                                            </li>
-
-                                                        </ul>
-                                                        </p>
-                                                    </div>
-
-                                                    <div id="projESData" style="padding-top:25px;">
-                                                      <p> <b><h2 style="text-align: center;">Electronic System Design</h2>
-                                                    </b><ul class="fa-ul">
-                                                        <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b> Implementation of census transform on FPGA</b><br>
-                                                                Implemented part of stereo-matching called “Census Transform” on Xilinx FPGA.Aim of the project is to make optimal use of the software in alignment with hardware in order to reduce computational complexity.<br>&nbsp;
-                                                            </li>
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>ARM Assembly level optimization of census transformation in Images</b><br>
-                                                                Algorithm to optimize the number of assembly level instructions of an application making it run effectively on ARM Cortex M3 hardware.<br>&nbsp;
-                                                            </li>
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b> Home automation system</b><br>
-                                                                Developed a Home automation system using pyro electric infrared, ambient light, humidity & temperature sensors over I2C and bluetooth serial communication protocols.<br>&nbsp;
-                                                            </li>
-
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>4 LED Transmittance Multiparameter Wireless Pulse Oximeter</b><br>
-                                                                Pulse oximeters are amongst the most widely used biomedical devices for monitoring the heart rate and blood pressure of patients. It generally uses two LEDs. This project achieved an upgrade in technology by using four LEDs for the calculation of multiple parameters like haemoglobin, spo2,heart rate, BP, etc. with better accuracy.<br>&nbsp;
-                                                            </li>
-
-                                                            <li>
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Lunar Rover Robot</b><br>
-                                                                Designed and built a working model of a moon rover, with software to wirelessly control it and capture pictures and video. The team built a WiFi controlled vehicle using a Raspberry Pi board and a microcontroller, and assembled simple circuits for motors. Transfer of images and control involved Python programming.<br>&nbsp;
-                                                            </li>
-                                                        </ul>
-                                                      </p>
-                                                    </div>
-
-                          </div>
-                          <div id="menu2" class="tab-pane fade">
-
-                            <!-- <h3>Menu 2</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p> -->
-                              <!-- <div class="profiles" > -->
-                              <div class="table" >
-                                      <table class="flat-table">
-                                          <tr>
-                                  <th>S.No</th>
-                                  <th>Name</th>
-                                  <th>Experience</th>
-                                </tr>
-                                        <tr>
-<tr>
-<td>IMT2013002</td>
-<td>Abhinav Chawla</td>
-<td>American Express, Neuron</td>
-</tr>
-<tr>
-<td>IMT2013003</td>
-<td>Aditya Naidu</td>
-<td>None</td>
-</tr>
-<tr>
-<td>IMT2013004</td>
-<td>Aditya Paliwal</td>
-<td>Cisco, <b>Google</b></td>
-</tr>
-<tr>
-<td>IMT2013005</td>
-<td>Anirudh Ravi</td>
-<td>Personal Air Quality Systems(PAQS)</td>
-</tr>
-<tr>
-<td>IMT2013006</td>
-<td>Apoorv Vikram Singh</td>
-<td>UpGrad</td>
-</tr>
-<tr>
-<td>IMT2013007</td>
-<td>Prudhvi krishna</td>
-<td>SIEMENS</td>
-</tr>
-<tr>
-<td>IMT2013008</td>
-<td>B. Laasya</td>
-<td>École Polytechnique Fédérale de Lausanne (EPFL)</td>
-</tr>
-<tr>
-<td>IMT2013009</td>
-<td>B.KrishnaChaitanya</td>
-<td>NSmiles</td>
-</tr>
-<tr>
-<td>IMT2013010</td>
-<td>Satwik Bhamiidi</td>
-<td>None</td>
-</tr>
-<tr>
-<td>IMT2013011</td>
-<td>Deepti Kulkarni</td>
-<td>None</td>
-</tr>
-<tr>
-<td>IMT2013012</td>
-<td>Devarsh K U</td>
-<td>University of Konstanz, Germany</td>
-</tr>
-<tr>
-<td>IMT2013013</td>
-<td>Aneesha D</td>
-<td>IIT-Hyderabad</td>
-</tr>
-<tr>
-<td>IMT2013014</td>
-<td>Dwaram Aishwarya Reddy </td>
-<td>Tejas Networks </td>
-</tr>
-<tr>
-<td>IMT2013015</td>
-<td>Gayathri Annapurna Garimella</td>
-<td>Indian Institute of Science, Bangalore</td>
-</tr>
-<tr>
-<td>IMT2013016</td>
-<td>Gavini Lakshmi Swetha</td>
-<td>BOSCH</td>
-</tr>
-<tr>
-<td>IMT2013017</td>
-<td>Vivek Ilapakurthi</td>
-<td>None</td>
-</tr>
-<tr>
-<td>IMT2013018</td>
-<td>Komaragiri Vasundhara</td>
-<td>IIIT Bangalore, Intuit</td>
-</tr>
-<tr>
-<td>IMT2013019</td>
-<td>Aravind Kashyap</td>
-<td>Markeffy Technologies Pvt LTD.   Robert Bosch </td>
-</tr>
-<tr>
-<td>IMT2013021</td>
-<td>Kumaresh Krishnan</td>
-<td>Indian Institute of Science Bangalore, Massachusetts Institute of Technology</td>
-</tr>
-<tr>
-<td>IMT2013022</td>
-<td>Lakshmi Namratha Vempaty</td>
-<td>Tejas Networks </td>
-</tr>
-<tr>
-<td>Imt2013024</td>
-<td>Medha B</td>
-<td>None</td>
-</tr>
-<tr>
-<td>IMT2013025</td>
-<td>Meghana M Reddy</td>
-<td>Srishti ESDM, NCL lab IIITB, Siemens </td>
-</tr>
-<tr>
-<td>IMT2013026</td>
-<td>Meghana Madhyastha</td>
-<td>Siemens R&D</td>
-</tr>
-<tr>
-<td>IMT2013027</td>
-<td>Nigel Steven Fernandez</td>
-<td>ISI Kolkata, <b>Google Summer of Code(GSoC)</b></td>
-</tr>
-<tr>
-<td>IMT2013028</td>
-<td>P.S.Srinivasan</td>
-<td>Ramco Systems, Commvault </td>
-</tr>
-<tr>
-<td>IMT2013029</td>
-<td>Murali Krishnam raju</td>
-<td>None</td>
-</tr>
-<tr>
-<td>IMT2013030</td>
-<td>Pranay Dugar</td>
-<td>Srishti ESDM, IIITB-CSL, Siemens</td>
-</tr>
-<tr>
-<td>IMT2013031</td>
-<td>Nikhilesh.P</td>
-<td>None</td>
-</tr>
-<tr>
-<td>IMT2013032</td>
-<td>Rajesh D M</td>
-<td>Srishti ESDM pvt. ltd., Siemens</td>
-</tr>
-<tr>
-<td>IMT2013033</td>
-<td>Karthik R V C</td>
-<td>Robert Bosch Engineering and Business Solutions</td>
-</tr>
-<tr>
-<td>IMT2013034</td>
-<td>Rishabh Bhadauria</td>
-<td>Sigtuple</td>
-</tr>
-<tr>
-<td>IMT2013035 </td>
-<td>Rishabh Manoj </td>
-<td>Sigtuple </td>
-</tr>
-<tr>
-<td>IMT2013036</td>
-<td>Soumya Rudraraju</td>
-<td>Visakhapatnam Steel Plant</td>
-</tr>
-<tr>
-<td>IMT2013037</td>
-<td>Arun Prasad</td>
-<td>Cisco, Ittiam Systems</td>
-</tr>
-<tr>
-<td>IMT2013038 </td>
-<td>Sharanya</td>
-<td>Yodlee, Jabong</td>
-</tr>
-<tr>
-<td>IMT2013039</td>
-<td>Samyak Upadhyay</td>
-<td>Redmed, Plivo, Citrya</td>
-</tr>
-<tr>
-<td>IMT2013040</td>
-<td>Sheril M Lawrence</td>
-<td>PES University, Yodlee Infotech Pvt. Ltd., Wally Startup (Personal Finance App)</td>
-</tr>
-<tr>
-<td>IMT2013041</td>
-<td>Shiva Ashish T</td>
-<td>Mymo Wireless, Analytic Edge, TATA Group Technology and Innovation Office, IISc Bangalore</td>
-</tr>
-<tr>
-<td>IMT2013042</td>
-<td>Shivam Kumar</td>
-<td>DataWeave Pvt Ltd</td>
-</tr>
-<tr>
-<td>IMT2013043</td>
-<td>Siddartha Sekhar Padhi</td>
-<td>Plivo, WeSEE (Weapons and Electronics Systems Engineering Establishment), <b>Google Summer of Code(GSoC)</b></td>
-</tr>
-<tr>
-<td>IMT2013044</td>
-<td>Simran Dokania</td>
-<td>Air India, Cisco, <b>Facebook(London)</b></td>
-</tr>
-<tr>
-<td>IMT2013045</td>
-<td>Sneha A</td>
-<td>NONE</td>
-</tr>
-<tr>
-<td>IMT2013046</td>
-<td>SOMA RAVALI</td>
-<td>RapidBizApps Pvt ltd</td>
-</tr>
-<tr>
-<td>IMT2013047</td>
-<td>Sriveda Chevuru Reddy</td>
-<td>IIITH, Valuelabs Pvt Ltd.</td>
-</tr>
-<tr>
-<td>iMT2013049</td>
-<td>Sulekha S</td>
-<td>Mayabious Art</td>
-</tr>
-<tr>
-<td>IMT2013050</td>
-<td>SLV Krishna Kumar</td>
-<td>NI R&D, IBM Innovation Labs, Siemens</td>
-</tr>
-<tr>
-<td>IMT2013051</td>
-<td>Abhiram T</td>
-<td>Vios medical </td>
-</tr>
-<tr>
-<td>IMT2013053</td>
-<td>Trisha Mittal</td>
-<td>Video Analytics Lab, IISc Bangalore</td>
-</tr>
-<tr>
-<td>IMT2013054</td>
-<td>Turlapaty Kaushik</td>
-<td>Snippets Technologies</td>
-</tr>
-<tr>
-<td>IMT2013055</td>
-<td>Udbhav Vats</td>
-<td>None</td>
-</tr>
-<tr>
-<td>IMT2013056</td>
-<td>Ujjwal Jain</td>
-<td>SrishtiESDM</td>
-</tr>
-<tr>
-<td>IMT2013057</td>
-<td>V R T Sai Kartheek</td>
-<td>Daily Ninja Pvt Ltd</td>
-</tr>
-<tr>
-<td>IMT2013058</td>
-<td>Sruthi Vattem</td>
-<td>HCL technologies </td>
-</tr>
-<tr>
-<td>IMT2013059</td>
-<td>SuryaTeja Venteddu</td>
-<td>None</td>
-</tr>
-<tr>
-<td>IMT2013060</td>
-<td>Vikas Yadav</td>
-<td>IBM, <b>Google Summer of Code(GSoC)</b></td>
-</tr>
-<tr>
-<td>IMT2013061</td>
-<td>Aishwarya Yandapalli</td>
-<td>Srishti - ESDM, Intuit</td>
-</tr>
-<tr>
-                                      </table>
-                                  </div>
-                          </div>
-                          <div id="menu3" class="tab-pane fade">
-                            <article>
-                                <h3>Hackathons</h3>
-                            <p style="font-weight:300;">Clear and concise coding is a practice that has been drilled into the students from first year. Having the right basics has allowed us to widen our horizons and students now venture into various coding competitions and hackathons. Many of them have won various plaudits on these two platforms making Iiitb a formidable force wherever they go. </p>
-                            <span class="image featured"><img src="images/Hackathons.jpg" alt="" /></span>
-                            <p style="font-weight:300;">The Students have actively participated and won prizes in a lot of Hackathons .<br>Some of these Hackathons are:</p>
-                            <ul class="fa-ul">
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Second Runners up in Mercedes Hack.Bangalore 2016 and selected as the team from India to represent Daimler in the Mobile World Congress(MWC), 2017 held in Barcelona. The team was allowed to showcase their idea on a global scale in the MWC.
-</li><br>
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Represented India in Airvolution 2017 by Air Asia where they competed against 20 teams from 10 nations.
-</li>
-
-                            </ul>
-                          </article>
-<article>
-                                <h3>Coding Competitions</h3>
-                            <span class="image featured"><img src="img/girlTeam.jpg" alt="" /></span>
-                            <p>There is an active coding habit present in the students and they keep participating in various coding competitions to show their mettle. A few of the popular events where our iMtech students have stood out are:</p>
-                          <ul class="fa-ul">
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>ACM ICPC 2017 World Finalist</b></li>
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>World Rank 6, HackerEarth International Women’s Hackathon Finale</li>
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>World Rank 5, <b>Google Code Jam</b> to I/O 2016 for Women</li>
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>World Rank 7, HackerRank Women's Cup 2015</li>
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>All India Rank 3 in <b>Google APAC Test</b> 2016</li>
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Runner up in ACM ICPC Regional 2016 </li>
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Finalist in India Hacks Algorithm 2016</li>
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Winner in Morgan Stanley Women Codeathon 2015, Runner up in Tesco Codeathon 2016, Finalist in Sears Dots and Arrows Challenge 2016, Rank 12 in Broadridge India CODE-BEE 2015 </li>
-                          </ul>
-
-                          </article>
-                          <article>
-                          <h3>Research Projects</h3>
-                            <span class="image featured"><img src="img/research.jpg" alt="" /></span>
-                            At IIItb, students are taught to be theoretically and conceptually strong. This, with the guidance from the professors, gives them the knowledge and skills required to pursue their research goals. As a part of their pursuits, they have written papers to bring their research out to public forums. Some of the papers have been published while a good lot has been submitted and is under process of publication.<br><br>
-                            <ul class="fa-ul">
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Research paper titled <b>'A Logo-Based Approach for Recognising Multiple Products on a Shelf'</b> published in Proceedings of 2016 SAI Intelligent Systems Conference</li>
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Research paper titled <b>'A Low Cost Personalised Robot Language Tutor
-with Perceptual and Interaction Capabilities'</b> presented at INDICON 2016 (held at IISc) and published in IEEE Xplore</b></li><br>
-
-                            </ul>
-                          </article>
-
-
-
-                          </div>
-
-                          <div id="menu4" class="tab-pane fade">
-
-                            <h2 style="text-decoration: underline;">Computer Science</h2>
-                              <article
-                                <h3>Web Sciences Lab</h3>
-                            <span class="image featured"><img src="img/webScience.png" alt="" /></span>
-                            <p style="font-weight:300;">The Web Science Lab (WSL) at IIIT Bangalore focuses on building models to extract semantics and understand the impact of the web on different facets of human life.<br>Typical research pursuits of WSL include the following:</p>
-                            <ul class="fa-ul">
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Mining semantic associations from text and social media data</li>
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Building computational models for various socio-cognitive phenomena on the web (like formation of collective opinions, creation of celebrities, etc.)</li>
-                            <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Semantic integration of formal web data</li>
-                            </ul>
-                          </article>
-                          <article>
-                                                        <h3>Computational Sciences Lab</h3>
-                                                    <span class="image featured"><img src="img/csl.jpg" alt="" /></span>
-
-
-                                                    <p>The Computational Sciences Lab at IIIT-B is interested broadly in the areas of Algorithms, Optimization, and Robotics.<br>Major focus areas include:
-                                                        <ul class="fa-ul">
-                                                            <li >
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Robust optimization under uncertainty, with applications to supply chains, real time search, banking, smart grid, transportation, gaming and allied areas
-                                                            </li>
-                                                            <li >
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style" aria-hidden="true" style="margin-bottom=20px;"></i>Approximation algorims, machine learning, cryptography and linguistics, Visualization (scientific and information), high performance computing, computational geometry and topology
-
-                                                            </li>
-
-                                                            <li >
-                                                                <i class="glyphicon glyphicon-chevron-right glyphicon-style" aria-hidden="true" style="margin-bottom=20px;"></i>Electronic Design Automation including Statistical timing analysis and Optimization for Digital circuits, Power Analysis and Optimization, Formal Verification, Semiconductor manufacturing, Statistical Optimization, Combinatorial Optimization, Design and Analysis of Alogrithms
-
-                                                            </li>
-
-
-                                                        </ul>
-                                                        </p>
-                                                </article>
-                                                <article>
-                          <h2 style="text-decoration: underline;">Electronics & Communication</h2>
-                              <article>
-                                <h3>HiDes Lab</h3>
-                            <span class="image featured"><img src="img/hides.jpg" alt="" /></span>
-                            <p>The High Density Electronic Systems Lab at IIIT-B focuses on research and development in the area of high density and low dimensional electronics. The areas of research include 3D electronics, magnetic logic devices, interconnects, and antennas.</p>
-                          </article>
-                          <article>
-                          <h3>CEEMS Lab</h3>
-                            <span class="image featured"><img src="img/ceems.jpg" alt="" /></span>
-                            <p>The Center for Electronics and Embedded Systems (CEEMS) Lab's objective is to nurture talent by focusing on Embedded Computing, Wireless Communication and Computer Vision. CEEMS Lab collaborates with public and private organizations with the aim of bridging the gap between academic output and industry requirements, thus providing every learner an equal opportunity to become industry ready.</p>
-                          </article>
-
-                          <h2 style="text-decoration: underline;">Networking & Signal Processing</h2>
-                              <article>
-                                <h3>Multi Modal Perception Lab</h3>
-                            <!-- <span class="image featured"><img src="images/pic08.jpg" alt="" /></span> -->
-                            <p>The Multimodal Perception lab focuses on human-centered sensing
-                              and multimodal signal processing methods to observe, measure, and model human behavior. These methods are used in applications that facilitate behavioral training and social media analysis and enable human-robot interactions (HRI). The focus is mainly on vision and audio modalities. Probabilistic graphical models from the backbone of the
-                              underlying formalism.</p>
-                          </article>
-                          <article>
-                            <h3>Wireless Network Lab</h3>
-                            <span class="image featured"><img src="img/networkLab.JPG" alt="" /></span>
-                            <p>This lab focuses on research involving networking standards and technology. Current research work concentrates upon the latest broadband wireless access technology – WiMAX/LTE. Major areas of work include medium access control (MAC), QoS, QoE, power management, media independent handover (MIH).</p>
-                          </article>
-                                                </article>
-                          </div>
-                      </div>
-                    </div>
-                  </article>
-
-                </div>
-              </div>
+            <div class="container">
             </div>
-          </div>
-
         </div>
+        <!-- Main Wrapper -->
+        <div id="main-wrapper">
+            <div class="wrapper style2">
+                <div class="inner">
+                    <div class="container">
+                        <div id="content">
+                            <!-- Content -->
+                            <article>
+                                <div class="major">
+                                    <h2 style="padding-top: 10px;">Integrated MTech</h2>
+                                    <!-- <p style="font-weight:300; font-size:1.0em;"> -->
+                                    <p style="font-weight:300;">
+                                        The iM.Tech course curriculum consists of Core Courses and Electives spanning ten semesters.
+                                        <br> While the same set of core courses have to be completed by all the students every semester, the students are free to choose their electives. While core courses help in creating a strong foundation in the Information Technology field, electives allow students to learn and specialize in their own areas of interest.
+                                        <br>
+                                        <br> The core courses, categorized into Computer Science, Electronics and Communication, Basic Sciences and Miscellaneous entirely make up the first five semesters. Electives are also categorized into Computer Science, Electronics & Communication, Data Science, Networks & Communication along with other core courses, are taken up from sixth semester till the ninth semster
+                                        <br>
+                                        <br>Though the electives of students may vary as per their interests, the number of electives per semester remains the same. The current(ninth) semester requires students to take any two electives and a twelve credit Project under the supervision of a Professor in the college. During the tenth semester, a student can either take up an industry internship or academic research at the institute leading to a thesis.
+                                    </p>
+                                </div>
+                                <div style="padding-bottom:25px;">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#courseTab">Courses</a></li>
+                                        <li><a data-toggle="tab" href="#menu1">Projects</a></li>
+                                        <li><a data-toggle="tab" href="#menu2">Students</a></li>
+                                        <li><a data-toggle="tab" href="#menu4">Labs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" style="padding-bottom:25px;">
+                                    <div id="courseTab" class="tab-pane fade in active">
+                                        <div class="container" style="text-align:center;">
+                                            <an id="courCSTab">Computer Science</an>
+                                            <an id="courECTab">Electronics and Communications</an>
+                                            <an id="courDSTab">Data Science</an>
+                                            <an id="courNCTab">Networks and Communications</an>
+                                            <an id="courBSTab">Basic Sciences</an>
+                                            <an id="courMiscTab"> Miscellaneous </an>
+                                        </div>
+                                        <div class="container" id="courCSData" tabindex='1' style="padding-top:25px;">
+                                            <h2 style="width:100%;text-align:center;">Computer Science</h2>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h3>Core Courses</h3>
+                                                    <ul class="fa-ul">
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Programming - 1 ( Python and C )</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Data Structures and Algorithms</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Discrete Mathematics</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Programming - 2 ( C++ and Java )</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Data Structures and Algorithms</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Design and Analysis of Algorithms</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Operating Systems</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Database Systems</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Software Engineering</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Programming Languages</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h3>Specialization Electives</h3>
+                                                    <ul class="fa-ul">
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Introduction to Automata Theory and Computability</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Distributed Computing</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Artificial Intelligence</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Approximation Algorithms</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Advanced Algorithms</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Convex Optimization</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Foundations of Cryptography</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Computing on Private Data</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Computer Graphics</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Advanced Computer Graphics</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Computational Geometry</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Digital Image Processing</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Advanced Digital Image Processing</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Multi Agent Systems</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Automated Formal Verification</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Object Oriented Analysis and Design(Software Engineering)</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Design Patterns and Enterprise System Development(Software Engineering)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container" id="courDSData" tabindex='1' style="padding-top:25px;">
+                                            <div id="cont" style="width:100%;">
+                                                <div id="course" style="position:relative;height:auto;">
+                                                    <h2 style="text-align:center;">Data Science</h2>
+                                                </div>
+                                                <h3>Specialization Electives</h3>
+                                                <ul class="fa-ul" style="position: relative;">
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Data Modeling</li>
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Foundations for Big Data Algorithms</li>
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Machine Learning - I</li>
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Machine Learning - II</li>
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Data Analytics</li>
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Machine Perception</li>
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Advanced Machine Perception</li>
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Network Sciences for the Web</li>
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Multi Agent Systems</li>
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Data Visualization</li>
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Geographical Information Systems</li>
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Automated Speech Recognition</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="container" id="courECData" tabindex='1' style="padding-top:25px;">
+                                            <h2 style="margin:auto;width:100%;text-align:center;">Electronics and Communication</h2>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h3>Core Courses</h3>
+                                                    <ul class="fa-ul">
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Basic Electronics, Digital Logic and Circuits</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Signals & Systems</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Computer Networks</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Computer Architecture and Organisation</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Digital Signal Processing</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Digital Communication</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h3>Specialization Electives</h3>
+                                                    <ul class="fa-ul">
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Real Time Operating Systems</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Modern Operating Systems</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Inter Device Communication</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Internet of Things</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Machine Perception</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Advanced Machine Perception</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Analysis and Design of VLSI Sub Systems</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Hardware Software Co-Synthesis</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Testing and Design for Testability</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container" id="courNCData" tabindex='1' style="padding-top:25px;">
+                                            <h2 style="margin:auto;width:100%;text-align:center;">Networks and Communication</h2>
+                                            <div id="wrapper" style="height:320px;">
+                                                <div id="cont" style="width:100%;">
+                                                    <h3>Specialization Electives</h3>
+                                                    <ul class="fa-ul" style="position: relative;">
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Wireless Area Networks</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Internet Of Things</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Network Security</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Techno-Economics of Networks</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>IMS</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Software Defined Networkings</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Mathematical Analysis of Networks</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container" id="courBSData" tabindex='1' style="padding-top:25px;">
+                                            <h2 style="margin:auto;width:100%;text-align:center;">Basic Science</h2>
+                                            <div id="wrapper" style="height:300px;">
+                                                <div id="cont" style="width:100%;">
+                                                    <h3>Core Courses</h3>
+                                                    <ul class="fa-ul" style="position: relative;">
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Physics - I</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Physics - II</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Intro to Bio-Sciences / Chemistry</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Mathematics - I ( Calculus )</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Mathematics - II ( Differential Equations )</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Mathematics - III ( Statistics, Probability
+                                                            <br> and Complex Analysis )</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Mathematics - IV ( Linear Algebra )</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container" id="courMiscData" tabindex='1' style="padding-top:25px;">
+                                            <h2 style="position: relative;margin:auto;width:100%;text-align:center;">Miscellaneous</h2>
+                                            <div id="wrapper" style="height:320px;">
+                                                <div id="cont" style="width:100%;">
+                                                    <h3>Core Courses</h3>
+                                                    <ul class="fa-ul" style="position: relative;">
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>English I</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Macro Economics / English II</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>The City: The Cradle of Information
+                                                            <br> Exchange and Innovation</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>The History of Ideas</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Introduction to Profession</li>
+                                                        <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Technical Communication</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="menu1" class="tab-pane fade">
+                                        <div class="container" style="text-align: center;">
+                                            <an id="projCSTab">Computer Science</an>
+                                            <an id="projDSTab">Data Science</an>
+                                            <an id="projNCTab">Networking and Comm</an>
+                                            <an id="projESTab">Electronic System Design</an>
+                                        </div>
+                                        <div id="projCSData" tabindex='1' style="padding-top:25px;">
+                                            <p>
+                                                <b><h2 style="text-align: center;">Computer Science</h2>
+                                                        </b>
+                                                <ul class="fa-ul">
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Virtual Stock Guru</b>
+                                                        <br> This project tries to simulate the real stock market by providing users virtual cash and letting them trade on live stock values. It provides a good platform for beginner level investors to hone their stock market skills. It is written using Ruby on Rails and Python.
+                                                        <br>
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Web for all</b>
+                                                        <br> This project tries to create a Heroku like setup to enable every student in college to have their own websites at
+                                                        <rollnumber>.iiitb.org. This tries to cut down the requirement of Virtual Machines as well as Hardware Infrastructure and give the full control to end users who write their own code and build scripts which can then be easily deployed.
+                                                            <br>
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Animation in OpenGL using SceneGraph</b>
+                                                        <br> Designed and rendered a complex scene in C++ using the OpenGL library, utilizing scene-graph and MVC concepts. The scene had multiple independent and interdependent objects, various types of stationary and mobile light sources, optional textures and a GUI to let the user control various parts of the animation.
+                                                        <br>
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Security in Cyber-Physical Systems</b>
+                                                        <br> Used FMEA and game theory for modelling and analysing the security of cyber-physical systems with the automobile industry as a case-study. Formulated an asymmetric non-zero sum sequential game between the attacker and the defender.
+                                                        <br>
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Protoype for Facebook</b>
+                                                        <br> The main aim of the project is to develop a prototype of Facebook using concepts of Object Oriented Programming. The technologies involved are Java and JDBC for backend, MySQL for Data storage and management. Also, HTML and Twitter Bootstrap are used for Front-end whereas JavaScript and Jersey framework are used for REST services and servlets for integrating Front-end and Back-end.
+                                                        <br>
+                                                    </li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                        <div id="projDSData" style="padding-top:25px;">
+                                            <p> <b><h2 style="text-align: center;">Data Science</h2>
+                                                    </b>
+                                                <ul class="fa-ul">
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Distracted Driver Detection</b>
+                                                        <br> Created a neural network to detect some basic distractions that a driver can face while driving and warn him appropriately to focus on the drive. The warning was customised to be given in the voice of a close person to create an emotional connect instead of viewing it as an annoyance.</li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>DNA – phred recalibration</b>
+                                                        <br> DNA analysis assigns a phred score to every location in the DNA. A model was created to find non-real mutations (arising from the chemical process of extraction of the DNA as compared to genuine biological mutations) from the variant callset consisting of all the mutations detected, using machine learning techniques.</li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b> Deception Detection - Automatic Recognition of Fake News using Adversarial IR </b>
+                                                        <br> Given a news article the goal of the project was to build a model which could classify the article as genuine or fake. The main algorithm used was the Weighted Majority Algorithm (WMA). WMA algorithm has experts and the experts used were neural networks and certain semantic based classifiers.
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Cognitive Human Robot Intelligence</b>
+                                                        <br> Formulate a robot model that can adjust its behavior to interact and collaborate effectively with a human whose own behavior and performance are subject to unpredictable changes like mood swings, changes of emotional states, boredom etc.
+                                                        <br>
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Recognise Nametag and Rank from Army Uniform</b>
+                                                        <br> Detect and recognise name-tag and rank of an army soldier from a video using Image Processing and Deep Learning.</li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Machine Translation between Indian Languages Telugu-Hindi</b>
+                                                        <br> Machine Translation (MT) is translation of a natural language content from one language to the other. Created Statistical Machine Translation to translate between Hindi and Telugu languages. It is an automated system with greater translation accuracy ideally without any kind of human intervention.
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Personalised Web Search:</b>
+                                                        <br> A challenge to personalize the web search using the history of users' search behaviour with clicks and dwell time. A model was built which used the results from the traditional retrieval using Page Rank and reranked the pages based on Topic-Sensitive Page-Rank(TSPR) values given a query and a user.
+                                                        <br>
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Implementation of deep neural networks for Object recognition in C</b>
+                                                        <br> A challenge to personalize the web search using the history of users' search behaviour with clicks and dwell time. A model was built which used the results from the traditional retrieval using Page Rank and reranked the pages based on Topic-Sensitive Page-Rank(TSPR) values given a query and a user.
+                                                        <br>
+                                                    </li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                        <div id="projNCData" style="padding-top:25px;">
+                                            <p> <b><h2 style="text-align: center;">Networking and Communication</h2>
+                                                    </b>
+                                                <ul class="fa-ul">
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b> VOIP call over OpenIMS</b>
+                                                        <br> VOIP call over OpenIMS, which consists of P-CSCF, I-CSCF, S-CSCF using SIP call setup and registration.
+                                                        <br>
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Tactical Communication System</b>
+                                                        <br> Simulation of Tactical Communication System (TCS) for Network Centric Warfare (NCW) using OMNeT++ simulator
+                                                        <br>
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Security in Software Defined Networking (SDN)</b>
+                                                        <br> Analyzing SDN control traffic using machine learning algorithms in order to detect anomalies in the SDN control plane.
+                                                        <br>
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Hierarchical Caching Algorithm for Content Centric Networking</b>
+                                                        <br> A new caching algorithm was proposed to handle the duplication of cached data without using control messages, thereby saving bandwidth and decreasing latency.
+                                                        <br>
+                                                    </li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                        <div id="projESData" style="padding-top:25px;">
+                                            <p> <b><h2 style="text-align: center;">Electronic System Design</h2>
+                                                    </b>
+                                                <ul class="fa-ul">
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b> Implementation of census transform on FPGA</b>
+                                                        <br> Implemented part of stereo-matching called “Census Transform” on Xilinx FPGA.Aim of the project is to make optimal use of the software in alignment with hardware in order to reduce computational complexity.
+                                                        <br>
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>ARM Assembly level optimization of census transformation in Images</b>
+                                                        <br> Algorithm to optimize the number of assembly level instructions of an application making it run effectively on ARM Cortex M3 hardware.
+                                                        <br>
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b> Home automation system</b>
+                                                        <br> Developed a Home automation system using pyro electric infrared, ambient light, humidity & temperature sensors over I2C and bluetooth serial communication protocols.
+                                                        <br>
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>4 LED Transmittance Multiparameter Wireless Pulse Oximeter</b>
+                                                        <br> Pulse oximeters are amongst the most widely used biomedical devices for monitoring the heart rate and blood pressure of patients. It generally uses two LEDs. This project achieved an upgrade in technology by using four LEDs for the calculation of multiple parameters like haemoglobin, spo2,heart rate, BP, etc. with better accuracy.
+                                                        <br>
+                                                    </li>
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i><b>Lunar Rover Robot</b>
+                                                        <br> Designed and built a working model of a moon rover, with software to wirelessly control it and capture pictures and video. The team built a WiFi controlled vehicle using a Raspberry Pi board and a microcontroller, and assembled simple circuits for motors. Transfer of images and control involved Python programming.
+                                                        <br>
+                                                    </li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div id="menu2" class="tab-pane fade">
+                                        <!-- <h3>Menu 2</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p> -->
+                                        <!-- <div class="profiles" > -->
+                                        <div class="table">
+                                            <table class="flat-table">
+                                                <tr>
+                                                    <th>S.No</th>
+                                                    <th>Name</th>
+                                                    <th>Experience</th>
+                                                </tr>
+                                                <tr>
+                                                    <tr>
+                                                        <td>IMT2013002</td>
+                                                        <td>Abhinav Chawla</td>
+                                                        <td>American Express, Neuron</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013003</td>
+                                                        <td>Aditya Naidu</td>
+                                                        <td>None</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013004</td>
+                                                        <td>Aditya Paliwal</td>
+                                                        <td>Cisco, <b>Google</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013005</td>
+                                                        <td>Anirudh Ravi</td>
+                                                        <td>Personal Air Quality Systems(PAQS)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013006</td>
+                                                        <td>Apoorv Vikram Singh</td>
+                                                        <td>UpGrad</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013007</td>
+                                                        <td>Prudhvi krishna</td>
+                                                        <td>SIEMENS</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013008</td>
+                                                        <td>B. Laasya</td>
+                                                        <td>École Polytechnique Fédérale de Lausanne (EPFL)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013009</td>
+                                                        <td>B.KrishnaChaitanya</td>
+                                                        <td>NSmiles</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013010</td>
+                                                        <td>Satwik Bhamiidi</td>
+                                                        <td>None</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013011</td>
+                                                        <td>Deepti Kulkarni</td>
+                                                        <td>None</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013012</td>
+                                                        <td>Devarsh K U</td>
+                                                        <td>University of Konstanz, Germany</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013013</td>
+                                                        <td>Aneesha D</td>
+                                                        <td>IIT-Hyderabad</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013014</td>
+                                                        <td>Dwaram Aishwarya Reddy </td>
+                                                        <td>Tejas Networks </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013015</td>
+                                                        <td>Gayathri Annapurna Garimella</td>
+                                                        <td>Indian Institute of Science, Bangalore</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013016</td>
+                                                        <td>Gavini Lakshmi Swetha</td>
+                                                        <td>BOSCH</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013017</td>
+                                                        <td>Vivek Ilapakurthi</td>
+                                                        <td>None</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013018</td>
+                                                        <td>Komaragiri Vasundhara</td>
+                                                        <td>IIIT Bangalore, Intuit</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013019</td>
+                                                        <td>Aravind Kashyap</td>
+                                                        <td>Markeffy Technologies Pvt LTD. Robert Bosch </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013021</td>
+                                                        <td>Kumaresh Krishnan</td>
+                                                        <td>Indian Institute of Science Bangalore, Massachusetts Institute of Technology</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013022</td>
+                                                        <td>Lakshmi Namratha Vempaty</td>
+                                                        <td>Tejas Networks </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Imt2013024</td>
+                                                        <td>Medha B</td>
+                                                        <td>None</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013025</td>
+                                                        <td>Meghana M Reddy</td>
+                                                        <td>Srishti ESDM, NCL lab IIITB, Siemens </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013026</td>
+                                                        <td>Meghana Madhyastha</td>
+                                                        <td>Siemens R&D</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013027</td>
+                                                        <td>Nigel Steven Fernandez</td>
+                                                        <td>ISI Kolkata, <b>Google Summer of Code(GSoC)</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013028</td>
+                                                        <td>P.S.Srinivasan</td>
+                                                        <td>Ramco Systems, Commvault </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013029</td>
+                                                        <td>Murali Krishnam raju</td>
+                                                        <td>None</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013030</td>
+                                                        <td>Pranay Dugar</td>
+                                                        <td>Srishti ESDM, IIITB-CSL, Siemens</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013031</td>
+                                                        <td>Nikhilesh.P</td>
+                                                        <td>None</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013032</td>
+                                                        <td>Rajesh D M</td>
+                                                        <td>Srishti ESDM pvt. ltd., Siemens</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013033</td>
+                                                        <td>Karthik R V C</td>
+                                                        <td>Robert Bosch Engineering and Business Solutions</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013034</td>
+                                                        <td>Rishabh Bhadauria</td>
+                                                        <td>Sigtuple</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013035 </td>
+                                                        <td>Rishabh Manoj </td>
+                                                        <td>Sigtuple </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013036</td>
+                                                        <td>Soumya Rudraraju</td>
+                                                        <td>Visakhapatnam Steel Plant</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013037</td>
+                                                        <td>Arun Prasad</td>
+                                                        <td>Cisco, Ittiam Systems</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013038 </td>
+                                                        <td>Sharanya</td>
+                                                        <td>Yodlee, Jabong</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013039</td>
+                                                        <td>Samyak Upadhyay</td>
+                                                        <td>Redmed, Plivo, Citrya</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013040</td>
+                                                        <td>Sheril M Lawrence</td>
+                                                        <td>PES University, Yodlee Infotech Pvt. Ltd., Wally Startup (Personal Finance App)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013041</td>
+                                                        <td>Shiva Ashish T</td>
+                                                        <td>Mymo Wireless, Analytic Edge, TATA Group Technology and Innovation Office, IISc Bangalore</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013042</td>
+                                                        <td>Shivam Kumar</td>
+                                                        <td>DataWeave Pvt Ltd</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013043</td>
+                                                        <td>Siddartha Sekhar Padhi</td>
+                                                        <td>Plivo, WeSEE (Weapons and Electronics Systems Engineering Establishment), <b>Google Summer of Code(GSoC)</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013044</td>
+                                                        <td>Simran Dokania</td>
+                                                        <td>Air India, Cisco, <b>Facebook(London)</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013045</td>
+                                                        <td>Sneha A</td>
+                                                        <td>NONE</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013046</td>
+                                                        <td>SOMA RAVALI</td>
+                                                        <td>RapidBizApps Pvt ltd</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013047</td>
+                                                        <td>Sriveda Chevuru Reddy</td>
+                                                        <td>IIITH, Valuelabs Pvt Ltd.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>iMT2013049</td>
+                                                        <td>Sulekha S</td>
+                                                        <td>Mayabious Art</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013050</td>
+                                                        <td>SLV Krishna Kumar</td>
+                                                        <td>NI R&D, IBM Innovation Labs, Siemens</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013051</td>
+                                                        <td>Abhiram T</td>
+                                                        <td>Vios medical </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013053</td>
+                                                        <td>Trisha Mittal</td>
+                                                        <td>Video Analytics Lab, IISc Bangalore</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013054</td>
+                                                        <td>Turlapaty Kaushik</td>
+                                                        <td>Snippets Technologies</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013055</td>
+                                                        <td>Udbhav Vats</td>
+                                                        <td>None</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013056</td>
+                                                        <td>Ujjwal Jain</td>
+                                                        <td>SrishtiESDM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013057</td>
+                                                        <td>V R T Sai Kartheek</td>
+                                                        <td>Daily Ninja Pvt Ltd</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013058</td>
+                                                        <td>Sruthi Vattem</td>
+                                                        <td>HCL technologies </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013059</td>
+                                                        <td>SuryaTeja Venteddu</td>
+                                                        <td>None</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013060</td>
+                                                        <td>Vikas Yadav</td>
+                                                        <td>IBM, <b>Google Summer of Code(GSoC)</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>IMT2013061</td>
+                                                        <td>Aishwarya Yandapalli</td>
+                                                        <td>Srishti - ESDM, Intuit</td>
+                                                    </tr>
+                                                    <tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                    <div id="menu4" class="tab-pane fade">
+                                        <anLab id="labCSTab" href="#">Computer Science</anLab>
+                                        <anLab id="labECTab" href="#">Electronics & Communication</anLab>
+                                        <anLab id="labNPTab" href="#">Networking & Signal Processing</anLab>
+                                        
+                                        <div id="labCS" tabindex='1' style="padding-top:25px;">
+                                            <div class="col-lg-6">
+                                                <h3>Web Sciences Lab</h3>
+                                                <span class="image featured 1"><img src="img/webScience.jpg" alt="" style="width: 80%"></span>
+                                                <p style="font-weight:300;">The Web Science Lab (WSL) at IIIT Bangalore focuses on building models to extract semantics and understand the impact of the web on different facets of human life.
+                                                    <br>Typical research pursuits of WSL include the following:</p>
+                                                <ul class="fa-ul">
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Mining semantic associations from text and social media data</li>
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Building computational models for various socio-cognitive phenomena on the web (like formation of collective opinions, creation of celebrities, etc.)</li>
+                                                    <li><i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Semantic integration of formal web data</li>
+                                                    </ul>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h3>Computational Sciences Lab</h3>
+                                                <span class="image featured"><img src="img/csl.jpg" alt=""></span>
+                                                <p>The Computational Sciences Lab at IIIT-B is interested broadly in the areas of Algorithms, Optimization, and Robotics.
+                                                    <br>Major focus areas include:
+                                                    <ul class="fa-ul">
+                                                        <li>
+                                                            <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Robust optimization under uncertainty, with applications to supply chains, real time search, banking, smart grid, transportation, gaming and allied areas
+                                                        </li>
+                                                        <li>
+                                                            <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Approximation algorims, machine learning, cryptography and linguistics, Visualization (scientific and information), high performance computing, computational geometry and topology
+                                                        </li>
+                                                        <li>
+                                                            <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>Electronic Design Automation including Statistical timing analysis and Optimization for Digital circuits, Power Analysis and Optimization, Formal Verification, Semiconductor manufacturing, Statistical Optimization, Combinatorial Optimization, Design and Analysis of Alogrithms
+                                                        </li>
+                                                    </ul>
+                                                </p>
+                                            </div>
+                                        </div>
 
+                                        <div id="labEC" style="padding-top:25px;">
+                                            <div class="col-lg-6">
+                                                <h3>HiDes Lab</h3>
+                                                <span class="image featured" ><img src="img/hides.jpg" alt="" /></span>
+                                                <p>The High Density Electronic Systems Lab at IIIT-B focuses on research and development in the area of high density and low dimensional electronics. The areas of research include 3D electronics, magnetic logic devices, interconnects, and antennas.</p>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h3>CEEMS Lab</h3>
+                                                <span class="image featured"><img src="img/ceems.jpg" alt="" /></span>
+                                                <p>The Center for Electronics and Embedded Systems (CEEMS) Lab's objective is to nurture talent by focusing on Embedded Computing, Wireless Communication and Computer Vision. CEEMS Lab collaborates with public and private organizations with the aim of bridging the gap between academic output and industry requirements, thus providing every learner an equal opportunity to become industry ready.</p>
+                                            </div>
+                                        </div>
+
+                                        <div id="labNP" style="padding-top:25px;">
+                                            <div class="col-lg-12">
+                                                <h3>Wireless Network Lab</h3>
+                                                <p>This lab focuses on research involving networking standards and technology. Current research work concentrates upon the latest broadband wireless access technology – WiMAX/LTE. Major areas of work include medium access control (MAC), QoS, QoE, power management, media independent handover (MIH).</p>
+                                                <span class="image featured"><img src="img/networkLab.JPG" alt="" /></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
+    </div>
     <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/skel-viewport.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+</body>
 
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.dropotron.min.js"></script>
-      <script src="assets/js/skel.min.js"></script>
-      <script src="assets/js/skel-viewport.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-      <script src="assets/js/main.js"></script>
-
-  </body>
 </html>
