@@ -124,36 +124,11 @@
     /*
             this part for tab within tab*/
     
-    anCourse {
-        display: block;
-        float: left;
-        height: 65px;
-        width: 16.6%;
-        background: #d4eaf9;
-        border-style: solid;
-        border-color: inherit;
-        border-radius: 10px;
-        border-width: thin;
-        text-decoration: bold;
-        font-weight: 600;
-        font-size: 0.77em;
-        text-align: center;
-        padding: 10px 0;
-        color: #3498db;
-        cursor: default;
-    }
-    
-    anCourse:hover {
-        background: #4286f4;
-        color: white;
-    }
-    
     an {
         display: block;
         float: left;
-        /*height: 65px;*/
-        width: wrap-content;
-        /*width:16%;*/
+        height: 65px;
+        width: 100%;
         background: #d4eaf9;
         border-style: solid;
         border-color: inherit;
@@ -166,42 +141,8 @@
         padding: 10px 10px;
         color: #3498db;
         cursor: default;
-        margin: 10px;
     }
-    
     an:hover {
-        border-color: black;
-        -webkit-transition-duration: 0.7s;
-        /* Safari */
-        transition-duration: 0.7s;
-        background: #4286f4;
-        color: white;
-    }
-
-    anLab {
-        display: block;
-        float: left;
-        width: wrap-content;
-        background: #d4eaf9;
-        border-style: solid;
-        border-color: inherit;
-        border-radius: 10px;
-        border-width: thin;
-        text-decoration: bold;
-        font-weight: 600;
-        font-size: 1.02em;
-        text-align: center;
-        padding: 10px 10px;
-        color: #3498db;
-        cursor: default;
-        margin: 10px;
-    }
-    
-    anLab:hover {
-        border-color: black;
-        -webkit-transition-duration: 0.7s;
-        /* Safari */
-        transition-duration: 0.7s;
         background: #4286f4;
         color: white;
     }
@@ -370,12 +311,24 @@
                                 <div class="tab-content" style="padding-bottom:25px;">
                                     <div id="courseTab" class="tab-pane fade in active">
                                         <div class="container" style="text-align:center;">
+                                            <div class="col-lg-2">
                                             <an id="courCSTab">Computer Science</an>
+                                            </div>
+                                            <div class="col-lg-2">
                                             <an id="courECTab">Electronics and Communications</an>
+                                            </div>
+                                            <div class="col-lg-2">
                                             <an id="courDSTab">Data Science</an>
+                                            </div>
+                                            <div class="col-lg-2">
                                             <an id="courNCTab">Networks and Communications</an>
+                                            </div>
+                                            <div class="col-lg-2">
                                             <an id="courBSTab">Basic Sciences</an>
+                                            </div>
+                                            <div class="col-lg-2">
                                             <an id="courMiscTab"> Miscellaneous </an>
+                                            </div>
                                         </div>
                                         <div class="container" id="courCSData" tabindex='1' style="padding-top:25px;">
                                             <h2 style="width:100%;text-align:center;">Computer Science</h2>
@@ -526,10 +479,18 @@
                                     </div>
                                     <div id="menu1" class="tab-pane fade">
                                         <div class="container" style="text-align: center;">
+                                            <div class="col-lg-3">
                                             <an id="projCSTab">Computer Science</an>
+                                            </div>
+                                            <div class="col-lg-3">
                                             <an id="projDSTab">Data Science</an>
+                                            </div>                                            
+                                            <div class="col-lg-3">
                                             <an id="projNCTab">Networking and Comm</an>
+                                            </div>
+                                            <div class="col-lg-3">
                                             <an id="projESTab">Electronic System Design</an>
+                                            </div>
                                         </div>
                                         <div id="projCSData" tabindex='1' style="padding-top:25px;">
                                             <p>
@@ -962,9 +923,15 @@
                                     </div>
                                     
                                     <div id="menu4" class="tab-pane fade">
-                                        <anLab id="labCSTab" href="#">Computer Science</anLab>
-                                        <anLab id="labECTab" href="#">Electronics & Communication</anLab>
-                                        <anLab id="labNPTab" href="#">Networking & Signal Processing</anLab>
+                                        <div class="col-lg-4">
+                                        <an id="labCSTab" href="#">Computer Science</an>
+                                        </div>
+                                        <div class="col-lg-4">
+                                        <an id="labECTab" href="#">Electronics & Communication</an>
+                                        </div>
+                                        <div class="col-lg-4">
+                                        <an id="labNPTab" href="#">Networking & Signal Processing</an>
+                                        </div>
                                         
                                         <div id="labCS" tabindex='1' style="padding-top:25px;">
                                             <div class="col-lg-6">

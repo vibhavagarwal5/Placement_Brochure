@@ -123,7 +123,7 @@
         display: block;
         float: left;
         height: 65px;
-        width: 50%;
+        width: 100%;
         background: #d4eaf9;
         border-style: solid;
         border-color: inherit;
@@ -133,11 +133,10 @@
         font-weight: 600;
         font-size: 1.02em;
         text-align: center;
-        padding: 10px 0;
+        padding: 10px 10px;
         color: #3498db;
         cursor: default;
     }
-    
     an:hover {
         background: #4286f4;
         color: white;
@@ -264,8 +263,12 @@
                                 </div>
                                 <div class="tab-content" style="padding-bottom:25px;">
                                     <div id="courseTab" class="tab-pane fade in active">
+                                        <div class="col-lg-6">
                                         <an href="#" id="courCSTab">Embedded Systems Design</an>
+                                        </div>
+                                        <div class="col-lg-6">
                                         <an href="#" id="courDSTab">System on Chip Design</an>
+                                        </div>
                                         <div id="courCSData" tabindex='1' style="padding-top:25px;">
                                             <!--<div data-filter="cs">-->
                                             <b><h2 style="text-align: center;padding-top: 50px;">Embedded Systems</h2></b> 
@@ -326,8 +329,12 @@
                                         </div>
                                     </div>
                                     <div id="menu1" class="tab-pane fade">
+                                        <div class="col-lg-6">
                                         <an id="projCSTab">Embedded Systems Design</an>
+                                        </div>
+                                        <div class="col-lg-6">
                                         <an id="projDSTab">System on Chip (SoC) Design</an>
+                                        </div>
                                         <!-- <an  id="projNCTab">Network and Comm</an>
                                                   	<an  id="projESTab">Software Eng.</an>
                                                   -->
