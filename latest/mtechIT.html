@@ -197,16 +197,19 @@
         $('#labNP').hide();
 
         $("#labCSTab").click(function() {
+            console.log('CS')
             $('#labCS').show();
             $('#labEC').hide();
             $('#labNP').hide();
         });
         $('#labECTab').click(function() {
+            console.log('EC')
             $('#labCS').hide();
             $('#labEC').show();
             $('#labNP').hide();
         });
         $('#labNPTab').click(function() {
+            console.log('NP')
             $('#labCS').hide();
             $('#labEC').hide();
             $('#labNP').show();
@@ -1302,20 +1305,22 @@
                                         </div>
                                     </div>
                                     <div id="menu3" class="tab-pane fade">
-                                        <div class="col-lg-4">
-                                        <an id="labCSTab" href="#">Computer Science</an>
-                                        </div>
-                                        <div class="col-lg-4">
-                                        <an id="labECTab" href="#">Electronics & Communication</an>
-                                        </div>
-                                        <div class="col-lg-4">
-                                        <an id="labNPTab" href="#">Networking & Signal Processing</an>
+                                        <div class="container" style="text-align:center;">
+                                            <div class="col-lg-4 col-xs-12">
+                                            <an id="labCSTab" href="#">Computer Science</an>
+                                            </div>
+                                            <div class="col-lg-4 col-xs-12">
+                                            <an id="labECTab" href="#">Electronics & Communication</an>
+                                            </div>
+                                            <div class="col-lg-4 col-xs-12">
+                                            <an id="labNPTab" href="#">Networking & Signal Processing</an>
+                                            </div>
                                         </div>
 
                                         <div id="labCS" tabindex='1' style="padding-top:25px;">
                                             <div class="col-lg-6">
                                                 <h3>Web Sciences Lab</h3>
-                                                <span class="image featured 1"><img src="img/webScience.jpg" alt="" style="width: 80%"></span>
+                                                <span class="image featured 1"><img src="img/webScience.jpg" alt=""></span>
                                                 <p style="font-weight:300;">The Web Science Lab (WSL) at IIIT Bangalore focuses on building models to extract semantics and understand the impact of the web on different facets of human life.
                                                     <br>Typical research pursuits of WSL include the following:</p>
                                                 <ul class="fa-ul">
@@ -1369,9 +1374,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>    
+                            </article>
                         </div>
-                        </article>
                     </div>
                 </div>
             </div>
