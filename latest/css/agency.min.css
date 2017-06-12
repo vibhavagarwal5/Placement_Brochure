@@ -9,6 +9,11 @@
     background-image: none
 }
 
+.up-down-arrow{
+    font-size: 60px;
+    color: #337ab7
+}
+
 .para{
     font-family: "Georgia", Helvetica, Arial, sans-serif;
     font-size: 250%;
@@ -99,7 +104,7 @@ p.large {
 
 a, a.active, a:active, a:focus, a:hover {
     outline: 0;
-    color: #ffff;
+    color: #555;
 }
 
 a.active, a:active, a:focus, a:hover {
