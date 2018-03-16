@@ -1,260 +1,384 @@
 <!DOCTYPE HTML>
 <!--
-	ZeroFour by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    ZeroFour by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<link rel="shortcut icon" href="favicon/favicon.ico">
-		<title>Achievements</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-	    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'> -->
-	    <link href="css/agency.min.css" rel="stylesheet">
 
-			<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-			<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-			<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-			<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-			<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>     <!-- link to the jQuery library (see http://jquery.com) -->
 
-        <!-- Theme CSS -->
-        <link href="css/agency.min.css" rel="stylesheet">
-	</head>
-	<body class="no-sidebar">
+	<!-- you can use these links, but better you have a link to the versions you need -->
+    <!-- usage of folder "current" is not recommended -->
+    <!-- see http://beaverslider.com/how-to-setup/docs/general for more info -->
+    <script src="http://beaverslider.com/code/current/beaverslider.js"></script>         <!-- link to a framework -->
+	<script src="http://beaverslider.com/code/current/beaverslider-effects.js"></script> <!-- link to a set of effects -->
 
-	<style type="text/css">
-	img {
-	    display: block;
-	    margin-left: auto;
-	    margin-right: auto;
-	    margin-top: 20px;
-	    margin-bottom: 20px;
-	    border: 2px solid #fff;
-	    background: url(img/tiger.png) no-repeat;
-	    box-shadow: 10px 10px 5px #ccc;
-	    -moz-box-shadow: 10px 10px 5px #ccc;
-	    -webkit-box-shadow: 10px 10px 5px #ccc;
-	    -khtml-box-shadow: 10px 10px 5px #ccc;
-	}
-	p {
-			font-family: 'Roboto', sans-serif;
-			font-size: 1em;
-			margin-bottom: 20px;
-	}
+	<!-- if you want to make styling link some css files -->
 
-        li{
-            margin-bottom: -20px;
+	<script>
+
+	$(function(){
+      var slider = new BeaverSlider({
+        structure: {
+          container: {
+            id: "special-slider",
+            width: 720,
+            height: 540
+          }
+        },
+        content: {
+          images: [
+            "achievements/Slide1.jpg",
+            "achievements/Slide2.jpg",
+            "achievements/Slide3.jpg",
+
+          ]
+        },
+        animation: {
+          effects: effectSets["slider: big set 2"],
+          interval: 2000
         }
-	</style>
+      });
+	});
 
-		<div id="page-wrapper">
-			<!-- Header Wrapper -->
-			<div id="header-wrapper">
-				<div class="container">
-					<!-- Header -->
-					<div id="header">
-						<div class="inner">
-							<!-- Logo -->
-							<h1><a href="index.html" id="logo"></a></h1>
-							<!-- Nav -->
-                            <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top ">
-                                <div class="navigationMenu">
-                                    <!-- Brand and toggle get grouped for better mobile display -->
-                                    <div class="navbar-header page-scroll">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                            <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                                        </button>
-                                        <!--<img src="img/logo.jpg">-->
-                                        <a class="navbar-brand page-scroll navBarHeading" href="index.html">IIIT - Bangalore</a>
+	</script>
+
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <title>Achievements</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'> -->
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top ">
+        <div class="navigationMenu">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <!--<img src="img/logo.jpg">-->
+                <a class="page-scroll" href="index.html">
+                    <img src="img/logo.jpg">
+                </a>
+                <!-- <a class="navbar-brand page-scroll navBarHeading" href="index.html">IIIT - Bangalore</a> -->
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li style="margin:0px">
+                        <a class="toolbarButton" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="toolbarButton" href="mtechIT.html">M.Tech - IT</a>
+                    </li>
+                    <li>
+                        <a class="toolbarButton" href="mtechESD.html">M.Tech - ESD</a>
+                    </li>
+                    <li>
+                        <a class="toolbarButton" href="imtech.html">Integrated M.Tech</a>
+                    </li>
+                    <li>
+                        <a class="toolbarButton" href="digisoc.html">MSc in Digital Society</a>
+                    </li>
+                    <li>
+                        <a class=" toolbarButton" href="ms_research.html">Research Programmes</a>
+                    </li>
+
+                    <li>
+                        <a class="toolbarButton currentPage" href="achievements.html">Achievements</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+    <style type="text/css">
+    .imgcustom {
+        display: block;
+        margin-left: 10px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        border: 2px solid #fff;
+        background: url(img/tiger.png) no-repeat;
+        box-shadow: 10px 10px 5px #ccc;
+        -moz-box-shadow: 10px 10px 5px #ccc;
+        -webkit-box-shadow: 10px 10px 5px #ccc;
+        -khtml-box-shadow: 10px 10px 5px #ccc;
+    }
+
+    .para {
+        margin-top: -50px;
+        margin-left: 10px;
+        width: 50%;
+        float: left;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+
+<body class="no-sidebar">
+    <!-- Main Wrapper -->
+    <div id="main-wrapper">
+        <div class="wrapper style2">
+            <div class="inner">
+
+                <div class="container" style="padding-bottom: 20px">
+                    <div id="content">
+                        <!-- Content -->
+                        <article>
+                            <h1 style="padding-top:70px; text-align: center;padding-top: 100px;">Special Achievements</h1>
+                            <div class="box">
+
+                                <div class="col-lg-12 text-center">
+                                    <div id="special-slider" style="margin:auto"> </div>
+                                </div>
+                            </div>
+
+                            <h1 style="padding-top:70px; text-align: center;padding-top: 100px;">Honourable Achievements</h1>
+                            <div class="box">
+
+                                <div class="col-lg-12 text-center">
+
+
+                                    <div id="carousel-example-generics5" class="carousel slide">
+
+
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators hidden-xs">
+                                            <li data-target="#carousel-example-generics5" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generics5" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generics5" data-slide-to="2"></li>
+                                            <li data-target="#carousel-example-generics5" data-slide-to="3"></li>
+                                            <li data-target="#carousel-example-generics5" data-slide-to="4"></li>
+                                        </ol>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <img class="img-responsive img-full" src="img/achievements/swissre1.jpg" alt="">
+                                                <div data-u="thumb">
+                                                    Runnersup at Mercedes Hack.Bangalore2016
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img class="img-responsive img-full" src="img/achievements/hilti.jpg" alt="">
+                                                <div data-u="thumb">
+                                                    Won the First prize of The 2016 Hilti Mobile App Competition(International Hackathon)
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img class="img-responsive img-full" src="img/achievements/kandy.jpg" alt="">
+                                                <div data-u="thumb">
+                                                    Runner up prize for Kandy's most Outlandish App
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img class="img-responsive img-full" src="img/achievements/iim.jpg" alt="">
+                                                <div data-u="thumb">
+                                                    IIMB Hackathon - Runnersup
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img class="img-responsive img-full" src="img/achievements/crypto.jpg" alt="">
+                                                <div data-u="thumb">
+                                                    First Runnersup of Cryptothon
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generics5" data-slide="prev">
+                                            <span class="icon-prev"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generics5" data-slide="next">
+                                            <span class="icon-next"></span>
+                                        </a>
                                     </div>
-
-                                    <!-- Collect the nav links, forms, and other content for toggling -->
-                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                        <ul class="nav navbar-nav navbar-right">
-                                            <li>
-                                                <a class="toolbarButton" href="mtechIT.html">M.Tech - IT</a>
+                                </div>
+                            </div>
+                        </article>
+                        <p>&nbsp;</p>
+                        <article>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h3>Hackathons</h3>
+                                        <p style="text-align:left;text-align: justify;">Clear and concise coding is a practice that has been drilled into the students from first year. Having the right basics has allowed us to widen our horizons and students now venture into various coding competitions and hackathons. Many of them have won various plaudits on these two platforms making Iiitb a formidable force wherever they go.
+                                            <br>The Students have actively participated and won prizes in a lot of Hackathons.
+                                            <br>Some of these Hackathons are:</p>
+                                        <ul class="fa-ul">
+                                            <div>
+                                                <li>
+                                                    <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i> Second Runners up in <b>Mercedes Hack.Bangalore</b> 2016 and selected as the team from India to represent Daimler in the <b>Mobile World Congress(MWC)</b>, 2017 held in Barcelona. The team was allowed to showcase their idea on a global scale in the MWC.
+                                                </li>
+                                                <br>
+                                                <li>
+                                                    <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>
+                                                    <b>Represented India in Airvolution 2017</b> by Air Asia where they competed against 20 teams from 10 nations.
+                                                </li>
+                                                <br>
+                                                <li>
+                                                    <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i> Runners Up in <b>Kone-IBM Hackathon</b>, 2017 where they competed against 2300 other developers to emerge the winners.
+                                                </li>
+                                                <br>
+                                                <li>
+                                                    <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i> Runnersup at India's first ever Bitcoin Challenge, <b>Cryptothon</b> organized by UniCoin, 2017
+                                                </li>
+                                                <br>
+                                                <li>
+                                                    <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i> Winner of Bosch Data Mining Hackathon, 2016
+                                                </li>
+                                                <br>
+                                        </ul>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <span class="image featured"><img class="imgcustom" align="right" src="img/Hackathons.jpg" alt="" width="100%"/></span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </article>
+                        <p></p>
+                        <article>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <img class="imgcustom" src="img/acm.jpg" width="100%" alt="" />
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h3 style="text-align:center">Coding Culture</h3>
+                                        <p style="text-align: justify; float: left;">
+                                            There is an active coding habit present in the students and they keep participating in various coding competitions to show their mettle. A few of the popular events where our iMtech students have stood out are:
+                                            <ul class="fa-ul">
+                                                <li>
+                                                    <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i> 10 students got selected for <b> Google Summer of Code 2017(GSoC)</b>
+                                                </li>
+                                                <li>
+                                                    <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i>
+                                                    <b>ACM ICPC 2017 World Finalist</b>
+                                                </li>
+                                                <li>
+                                                    <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i> World Rank 6, HackerEarth International Women’s Hackathon Finale
+                                                </li>
+                                                <li>
+                                                    <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i> World Rank 5, <b>Google Code Jam</b> to I/O 2016 for Women
+                                                </li>
+                                                <li>
+                                                    <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i> All India Rank 3 in <b>Google APAC Test</b> 2016
+                                                </li>
+                                                <li>
+                                                    <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i> World Rank 7, HackerRank Women's Cup 2015
+                                                </li>
+                                                <li>
+                                                    <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i> Runner up in ACM ICPC Regional 2016
+                                                </li>
+                                                <li>
+                                                    <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i> Finalist in India Hacks Algorithm 2016
+                                                </li>
+                                                <li>
+                                                    <i class="glyphicon glyphicon-chevron-right glyphicon-style"></i> Winner in Morgan Stanley Women Codeathon 2015, Runner up in Tesco Codeathon 2016, Finalist in Sears Dots and Arrows Challenge 2016, Rank 12 in Broadridge India CODE-BEE 2015
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <p></p>
+                        <article>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h3>Research Projects</h3>
+                                        <p style="text-align: justify;">
+                                            At Iiitb, students are taught to be theoretically and conceptually strong. This, with the guidance from the professors, gives them the knowledge and skills required to pursue their research goals. As a part of their pursuits, they have written papers to bring their research out to public forums. Some of the papers have been published while a good lot has been submitted and is under process of publication.
+                                        </p>
+                                        <ul class="fa-ul">
+                                            <div>
+                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style" style="float:left;"></i>
+                                            </div>
+                                            <div>
+                                                Research paper titled <b>'A Logo-Based Approach for Recognising Multiple Products on a Shelf'</b> published in Proceedings of 2016 SAI Intelligent Systems Conference
+                                            </div>
                                             </li>
-                                            <li>
-                                                <a class="toolbarButton" href="mtechESD.html">M.Tech - ESD</a>
+                                            <br>
+                                            <div>
+                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style" style="float:left;"></i>
+                                            </div>
+                                            <div>
+                                                Research paper titled <b>'A Low Cost Personalised Robot Language Tutor with Perceptual and Interaction Capabilities'</b> presented at INDICON 2016 (held at IISc) and published in IEEE Xplore
+                                            </div>
                                             </li>
-                                            <li>
-                                                <a class="toolbarButton" href="imtech.html">Integrated M.Tec</a>
+                                            <br>
+                                            <div>
+                                                <li><i class="glyphicon glyphicon-chevron-right glyphicon-style" style="float:left;"></i>
+                                            </div>
+                                            <div>
+                                                Project on <b>'Indian Railways: A heuristic based approach to solve problems in complex networks'</b> got selected for the poster Presentation at the 2017 INFORMS Conference on Business Analytics and O.R. </div>
                                             </li>
-                                            <li>
-                                                <a class="toolbarButton" href="ms_research.html">Research Programmes</a>
-                                            </li>
-                                            <li>
-                                                <a class="toolbarButton" href="digisoc.html">MSc in Digital Society</a>
-                                            </li>
-                                            <li>
-                                                <a class="currentPage toolbarButton" href="achievements.html">Achievements</a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <!-- /.navbar-collapse -->
+                                    <div class="col-md-6">
+                                        <img class="imgcustom" src="img/research.jpg" width="105%" alt="" />
+                                    </div>
                                 </div>
-                                <!-- /.container-fluid -->
-                            </nav>
-					</div>
-				</div>
-			</div>
-
-			<!-- Main Wrapper -->
-				<div id="main-wrapper">
-					<div class="wrapper style2">
-						<div class="inner">
-							<div class="container" style="padding-bottom: 20px">
-								<div id="content">
-
-									<!-- Content -->
-
-										<article>
-
-									<h2 style="padding-top:70px">Achievements</h2>
-
-									<div class="box">
-                                        <div class="col-lg-12 text-center">
-                                            <div id="carousel-example-generics5" class="carousel slide">
-                                                <!-- Indicators -->
-                                                <ol class="carousel-indicators hidden-xs">
-                                                    <li data-target="#carousel-example-generics5" data-slide-to="0" class="active"></li>
-                                                    <li data-target="#carousel-example-generics5" data-slide-to="1"></li>
-                                                    <li data-target="#carousel-example-generics5" data-slide-to="2"></li>
-                                                    <li data-target="#carousel-example-generics5" data-slide-to="3"></li>
-                                                </ol>
-
-                                                <!-- Wrapper for slides -->
-                                                <div class="carousel-inner">
-                                                    <div class="item active">
-                                                        <img class="img-responsive img-full" src="img/achievements/swissre1.jpg" alt="">
-																												<div data-u="thumb">Students getting 1st and 2nd place in SwissRe Hack'16</div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <img class="img-responsive img-full" src="img/achievements/hilti.jpg" alt="">
-																												<div data-u="thumb">Won the First prize of The 2016 Hilti Mobile App Competition(International Hackathon)</div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <img class="img-responsive img-full" src="img/achievements/kandy.jpg" alt="">
-																												<div data-u="thumb">Runner up prize for Kandy's most Outlandish App</div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <img class="img-responsive img-full" src="img/achievements/applift.jpg" alt="">
-																												<div data-u="thumb">AppLift Datathon - Winners and Second Runner Up</div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Controls -->
-                                                <a class="left carousel-control" href="#carousel-example-generics5" data-slide="prev">
-                                                    <span class="icon-prev"></span>
-                                                </a>
-                                                <a class="right carousel-control" href="#carousel-example-generics5" data-slide="next">
-                                                    <span class="icon-next"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-	                                </div>
-
-
-											<article>
-									        	<h3>Hackathons</h3>
-												<p >Clear and concise coding is a practice that has been drilled into the students from first year. Having the right basics has allowed us to widen our horizons and students now venture into various coding competitions and hackathons. Many of them have won various plaudits on these two platforms making Iiitb a formidable force wherever they go. </p>
-												<span class="image featured"><img src="img/Hackathons.jpg" alt="" width="70%"/></span>
-												<p style="font-weight:300;">The Students have actively participated and won prizes in a lot of Hackathons .<br>Some of these Hackathons are:</p>
-												<ul class="fa-ul">
-												<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Second Runners up in Mercedes Hack.Bangalore 2016 and selected as the team from India to represent Daimler in the Mobile World Congress(MWC), 2017 held in Barcelona. The team was allowed to showcase their idea on a global scale in the MWC.
-												</li><br>
-												<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Represented India in Airvolution 2017 by Air Asia where they competed against 20 teams from 10 nations.
-												</li>
-												</ul>
-												</article>
-
-											<article>
-											        	<h3>Coding Competitions</h3>
-														<span class="image featured"><img src="img/girlTeam.jpg" width="70%" alt="" /></span>
-														<p>There is an active coding habit present in the students and they keep participating in various coding competitions to show their mettle. A few of the popular events where our iMtech students have stood out are:
-													<ul class="fa-ul">
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i><b>ACM ICPC 2017 World Finalist</b></li><br>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>World Rank 6, HackerEarth International Women’s Hackathon Finale</li><br>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>World Rank 5, <b>Google Code Jam</b> to I/O 2016 for Women</li><br>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>All India Rank 3 in <b>Google APAC Test</b> 2016</li><br>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>World Rank 7, HackerRank Women's Cup 2015</li><br>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Runner up in ACM ICPC Regional 2016 </li><br>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Finalist in India Hacks Algorithm 2016</li><br>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Winner in Morgan Stanley Women Codeathon 2015, Runner up in Tesco Codeathon 2016, Finalist in Sears Dots and Arrows Challenge 2016, Rank 12 in Broadridge India CODE-BEE 2015 </li><br>
-													</ul>
-													</p>
-
-													</article>
-													<article>
-													<h3>Research Projects</h3>
-														<span class="image featured"><img src="img/research.jpg" width="70%" alt="" /></span>
-														At Iiitb, students are taught to be theoretically and conceptually strong. This, with the guidance from the professors, gives them the knowledge and skills required to pursue their research goals. As a part of their pursuits, they have written papers to bring their research out to public forums. Some of the papers have been published while a good lot has been submitted and is under process of publication.<br><br>
-														<ul class="fa-ul">
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Research paper titled <b>'A Logo-Based Approach for Recognising Multiple Products on a Shelf'</b> published in Proceedings of 2016 SAI Intelligent Systems Conference</li><br>
-														<li><i class="fa-li fa fa-check-square fa-1x" aria-hidden="true"></i>Research paper titled <b>'A Low Cost Personalised Robot Language Tutor
-with Perceptual and Interaction Capabilities'</b> presented at INDICON 2016 (held at IISc) and published in IEEE Xplore</b></li><br>
-
-														</ul>
-													</article>
-
-
-
-									</article>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<!-- Scripts -->
-
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/skel-viewport.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-		    <!-- jQuery -->
-		    <script src="vendor/jquery/jquery.min.js"></script>
-
-		    <!-- Bootstrap Core JavaScript -->
-		    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-		    <!-- Plugin JavaScript -->
-		    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
-
-		    <!-- Contact Form JavaScript -->
-		    <script src="js/jqBootstrapValidation.js"></script>
-		    <script src="js/contact_me.js"></script>
-
-		    <!-- Theme JavaScript -->
-		    <script src="js/agency.min.js"></script>
-
-
-	</body>
-	<footer style="background-color: rgb(46,48,53);">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; IIITB</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="https://twitter.com/IIITB_official"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="https://www.facebook.com/IIITBofficial/"><i class="fa fa-facebook"></i></a>
-                        </li>
-                    </ul>
+                        </article>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/skel-viewport.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="assets/js/main.js"></script>
+            <!-- jQuery -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <!-- Bootstrap Core JavaScript -->
+            <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+            <!-- Plugin JavaScript -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+            <!-- Contact Form JavaScript -->
+            <script src="js/jqBootstrapValidation.js"></script>
+            <script src="js/contact_me.js"></script>
+            <!-- Theme JavaScript -->
+            <script src="js/agency.min.js"></script>
+</body>
+<footer style="background-color: rgb(46,48,53);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; IIITB</span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li><a href="https://twitter.com/IIITB_official"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/IIITBofficial/"><i class="fa fa-facebook"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
 </html>

@@ -58,7 +58,7 @@
 }
 
 .fa-li {
-    position: absolute;
+    position: relative;
     left: -2.14285714em;
     width: 2.14285714em;
     top: .14285714em;

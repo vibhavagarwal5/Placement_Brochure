@@ -9,6 +9,22 @@
     background-image: none
 }
 
+.up-down-arrow{
+    font-size: 60px;
+    color: #337ab7
+}
+
+.para{
+    font-family: "Georgia", Helvetica, Arial, sans-serif;
+    font-size: 250%;
+    margin-bottom: -5px;
+    text-align: center;
+}
+
+.glyphicon-style{
+    margin-right: 10px;
+}
+
 .img-icon{
     font-size: 60px;
     float: right;
@@ -42,6 +58,8 @@
     margin-left: 2px;
     margin-right: 2px;
     border-radius: 6px;
+    margin-top: 10px;
+    font-size: 12px;
     /*text-align: center;*/
     /*display: inline;*/
     /*font-size: 12px;*/
@@ -62,7 +80,7 @@ body {
 }
 
 .btn-primary, .btn-xl, h1, h2, h3, h4, h5, h6 {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700
 }
@@ -86,7 +104,7 @@ p.large {
 
 a, a.active, a:active, a:focus, a:hover {
     outline: 0;
-    color: #ffff;
+    color: #555;
 }
 
 a.active, a:active, a:focus, a:hover {
@@ -171,7 +189,7 @@ a.active, a:active, a:focus, a:hover {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .navbar-custom .navbar-collapse {
@@ -248,7 +266,7 @@ header {
     -o-background-size: cover;
     text-align: center;
     color: #fff;
-    padding-top: 100px;
+    padding-top: 170px;
 }
 
 header .intro-text {
@@ -261,7 +279,7 @@ header .intro-text .intro-lead-in {
     font-style: italic;
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
 }
 
 header .intro-text .intro-heading {
@@ -301,7 +319,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0
+    padding: 20px 0
 }
 
 section h2.section-heading {
@@ -321,6 +339,7 @@ section h3.section-subheading {
     section {
         padding: 50px 0;
         padding-bottom:30px;
+        padding-top: 50px;
     }
 }
 
